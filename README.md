@@ -1,2 +1,2 @@
 # diy-accounting
-The home of DIY Accounting's community edition spreadsheet based packages. Formerly a proprietary product 
+This is the home of DIY Accounting's community edition spreadsheet based packages. Formerly, these DIY Accounting spreadsheets were distributed as a set of proprietary products, owned by DIY Accounting Limited and created by Terry Cartwright in the early 2000s. The spreadsheets are now Open Source and released under the Mozilla Public License Version 2.0. https://www.mozilla.org/en-US/MPL/2.0/  
