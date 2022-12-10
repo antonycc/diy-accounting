@@ -6,10 +6,11 @@ MAINTAINER DIY Accounting https://diyaccounting.co.uk/
 
 #RUN apt-get install -y nginx
 
-RUN mkdir -p /usr/share/webapp
+RUN mkdir -p /usr/share/webapp/zips
 COPY ./index.html /usr/share/webapp
-#ADD ./build /usr/share/webapp/zips
-COPY ./build/* /usr/share/zips
+ADD ./build /usr/share/webapp/zips
+#RUN mkdir -p /usr/share/webapp
+#COPY ./build/* /usr/share/webapp/zips
 
 RUN mkdir -p /etc/nginx/
 COPY nginx.conf /etc/nginx/nginx.conf
