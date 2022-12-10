@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: ./build.sh
+      - run: pwd ; ls -lart ; ../../build.sh
