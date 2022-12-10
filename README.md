@@ -22,5 +22,5 @@ an issue here https://github.com/antonycc/diy-accounting/issues .
 
 # TODO
 
-* Publish to s3 and regenerate catalog.properties
+* Publish Docker image to GitHub Container Registry
 * Convert docs to online content such as a wiki or GitHub pages

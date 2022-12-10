@@ -1,0 +1,15 @@
+# Run the build docker image using file system resources
+# Usage:
+# $ docker compose build --no-cache --pull
+# $ docker compose up --force-recreate --detach
+# $ docker compose logs --tail="all" --follow
+# $ docker compose down --remove-orphans
+# Browse: curl --head http://localhost:80/index.html
+# Browse: curl --head http://localhost:80/zips
+version: '3.8'
+services:
+  zips:
+    build:
+      context: .
+    ports:
+      - 8081:80
