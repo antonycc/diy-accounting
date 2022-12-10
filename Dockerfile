@@ -1,6 +1,10 @@
-# Static HTML in nginx doc root in Docker: http://localhost:8081/index.html
-#FROM nginx
-FROM ubuntu
+# Purpose: DIY Accounting package zip files in nginx accessed from: http://localhost:8081/index.html
+# Usage:
+#    $ docker build --tag diy-accounting-zips .
+#    $ docker image ls diy-accounting-zips
+#    $ docker run --interactive --tty diy-accounting-zips bash
+FROM nginx
+#FROM ubuntu
 
 MAINTAINER DIY Accounting https://diyaccounting.co.uk/
 
