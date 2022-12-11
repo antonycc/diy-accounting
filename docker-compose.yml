@@ -8,7 +8,7 @@
 # Browse: curl --head http://localhost:8081/zips/zips.html
 version: '3.8'
 services:
-  zips:
+  diy-accounting:
     build:
       context: .
     ports:

@@ -1,8 +1,8 @@
 # Purpose: DIY Accounting package zip files in nginx accessed from: http://localhost:80/index.html
 # Usage:
-#    $ docker build --tag diy-accounting-zips .
-#    $ docker image ls diy-accounting-zips
-#    $ docker run --interactive --tty diy-accounting-zips bash
+#    $ docker build --tag diy-accounting .
+#    $ docker image ls diy-accounting
+#    $ docker run --interactive --tty diy-accounting bash
 FROM nginx
 
 MAINTAINER DIY Accounting https://diyaccounting.co.uk/

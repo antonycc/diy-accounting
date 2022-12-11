@@ -51,3 +51,4 @@ GB Accounts Basic Sole Trader 2021-04-05 (Apr21) Excel 2003.zip
 
 * Convert docs to online content such as a wiki or GitHub pages
 * Contribution guidelines
+* Ensure index page is well-formed
