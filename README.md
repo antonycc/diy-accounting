@@ -20,7 +20,34 @@ As proprietary software support was supplied by email and staffed part-time. The
 users are encouraged to start a discussion here: https://github.com/antonycc/diy-accounting/discussions or raise
 an issue here https://github.com/antonycc/diy-accounting/issues .
 
+# Examples
+
+Access all DIY Accounting packages in a docker container:
+```shell
+$ docker pull ghcr.io/antonycc/diy-accounting:main
+$ docker run --dettach --publish 8081:80 ghcr.io/antonycc/diy-accounting:main
+$ curl --include 'http://localhost:8081/zips/packages.txt' | head -15
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  9923  100  9923    0     0  1218k      0 --:--:-- --:--:-- --:--:-- 4845k
+HTTP/1.1 200 OK
+Server: nginx/1.23.2
+Date: Sun, 11 Dec 2022 00:47:34 GMT
+Content-Type: text/plain
+Content-Length: 9923
+Last-Modified: Sun, 11 Dec 2022 00:39:31 GMT
+Connection: keep-alive
+ETag: "639526c3-26c3"
+Accept-Ranges: bytes
+
+GB Accounts Basic Sole Trader 2019-04-05 (Apr19) Excel 2003.zip
+GB Accounts Basic Sole Trader 2019-04-05 (Apr19) Excel 2007.zip
+GB Accounts Basic Sole Trader 2020-04-05 (Apr20) Excel 2003.zip
+GB Accounts Basic Sole Trader 2020-04-05 (Apr20) Excel 2007.zip
+GB Accounts Basic Sole Trader 2021-04-05 (Apr21) Excel 2003.zip
+```
+
 # TODO
 
-* Publish Docker image to GitHub Container Registry
 * Convert docs to online content such as a wiki or GitHub pages
+* Contribution guidelines
