@@ -5,6 +5,7 @@
 # Examples:
 #    ./build.sh 
 
+rm -rf './build'
 mkdir -p './build'
 
 #find 'IE Accounts 2007' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
@@ -31,3 +32,14 @@ find 'GB Accounts 2022-23' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh
 find 'GB Accounts 2023-24' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 
 ls -lrt './build'
+
+cat './index.html' | sed '$d' | sed '$d' | sed '$d' | sed '$d' > './build/zips.html'
+cd './build'
+ls -1 *.zip | while read line; do
+  echo "<a href=\"$line\">$line</a><br/>" >> './zips.html'
+  echo "$line" >> './packages.txt'
+done
+echo "</body>" >> './zips.html'
+echo "</html>" >> './zips.html'
+cat './zips.html'
+cd ..

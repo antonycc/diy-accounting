@@ -4,8 +4,8 @@
 # $ docker compose up --force-recreate --detach
 # $ docker compose logs --tail="all" --follow
 # $ docker compose down --remove-orphans
-# Browse: curl --head http://localhost:80/index.html
-# Browse: curl --head http://localhost:80/zips
+# Browse: curl --head http://localhost:8081/index.html
+# Browse: curl --head http://localhost:8081/zips/zips.html
 version: '3.8'
 services:
   zips:
