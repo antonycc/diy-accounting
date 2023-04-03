@@ -30,6 +30,7 @@ find 'GB Accounts 2020-21' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh
 find 'GB Accounts 2021-22' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 find 'GB Accounts 2022-23' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 find 'GB Accounts 2023-24' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
+find 'GB Accounts 2024-25' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 
 ls -lrt './build'
 
