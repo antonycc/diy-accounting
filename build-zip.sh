@@ -37,11 +37,11 @@ then
   # If this is the Any package, generate multiple zips
   if [[ $source_name == *"(Any) Excel 2007"* ]] ;
   then
-    local package="GB Accounts Company"
-    local format="Excel 2007"
-    local range=$(echo -n "${source_name?}" | sed -e 's/GB Accounts Company //' -e 's/ (Any) Excel 2007//')
-    local start_range=${range:0:4}
-    local end_range="${range:(-4)}"
+    package="GB Accounts Company"
+    format="Excel 2007"
+    range=$(echo -n "${source_name?}" | sed -e 's/GB Accounts Company //' -e 's/ (Any) Excel 2007//')
+    start_range=${range:0:4}
+    end_range="${range:(-4)}"
     zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-04-30 (Apr${start_range:(-2)}) ${format?}"
     echo "Skipping ${start_range?}-05-31" ; #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-05-31 (May${start_range:(-2)}) ${format?}"
     echo "Skipping ${start_range?}-06-30" ; #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-06-30 (Jun${start_range:(-2)}) ${format?}"
