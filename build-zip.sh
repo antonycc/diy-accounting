@@ -43,7 +43,7 @@ then
     start_range=${range:0:4}
     end_range="${range:(-4)}"
     zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-04-30 (Apr${start_range:(-2)}) ${format?}"
-    echo "Skipping ${start_range?}-05-31" ; #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-05-31 (May${start_range:(-2)}) ${format?}"
+    zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-05-31 (May${start_range:(-2)}) ${format?}"
     echo "Skipping ${start_range?}-06-30" ; #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-06-30 (Jun${start_range:(-2)}) ${format?}"
     echo "Skipping ${start_range?}-07-31" ; #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-07-31 (Jul${start_range:(-2)}) ${format?}"
     echo "Skipping ${start_range?}-08-31" ; #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-08-31 (Aug${start_range:(-2)}) ${format?}"
