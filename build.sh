@@ -23,14 +23,15 @@ mkdir -p './build'
 #find 'GB Accounts 2015-16' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 #find 'GB Accounts 2016-17' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 #find 'GB Accounts 2017-18' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
+#find 'GB Accounts 2018-19' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 
-find 'GB Accounts 2018-19' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 find 'GB Accounts 2019-20' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 find 'GB Accounts 2020-21' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 find 'GB Accounts 2021-22' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 find 'GB Accounts 2022-23' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 find 'GB Accounts 2023-24' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 find 'GB Accounts 2024-25' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
+find 'GB Accounts 2025-26' -mindepth 1 -maxdepth 1 -type d -exec './build-zip.sh' "{}" \;
 
 ls -lrt './build'
 
