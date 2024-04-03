@@ -60,12 +60,12 @@ then
       #echo "Skipping ${end_range?}-01-31"   ;
       #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-01-31 (Jan${end_range:(-2)}) ${format?}"
       # Lazy leap year check is correct between 2001 and 2099.
-      if ! (( ${end_range?} % 4 )) ;
-      then
+      #if ! (( ${end_range?} % 4 )) ;
+      #then
         #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-02-29 (Feb${end_range:(-2)}) ${format?}"
-      else
+      #else
         #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-02-28 (Feb${end_range:(-2)}) ${format?}"
-      fi
+      #fi
     else
       # For all other years, generate all zips
       zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-04-30 (Apr${start_range:(-2)}) ${format?}"
