@@ -43,48 +43,50 @@ then
     range=$(echo -n "${source_name?}" | sed -e 's/GB Accounts Company //' -e 's/ (Any) Excel 2007//')
     start_range=${range:0:4}
     end_range="${range:(-4)}"
+    first_year_end=$((start_range+1))
+    second_year_end=$((end_range+1))
     echo "start_range: ${start_range?}, end_range: ${end_range?}, cutoff_year: ${cutoff_year?}"
     # TODO: Automate the current month logic
     if [[ ${end_range?} -eq ${cutoff_year?} ]] ;
     then
       echo "Only generate company zips up to the current month in year end_range ${end_range?} which is ${cutoff_year?}"
       #echo "Skipping ${start_range?}-04-30" ; zip_source.....
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-04-30 (Apr${start_range:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-05-31 (May${start_range:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-06-30 (Jun${start_range:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-07-31 (Jul${start_range:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-08-31 (Aug${start_range:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-09-30 (Sep${start_range:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-10-31 (Oct${start_range:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-11-30 (Nov${start_range:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-12-31 (Dec${start_range:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-04-30 (Apr${first_year_end:(-2)}) ${format?}"
+      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-05-31 (May${first_year_end:(-2)}) ${format?}"
+      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-06-30 (Jun${first_year_end:(-2)}) ${format?}"
+      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-07-31 (Jul${first_year_end:(-2)}) ${format?}"
+      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-08-31 (Aug${first_year_end:(-2)}) ${format?}"
+      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-09-30 (Sep${first_year_end:(-2)}) ${format?}"
+      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-10-31 (Oct${first_year_end:(-2)}) ${format?}"
+      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-11-30 (Nov${first_year_end:(-2)}) ${format?}"
+      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-12-31 (Dec${first_year_end:(-2)}) ${format?}"
       #echo "Skipping ${end_range?}-01-31"   ;
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-01-31 (Jan${end_range:(-2)}) ${format?}"
+      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${second_year_end?}-01-31 (Jan${second_year_end:(-2)}) ${format?}"
       # Lazy leap year check is correct between 2001 and 2099.
       #if ! (( ${end_range?} % 4 )) ;
       #then
-        #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-02-29 (Feb${end_range:(-2)}) ${format?}"
+        #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${second_year_end?}-02-29 (Feb${second_year_end:(-2)}) ${format?}"
       #else
-        #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-02-28 (Feb${end_range:(-2)}) ${format?}"
+        #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${second_year_end?}-02-28 (Feb${second_year_end:(-2)}) ${format?}"
       #fi
     else
       echo "For all other years including end_range ${end_range?}, generate all company zips which is not ${cutoff_year?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-04-30 (Apr${start_range:(-2)}) ${format?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-05-31 (May${start_range:(-2)}) ${format?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-06-30 (Jun${start_range:(-2)}) ${format?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-07-31 (Jul${start_range:(-2)}) ${format?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-08-31 (Aug${start_range:(-2)}) ${format?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-09-30 (Sep${start_range:(-2)}) ${format?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-10-31 (Oct${start_range:(-2)}) ${format?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-11-30 (Nov${start_range:(-2)}) ${format?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-12-31 (Dec${start_range:(-2)}) ${format?}"
-      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-01-31 (Jan${end_range:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-04-30 (Apr${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-05-31 (May${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-06-30 (Jun${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-07-31 (Jul${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-08-31 (Aug${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-09-30 (Sep${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-10-31 (Oct${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-11-30 (Nov${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-12-31 (Dec${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${second_year_end?}-01-31 (Jan${second_year_end:(-2)}) ${format?}"
       # Lazy leap year check is correct between 2001 and 2099.
       if ! (( ${end_range?} % 4 )) ;
       then
-        zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-02-29 (Feb${end_range:(-2)}) ${format?}"
+        zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${second_year_end?}-02-29 (Feb${second_year_end:(-2)}) ${format?}"
       else
-        zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-02-28 (Feb${end_range:(-2)}) ${format?}"
+        zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${second_year_end?}-02-28 (Feb${second_year_end:(-2)}) ${format?}"
       fi
     fi
   else
