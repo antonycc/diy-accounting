@@ -43,10 +43,11 @@ then
     range=$(echo -n "${source_name?}" | sed -e 's/GB Accounts Company //' -e 's/ (Any) Excel 2007//')
     start_range=${range:0:4}
     end_range="${range:(-4)}"
+    echo "start_range: ${start_range?}, end_range: ${end_range?}, cutoff_year: ${cutoff_year?}"
     # TODO: Automate the current month logic
     if [[ ${end_range?} -eq ${cutoff_year?} ]] ;
     then
-       # Only generate zips up to the current month in the year
+      echo "Only generate company zips up to the current month in year end_range ${end_range?} which is ${cutoff_year?}"
       #echo "Skipping ${start_range?}-04-30" ; zip_source.....
       zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-04-30 (Apr${start_range:(-2)}) ${format?}"
       #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-05-31 (May${start_range:(-2)}) ${format?}"
@@ -67,7 +68,7 @@ then
         #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${end_range?}-02-28 (Feb${end_range:(-2)}) ${format?}"
       #fi
     else
-      # For all other years, generate all zips
+      echo "For all other years including end_range ${end_range?}, generate all company zips which is not ${cutoff_year?}"
       zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-04-30 (Apr${start_range:(-2)}) ${format?}"
       zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-05-31 (May${start_range:(-2)}) ${format?}"
       zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${start_range?}-06-30 (Jun${start_range:(-2)}) ${format?}"
