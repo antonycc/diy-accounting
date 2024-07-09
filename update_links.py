@@ -16,19 +16,14 @@ def update_hyperlinks(file_path):
     wb.save(file_path)
 
 def main():
-    # Get the directory from command line arguments
+    # Get the file path from command line arguments
     if len(sys.argv) != 2:
-        print("Usage: update_links.py <directory>")
+        print("Usage: update_links.py <file_path>")
         sys.exit(1)
 
-    directory = sys.argv[1]
-
-    # Loop through all .xlsx files in the directory
-    for filename in os.listdir(directory):
-        if filename.endswith(".xlsx"):
-            file_path = os.path.join(directory, filename)
-            update_hyperlinks(file_path)
-            print(f"Updated links in {filename}")
+    file_path = sys.argv[1]
+    update_hyperlinks(file_path)
+    print(f"Updated links in {file_path}")
 
 if __name__ == "__main__":
     main()
