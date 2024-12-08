@@ -57,9 +57,9 @@ then
       zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-07-31 (Jul${first_year_end:(-2)}) ${format?}"
       zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-08-31 (Aug${first_year_end:(-2)}) ${format?}"
       zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-09-30 (Sep${first_year_end:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-10-31 (Oct${first_year_end:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-11-30 (Nov${first_year_end:(-2)}) ${format?}"
-      #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-12-31 (Dec${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-10-31 (Oct${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-11-30 (Nov${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-12-31 (Dec${first_year_end:(-2)}) ${format?}"
       #echo "Skipping ${end_range?}-01-31"   ;
       #echo "Skipping ${start_range?}--" ; zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${second_year_end?}-01-31 (Jan${second_year_end:(-2)}) ${format?}"
       # Lazy leap year check is correct between 2001 and 2099.
