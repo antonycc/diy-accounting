@@ -51,10 +51,10 @@ then
     then
       echo "Only generate company zips up to the current month in year end_range ${end_range?} which is ${cutoff_year?}"
       #echo "Skipping ${start_range?}-04-30" ; zip_source.....
-      #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-04-30 (Apr${first_year_end:(-2)}) ${format?}"
-      #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-05-31 (May${first_year_end:(-2)}) ${format?}"
-      #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-06-30 (Jun${first_year_end:(-2)}) ${format?}"
-      #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-07-31 (Jul${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-04-30 (Apr${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-05-31 (May${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-06-30 (Jun${first_year_end:(-2)}) ${format?}"
+      zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-07-31 (Jul${first_year_end:(-2)}) ${format?}"
       #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-08-31 (Aug${first_year_end:(-2)}) ${format?}"
       #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-09-30 (Sep${first_year_end:(-2)}) ${format?}"
       #zip_source_folder_to_file "${source_dir?}" "${zip_destination_dir?}" "${package?} ${first_year_end?}-10-31 (Oct${first_year_end:(-2)}) ${format?}"
