@@ -14,26 +14,18 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
+./parts/
+./sdist/
+./coverage/
+./actions/
+./var/
+./wheels/
+./share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
-
-# Virtual environment
-venv/
-env/
-ENV/
-.venv/
-.env/
-# If you use Poetry
-.pdm-venv/
+./MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -57,6 +49,8 @@ coverage.xml
 *.cover
 *.py,cover
 .hypothesis/
+.pytest_cache/
+cover/
 
 # Translations
 *.mo
@@ -79,6 +73,7 @@ instance/
 docs/_build/
 
 # PyBuilder
+.pybuilder/
 target/
 
 # Jupyter Notebook
@@ -88,7 +83,34 @@ target/
 profile_default/
 ipython_config.py
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
 
 # Celery stuff
@@ -98,16 +120,14 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environment variables
-.env
-.env.*
-.envrc
-*.env
-*.env.*
-.env.local
-.env.*.local
-*.ini
-*.config
+# Environments
+/.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -130,23 +150,240 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
-# cpython test
-build/test_python_*.txt
-
-# cython debug symbols
+# Cython debug symbols
 cython_debug/
 
-# Editable installations (https://pip.pypa.io/en/latest/topics/local-project-installs/#editable-installs)
-*.egg-info/
-.installed.cfg
-*.egg
+# IntelliJ
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# Other user added ignores
-.idea/
-.jekyll-cache/
-.jekyll-metadata
-.sass-cache/
-_site/
-build/
-zips/
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# AWS User-specific
+.idea/**/aws.xml
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# SonarLint plugin
+.idea/sonarlint/
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+/.idea/.gitignore
+/.idea/vcs.xml
+/.idea/detekt.xml
+/node_modules/
+/.idea/jsLibraryMappings.xml
+
+# But don't ignore
+!.idea/copilot/
+!.idea/copilot/chatSessions/
+
+# Unsorted project specific ignores
+/coverage/
+/secrets.env
+
+# macOS specific
 **/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+**/Icon?
+**/._*
+**/._.DS_Store
+**/.fseventsd
+**/.Spotlight-V100
+**/.Trashes
+**/.volumeIcon.icns
+**/.DocumentRevisions-V100/*
+**/.metadata_never_index
+**/.metadata_never_index_unless_rootfs
+**/.TemporaryItems
+**/.apdisk
+
+# ChatGPT prompt cache
+/prompt-cache.jsonl
+
+# Intention specific logs
+/intention-log.jsonl
+/intention-log-unit.jsonl
+/intention-log-integration.jsonl
+/intention-log-live.jsonl
+/intention-log-live-integration.jsonl
+/intention-log-entrypoint.jsonl
+/intention-log-test.jsonl
+
+# npm auth resource
+/.npmrc
+/.idea/
+
+# Project files
+/json
+/app/lib/output.*
+/app/unit-tests/output.*
+/app/integration-tests/output.*
+/output.*
+/cdk/cdk.out/
+/cdk.out/
+/target/
+/test-file.txt
+/latest*.json
+/1.json
+/2.json
+/3.json
+/4.json
+/5.json
+/6.json
+/7.json
+/8.json
+/9.json
+/10.json
+/11.json
+/12.json
+/13.json
+/14.json
+/15.json
+/16.json
+/17.json
+/18.json
+/19.json
+/20.json
+/21.json
+/22.json
+/23.json
+/24.json
+/25.json
+/id-1.json
+/copy-of-id-1.json
+/id-2.json
+/id-3.json
+/last_modified.txt
+/versions.txt
+/id-4.json
+/pom.xml.versionsBackup
+/prompt.txt
+/plot.png
+/plot.svg
+/plot.json
+/output.png
+/output.json
+/request.json
+/response.json
+/result.json
+/dependency-reduced-pom.xml
+/all-test-results
+/target
+/all-test-results/.last-run.json
+/.env.bak
+/.env.hmrc-test-api
+/client*-results/
+/behaviour*-results/
+/run-manually*-results/
+/cdk-submit-application.out/
+/cdk-submit-delivery.out/
+/cdk-submit-environment.out/
+/.output.txt
+
+# HMRC test user credentials
+/hmrc-test-user.json
+
+# Cognito native auth test credentials (survives mvnw clean, unlike target/)
+/cognito-native-test-credentials.json
+
+# Salt backups (sensitive - store securely, not in Git)
+salt-backup-*.json
+
+# Claude Code local files (personal settings, not shared)
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Generated test bundle
+web/public/submit.bundle.js
+
+# Generated simulator build output
+web/public-simulator/
+web/public/simulator-local.js
+/getVatObligationsBehaviour.output.txt
+
+# Generated QR codes (produced by generate-pass workflow, uploaded as artifacts)
+/qr-codes/
+/passes-output.json
+
+# Generated gateway redirect function (built from redirects.toml by scripts/build-gateway-redirects.cjs)
+web/www.diyaccounting.co.uk/redirect-function.js
+/salt-canary-item-20260221-001556.json
+/salt-metadata-20260221-001556.json
+/cdk-app-account.drawio
+/cdk-app-auth-billing.drawio
+/cdk-app-dataflow.drawio.bak
+/cdk-app-delivery.drawio
+/cdk-app-delivery.drawio.bak
+/cdk-app-hmrc.drawio
+/cdk-app-invocation.drawio.bak
+/cdk-app-ops.drawio
+/cdk-app-ops.drawio.bak
