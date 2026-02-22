@@ -8,8 +8,8 @@ Resources below exist for both `ci` and `prod` environments. Replace `{env}` wit
 
 | Resource | Name / ID | Purpose |
 | -------- | --------- | ------- |
-| CloudFormation | `prod-spreadsheets-SpreadsheetsStack` | CDK-managed stack (CREATE_COMPLETE) |
-| CloudFormation | `ci-spreadsheets-SpreadsheetsStack` | CDK-managed stack (CREATE_COMPLETE) |
+| CloudFormation | `prod-spreadsheets-SpreadsheetsStack` | CDK-managed stack (UPDATE_COMPLETE) |
+| CloudFormation | `ci-spreadsheets-SpreadsheetsStack` | CDK-managed stack (UPDATE_COMPLETE) |
 | CloudFront dist | `E2TBOSOQKMVM6Q` / `dk6ghpplfgq9t.cloudfront.net` | ci-spreadsheets.diyaccounting.co.uk |
 | CloudFront dist | `EIWDNO6M6DL7R` / `d10s0isuhkjtrs.cloudfront.net` | spreadsheets.diyaccounting.co.uk, prod-spreadsheets.diyaccounting.co.uk |
 | S3 bucket | `ci-spreadsheets-spreadshe-cispreadsheetsoriginbuck-mbkz8lqgzamk` | Static site content origin |
@@ -46,6 +46,7 @@ Resources below exist for both `ci` and `prod` environments. Replace `{env}` wit
 
 | Role | Service |
 | ---- | ------- |
+| `AWSServiceRoleForCloudFrontLogger` | Cloud Front Logger |
 | `AWSServiceRoleForOrganizations` | Organizations |
 | `AWSServiceRoleForResourceExplorer` | Resource Explorer |
 | `AWSServiceRoleForSSO` | S S O |
