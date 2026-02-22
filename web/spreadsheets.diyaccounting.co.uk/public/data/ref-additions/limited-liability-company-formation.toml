@@ -1,0 +1,141 @@
+# Citation references for limited-liability-company-formation.html
+# New references: REF279, REF280, REF281, REF282, REF283, REF284, REF285, REF286, REF287
+# NOTE: Article references Companies Act 1985 Forms 10 and 12, which were replaced by
+# form IN01 under the Companies Act 2006. Registration fees are also out of date
+# (article says £20/£50 from 2008; current fees are £100 online / £124 postal).
+# References cite current GOV.UK sources so readers can verify the up-to-date position.
+
+[[reference]]
+id = "REF279"
+claim = "A memorandum of association is a legal statement signed by all initial shareholders agreeing to form the company"
+category = "company-formation"
+articles = ["limited-liability-company-formation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-FORMATION"
+url = "https://www.gov.uk/limited-company-formation"
+title = "Set up a limited company"
+publisher = "GOV.UK / Companies House"
+extract = "a 'memorandum of association' - a legal statement signed by all initial shareholders or guarantors agreeing to form the company"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF280"
+claim = "Articles of association are written rules about running the company agreed by the shareholders"
+category = "company-formation"
+articles = ["limited-liability-company-formation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-FORMATION"
+url = "https://www.gov.uk/limited-company-formation"
+title = "Set up a limited company"
+publisher = "GOV.UK / Companies House"
+extract = "'articles of association' - written rules about running the company agreed by the shareholders or guarantors"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF281"
+claim = "A limited company name must usually end in 'Limited' or 'Ltd'"
+category = "company-formation"
+articles = ["limited-liability-company-formation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-NAME"
+url = "https://www.gov.uk/limited-company-formation/choose-company-name"
+title = "Set up a limited company: Choose a company name"
+publisher = "GOV.UK / Companies House"
+extract = "Your name must usually end in either 'Limited' or 'Ltd'."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF282"
+claim = "A company's registered office address must be a physical address in the UK"
+category = "company-formation"
+articles = ["limited-liability-company-formation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-ADDRESS"
+url = "https://www.gov.uk/limited-company-formation/company-address"
+title = "Set up a limited company: Company address"
+publisher = "GOV.UK / Companies House"
+extract = "a physical address in the UK"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF283"
+claim = "A limited company must have at least one director who is 16 or over"
+category = "company-formation"
+articles = ["limited-liability-company-formation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-DIRECTORS"
+url = "https://www.gov.uk/limited-company-formation/appoint-directors-and-company-secretaries"
+title = "Set up a limited company: Appoint directors and company secretaries"
+publisher = "GOV.UK / Companies House"
+extract = "Your company must have at least one director."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF284"
+claim = "A company name cannot be the same as another registered company's name"
+category = "company-formation"
+articles = ["limited-liability-company-formation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-NAME"
+url = "https://www.gov.uk/limited-company-formation/choose-company-name"
+title = "Set up a limited company: Choose a company name"
+publisher = "GOV.UK / Companies House"
+extract = "Your name cannot be the same as another registered company's name."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF285"
+claim = "On registration the company receives a certificate of incorporation confirming the company legally exists"
+category = "company-formation"
+articles = ["limited-liability-company-formation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-REGISTER"
+url = "https://www.gov.uk/limited-company-formation/register-your-company"
+title = "Set up a limited company: Register your company"
+publisher = "GOV.UK / Companies House"
+extract = "You'll get a 'certificate of incorporation'. This confirms the company legally exists and shows the company number and date of formation."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF286"
+claim = "You can register a limited company by post using form IN01"
+category = "company-formation"
+articles = ["limited-liability-company-formation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-REGISTER"
+url = "https://www.gov.uk/limited-company-formation/register-your-company"
+title = "Set up a limited company: Register your company"
+publisher = "GOV.UK / Companies House"
+extract = "You can register by post using form IN01."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF287"
+claim = "You do not need a company secretary for a private limited company"
+category = "company-formation"
+articles = ["limited-liability-company-formation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-DIRECTORS"
+url = "https://www.gov.uk/limited-company-formation/appoint-directors-and-company-secretaries"
+title = "Set up a limited company: Appoint directors and company secretaries"
+publisher = "GOV.UK / Companies House"
+extract = "You do not need a company secretary for a private limited company."
+accessed = "2026-02-06"
+authority = "primary"

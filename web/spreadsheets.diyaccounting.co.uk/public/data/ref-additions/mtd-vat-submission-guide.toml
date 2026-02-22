@@ -1,0 +1,92 @@
+# Citation additions for mtd-vat-submission-guide.html
+# New references REF074-REF079, checked 2026-02-05
+
+[[reference]]
+id = "REF074"
+claim = "VAT returns must be submitted using accounting software compatible with Making Tax Digital"
+category = "mtd-vat"
+articles = ["mtd-vat-submission-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-SEND"
+url = "https://www.gov.uk/vat-returns/send-your-return"
+title = "Send your VAT Return"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must submit your VAT Return using accounting software that's compatible with Making Tax Digital."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF075"
+claim = "VAT-registered businesses must keep some VAT records digitally under Making Tax Digital"
+category = "mtd-vat"
+articles = ["mtd-vat-submission-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-RECORDS"
+url = "https://www.gov.uk/vat-record-keeping"
+title = "VAT record keeping"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must keep some VAT records digitally (also known as an 'electronic account') - unless you're exempt from following 'Making Tax Digital for VAT' rules."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF076"
+claim = "The VAT return contains nine boxes covering VAT due on sales, acquisitions, purchases, net VAT, and values of sales/purchases/EU supplies"
+category = "vat-returns"
+articles = ["mtd-vat-submission-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-NOTICE-700-12"
+url = "https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012"
+title = "How to fill in and submit your VAT Return (VAT Notice 700/12)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Box 1: VAT due in the period on sales and other outputs. Box 2: VAT due in the period on acquisitions of goods made in Northern Ireland from EU member states. Box 3: total VAT due. Box 4: VAT reclaimed in the period on purchases and other inputs (including acquisitions from the EU). Box 5: net VAT to pay to HMRC or reclaim. Box 6: total value of sales and all other outputs excluding any VAT. Box 7: the total value of purchases and all other inputs excluding any VAT. Box 8: total value of all supplies of goods and related costs, excluding any VAT, to EU member states. Box 9: total value of all acquisitions goods and related costs, excluding any VAT, from EU member states."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF077"
+claim = "Bridging software connects non-compatible software like spreadsheets to HMRC systems for MTD VAT submission"
+category = "mtd-vat"
+articles = ["mtd-vat-submission-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MTD-SOFTWARE"
+url = "https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-vat"
+title = "Find software that's compatible with Making Tax Digital for VAT"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "bridging software to connect non-compatible software (like spreadsheets) to HMRC systems"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF078"
+claim = "VAT errors below £10,000 (or between £10,000 and £50,000 if less than 1% of total sales) can be corrected on the next return"
+category = "vat-returns"
+articles = ["mtd-vat-submission-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-CORRECTIONS"
+url = "https://www.gov.uk/vat-corrections"
+title = "Correct errors in your VAT Return"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You can correct errors in returns for the preceding 4 years, as long as the net value of the errors is either: £10,000 or less; between £10,000 and £50,000 but less than 1% of the total value of your sales"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF079"
+claim = "VAT return deadline is one calendar month and 7 days after the end of the accounting period"
+category = "vat-returns"
+articles = ["mtd-vat-submission-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-RETURNS"
+url = "https://www.gov.uk/vat-returns"
+title = "VAT Returns"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The deadline for submitting your return online is usually one calendar month and 7 days after the end of an accounting period."
+accessed = "2026-02-05"
+authority = "primary"

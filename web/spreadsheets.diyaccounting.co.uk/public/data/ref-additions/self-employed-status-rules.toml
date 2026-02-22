@@ -1,0 +1,74 @@
+[[reference]]
+id = "REF159"
+claim = "Employers may have to pay unpaid tax and penalties if a worker's employment status is wrong"
+category = "employment-status"
+articles = ["self-employed-status-rules"]
+
+[[reference.source]]
+id = "SRC-GOVUK-EMP-STATUS"
+url = "https://www.gov.uk/employment-status"
+title = "Employment status"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Individuals and their employers may have to pay unpaid tax and penalties, or lose entitlement to benefits, if their employment status is wrong."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF160"
+claim = "Employee status indicators include being supervised, working set hours, being unable to substitute, and being subject to employer's disciplinary procedures"
+category = "employment-status"
+articles = ["self-employed-status-rules"]
+
+[[reference.source]]
+id = "SRC-GOVUK-EMP-EMPLOYEE"
+url = "https://www.gov.uk/employment-status/employee"
+title = "Employment status: Employee"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "they're required to do a minimum number of hours and expect to be paid ... a manager or supervisor is responsible for their workload ... they cannot send someone else to do their work ... they get paid holiday ... they're entitled to contractual or Statutory Sick Pay"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF161"
+claim = "Self-employment indicators include not being under direct supervision, submitting invoices, being responsible for own tax and NI, and not receiving holiday or sick pay"
+category = "employment-status"
+articles = ["self-employed-status-rules"]
+
+[[reference.source]]
+id = "SRC-GOVUK-EMP-SELFEMPLOYED"
+url = "https://www.gov.uk/employment-status/selfemployed-contractor"
+title = "Employment status: Self-employed and contractor"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "they put in bids or give quotes to get work ... they're not under direct supervision when working ... they submit invoices for the work they've done ... they're responsible for paying their own National Insurance and tax ... they do not get holiday or sick pay when they're not working"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF162"
+claim = "HMRC provides a Check Employment Status for Tax (CEST) tool to determine if a worker should be classed as employed or self-employed"
+category = "employment-status"
+articles = ["self-employed-status-rules"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CEST"
+url = "https://www.gov.uk/guidance/check-employment-status-for-tax"
+title = "Check employment status for tax"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Use the Check Employment Status for Tax (CEST) tool to find out if you, or a worker on a specific engagement, should be classed as employed or self-employed for tax purposes."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF163"
+claim = "If the business provides the materials, tools and equipment for work, it indicates employee rather than self-employed status"
+category = "employment-status"
+articles = ["self-employed-status-rules"]
+
+[[reference.source]]
+id = "SRC-GOVUK-EMP-EMPLOYEE"
+url = "https://www.gov.uk/employment-status/employee"
+title = "Employment status: Employee"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "the business provides the materials, tools and equipment for their work"
+accessed = "2026-02-06"
+authority = "primary"

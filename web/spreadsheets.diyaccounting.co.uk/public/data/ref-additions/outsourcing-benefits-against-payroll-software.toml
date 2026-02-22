@@ -1,0 +1,86 @@
+# Citation references for: outsourcing-benefits-against-payroll-software
+# New references REF104–REF108
+
+[[reference]]
+id = "REF104"
+claim = "Employers are legally responsible for operating PAYE"
+category = "payroll"
+articles = ["outsourcing-benefits-against-payroll-software", "pay-as-you-earn-wages-salaries-tax-scheme", "new-employers-payroll-essentials", "inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-EMPLOYERS"
+url = "https://www.gov.uk/paye-for-employers"
+title = "PAYE and payroll for employers"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "As an employer, you're legally responsible for completing all PAYE tasks - even if you pay someone else to do them."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF105"
+claim = "Employers must deduct income tax and National Insurance from employee pay"
+category = "payroll"
+articles = ["outsourcing-benefits-against-payroll-software", "pay-as-you-earn-wages-salaries-tax-scheme", "income-tax-p-a-y-e-employers-payroll", "new-employers-payroll-essentials", "inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-EMPLOYERS"
+url = "https://www.gov.uk/paye-for-employers"
+title = "PAYE and payroll for employers"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "From these payments, you'll need to deduct tax and National Insurance for most employees."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF106"
+claim = "HMRC's Basic PAYE Tools is free payroll software for businesses with fewer than 10 employees"
+category = "payroll"
+articles = ["outsourcing-benefits-against-payroll-software"]
+
+[[reference.source]]
+id = "SRC-GOVUK-BASIC-PAYE-TOOLS"
+url = "https://www.gov.uk/basic-paye-tools"
+title = "Basic PAYE Tools"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Basic PAYE Tools is free payroll software from HM Revenue and Customs (HMRC) for businesses with fewer than 10 employees."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF107"
+claim = "Payroll must account for statutory sick pay, statutory maternity pay, pension contributions and student loan repayments"
+category = "payroll"
+articles = ["outsourcing-benefits-against-payroll-software"]
+
+[[reference.source]]
+id = "SRC-GOVUK-RUNNING-PAYROLL"
+url = "https://www.gov.uk/running-payroll"
+title = "Running payroll"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You may also need to deduct student loan repayments, pension contributions, Payroll Giving donations and child maintenance payments."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-RUNNING-PAYROLL-SSP"
+url = "https://www.gov.uk/running-payroll"
+title = "Running payroll"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must record these in your software - they're taxed like normal pay."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF108"
+claim = "Employers must report pay and deductions to HMRC via Full Payment Submission on or before each payday"
+category = "payroll"
+articles = ["outsourcing-benefits-against-payroll-software"]
+
+[[reference.source]]
+id = "SRC-GOVUK-RUNNING-PAYROLL-FPS"
+url = "https://www.gov.uk/running-payroll"
+title = "Running payroll"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Send the FPS on or before your employees' payday, even if you pay HMRC quarterly instead of monthly."
+accessed = "2026-02-05"
+authority = "primary"

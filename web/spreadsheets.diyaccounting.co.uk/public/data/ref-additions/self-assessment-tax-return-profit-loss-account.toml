@@ -1,0 +1,105 @@
+# Existing references reused in this article:
+# REF008 - Capital allowances let you deduct the value of business assets from profits before tax
+# REF190 - Self-employed proprietor's own wages and drawings are not allowable business expenses
+# REF192 - Specific identified bad debts are allowed for tax purposes but general bad debt provisions based on a percentage are not
+# REF193 - Depreciation of fixed assets is not allowable for tax purposes
+# REF195 - Fines for breaking the law including motoring fines are not allowable for tax purposes
+
+[[reference]]
+id = "REF259"
+claim = "Employee costs for self-employment include salaries, bonuses, pensions, employer's National Insurance, agency fees, and subcontractors"
+category = "self-employment-expenses"
+articles = ["self-assessment-tax-return-profit-loss-account"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-STAFF"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "employee and staff salaries, bonuses, pensions, benefits, agency fees, subcontractors, employer's National Insurance"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF260"
+claim = "Premises costs include rent, business rates, utility bills, and property insurance"
+category = "self-employment-expenses"
+articles = ["self-assessment-tax-return-profit-loss-account"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-PREMISES"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "rent for business premises, business and water rates, utility bills, property insurance, security"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF261"
+claim = "Household expenses can be claimed proportionally as business expenses when working from home"
+category = "self-employment-expenses"
+articles = ["self-assessment-tax-return-profit-loss-account"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-HOME"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "costs for things like heating, electricity, Council Tax, mortgage interest or rent, internet and telephone use"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF262"
+claim = "Financial costs including bank charges, interest on loans and overdrafts, and hire purchase interest are allowable expenses"
+category = "self-employment-expenses"
+articles = ["self-assessment-tax-return-profit-loss-account"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-FINANCE"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "bank, overdraft and credit card charges, interest on bank and business loans, hire purchase interest, leasing payments"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF263"
+claim = "Business entertainment of clients and customers is not an allowable deduction for tax purposes and employee entertainment is not business entertainment unless incidental to entertainment of others"
+category = "disallowed-expenses"
+articles = ["self-assessment-tax-return-profit-loss-account"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-ENTERTAIN"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "entertaining clients, suppliers and customers"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-HMRC-BIM45025"
+url = "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim45025"
+title = "BIM45025 - Specific deductions: entertainment: staff entertainment"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The entertainment of employees is not business entertainment unless it is incidental to entertainment provided for others"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF264"
+claim = "Balancing charges arise when disposal proceeds from selling an asset exceed the remaining capital allowance pool balance"
+category = "capital-allowances"
+articles = ["self-assessment-tax-return-profit-loss-account"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CA-SELL-BALANCING"
+url = "https://www.gov.uk/capital-allowances-sell-asset"
+title = "Capital allowances when you sell an asset"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You can only deduct the original cost of the item even if you sell it for more."
+accessed = "2026-02-06"
+authority = "primary"

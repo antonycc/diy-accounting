@@ -1,0 +1,103 @@
+# New references for mtd-income-tax-self-assessment.html
+# Generated: 2026-02-05
+# Merge into references.toml when reviewed
+#
+# Reused references (update articles arrays in references.toml):
+#   REF016 — already lists "mtd-income-tax-self-assessment"
+#
+# Outdated claims found:
+#   "furnished holiday lettings" mentioned in the Who Will Need to Comply section —
+#   the FHL tax regime was abolished from 6 April 2025 (Income Tax).
+#   See https://www.gov.uk/government/publications/furnished-holiday-lettings-tax-regime-abolition
+#   FHL properties now form part of the general UK property business. The article text
+#   "(including furnished holiday lettings)" is no longer a distinct legal category.
+
+[[reference]]
+id = "REF034"
+claim = "MTD for ITSA mandatory from April 2027 for income over £30,000"
+category = "mtd-itsa"
+articles = ["mtd-income-tax-self-assessment"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MTD-ITSA-ELIGIBILITY"
+url = "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax"
+title = "Find out if and when you need to use Making Tax Digital for Income Tax"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "your qualifying income is more than £30,000 for the 2025 to 2026 tax year, you will need to use it from 6 April 2027"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF035"
+claim = "Partnerships will need to use MTD for Income Tax in the future but no timeline has been set"
+category = "mtd-itsa"
+articles = ["mtd-income-tax-self-assessment"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MTD-ITSA-ELIGIBILITY"
+url = "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax"
+title = "Find out if and when you need to use Making Tax Digital for Income Tax"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Partnerships will also need to use Making Tax Digital for Income Tax in the future. We'll set out the timeline for this at a later date."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF036"
+claim = "MTD for ITSA quarterly updates are due by the 7th of the month following each quarter end"
+category = "mtd-itsa"
+articles = ["mtd-income-tax-self-assessment"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MTD-ITSA-QUARTERLY"
+url = "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates"
+title = "Use Making Tax Digital for Income Tax - Send quarterly updates"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "6 April to 5 July: deadline 7 August. 6 April to 5 October: deadline 7 November. 6 April to 5 January: deadline 7 February. 6 April to 5 April: deadline 7 May."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF037"
+claim = "MTD for ITSA final declaration (tax return) must be submitted by 31 January following the end of the tax year"
+category = "mtd-itsa"
+articles = ["mtd-income-tax-self-assessment"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MTD-ITSA-RETURN"
+url = "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/submit-your-tax-return"
+title = "Use Making Tax Digital for Income Tax - Submit your tax return"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must submit your tax return by 31 January following the end of the relevant tax year, but you can submit it earlier than this."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF038"
+claim = "Employment (PAYE), pensions, savings, dividends, and partnership income do not count towards qualifying income for MTD ITSA"
+category = "mtd-itsa"
+articles = ["mtd-income-tax-self-assessment"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MTD-ITSA-QUALIFYING"
+url = "https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax"
+title = "Work out your qualifying income for Making Tax Digital for Income Tax"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Income that is not included: Employment (PAYE), Your share of profit from a partnership as an individual partner, Dividends (including those from your own company), A State Pension, private pensions"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF039"
+claim = "MTD for ITSA requires use of compatible software to keep digital records of income and expenses"
+category = "mtd-itsa"
+articles = ["mtd-income-tax-self-assessment"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MTD-ITSA-SOFTWARE"
+url = "https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax"
+title = "Find software that's compatible with Making Tax Digital for Income Tax"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "From 6 April 2026, some sole traders and landlords must start using compatible software to report their income under Making Tax Digital for Income Tax."
+accessed = "2026-02-05"
+authority = "primary"

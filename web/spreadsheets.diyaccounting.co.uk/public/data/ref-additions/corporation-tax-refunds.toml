@@ -1,0 +1,17 @@
+# Citation references for corporation-tax-refunds.html
+# New references: REF064
+
+[[reference]]
+id = "REF064"
+claim = "Companies must file a Company Tax Return for each accounting period even if they have no Corporation Tax to pay"
+category = "corporation-tax"
+articles = ["corporation-tax-refunds"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CT-RETURN"
+url = "https://www.gov.uk/company-tax-returns"
+title = "Company Tax Returns"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must still send a return if you make a loss or have no Corporation Tax to pay."
+accessed = "2026-02-05"
+authority = "primary"

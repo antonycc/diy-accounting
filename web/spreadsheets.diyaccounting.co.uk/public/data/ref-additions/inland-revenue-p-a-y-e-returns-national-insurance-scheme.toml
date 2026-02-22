@@ -1,0 +1,93 @@
+# Citation references for inland-revenue-p-a-y-e-returns-national-insurance-scheme.html
+# New references: REF349, REF350, REF351, REF352, REF353, REF354
+# Reused references: REF104, REF105, REF154, REF155, REF157, REF241, REF250
+
+[[reference]]
+id = "REF349"
+claim = "New employees must provide a P45 or, if unavailable, complete a starter checklist (which replaced the P46)"
+category = "paye-forms"
+articles = ["inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-NEW-EMPLOYEE"
+url = "https://www.gov.uk/new-employee"
+title = "Tell HMRC about a new employee"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "if you do not have their P45, use HMRC's 'starter checklist' (which replaced the P46)"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF350"
+claim = "A P45 shows how much tax you have paid on your salary so far in the tax year"
+category = "paye-forms"
+articles = ["inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-P45"
+url = "https://www.gov.uk/paye-forms-p45-p60-p11d/p45"
+title = "P45, P60 and P11D forms: P45"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Your P45 shows how much tax you've paid on your salary so far in the tax year (6 April to 5 April)."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF351"
+claim = "Emergency tax codes W1 and M1 mean tax is calculated only on what the employee is paid in the current pay period, not the whole year"
+category = "paye-tax-codes"
+articles = ["inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-EMERGENCY-TAX"
+url = "https://www.gov.uk/employee-tax-codes"
+title = "Tax codes"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Calculate your employee's tax only on what they are paid in the current pay period, not the whole year."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF352"
+claim = "Directors' National Insurance contributions are worked out from their annual earnings rather than from what they earn in each pay period"
+category = "paye-national-insurance"
+articles = ["inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIRECTORS-NI"
+url = "https://www.gov.uk/employee-directors"
+title = "National Insurance for company directors"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Contributions are worked out from their annual earnings rather than from what they earn in each pay period."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF353"
+claim = "Employers must keep PAYE records for 3 years from the end of the tax year they relate to"
+category = "paye-records"
+articles = ["inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-RECORDS"
+url = "https://www.gov.uk/paye-for-employers/keeping-records"
+title = "PAYE and payroll for employers: Keeping records"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "for 3 years from the end of the tax year they relate to"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF354"
+claim = "A P60 shows the tax paid on salary in the tax year (6 April to 5 April)"
+category = "paye-forms"
+articles = ["inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-P60"
+url = "https://www.gov.uk/paye-forms-p45-p60-p11d/p60"
+title = "P45, P60 and P11D forms: P60"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Your P60 shows the tax you've paid on your salary in the tax year (6 April to 5 April)."
+accessed = "2026-02-06"
+authority = "primary"

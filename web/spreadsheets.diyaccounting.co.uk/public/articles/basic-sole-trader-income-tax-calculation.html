@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basic Sole Trader Income Tax Calculation - DIY Accounting Spreadsheets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This article explains the use of the Income Tax sheet within the Basic Sole Trader package" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <meta property="og:title" content="Basic Sole Trader Income Tax Calculation - DIY Accounting Spreadsheets" />
+    <meta property="og:description" content="This article explains the use of the Income Tax sheet within the Basic Sole Trader package" />
+    <meta property="og:url" content="https://spreadsheets.diyaccounting.co.uk/articles/basic-sole-trader-income-tax-calculation.html" />
+    <meta property="og:site_name" content="DIY Accounting" />
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="../spreadsheets.css" />
+    <script src="../lib/analytics.js"></script>
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../index.html">Products</a>
+      <a href="../download.html">Download</a>
+      <a href="../knowledge-base.html" class="nav-current">Knowledge Base</a>
+      <a href="../community.html">Community</a>
+      <a href="https://submit.diyaccounting.co.uk">Submit VAT MTD</a>
+      <a href="../donate.html">Donate</a>
+    </nav>
+    <header>
+      <h1>DIY Accounting Spreadsheets</h1>
+      <p class="subtitle">Excel bookkeeping and accounting software for UK small businesses</p>
+    </header>
+    <main id="mainContent">
+      <nav class="nav-back" aria-label="Breadcrumb">
+        <a href="../all-articles.html">&larr; All articles</a> &middot;
+        <a href="../knowledge-base.html">Knowledge Base</a>
+      </nav>
+      <article class="kb-article">
+        <span class="kb-category-badge">Payroll &amp; PAYE</span>
+        <h2>Basic Sole Trader Income Tax Calculation</h2>
+        <p>This article explains the use of the Income Tax sheet within the Basic Sole Trader package.</p>
+        <p>
+          The Income Tax sheet in the Basic Sole Trader package just focuses on the business side of things so it's is only an indication of
+          your bill. If you have more complex circumstances you could just ignore it and leave a pessimistic allowance in your drawings
+          until file your return. When filing your tax return the DIY Accounting package will help you complete
+          <span class="ref" data-ref="REF361"
+            >the Self Employment supplement<sup><a href="../references.html#REF361">[1]</a></sup></span
+          >, then you'll get the exact amount of tax to pay HMRC after completing other sections for personal circumstances and PAYE income.
+          It is possible to adjust the Income Tax calculation:
+        </p>
+        <ol>
+          <li>
+            Stop
+            <span class="ref" data-ref="REF360"
+              >NI calculation<sup><a href="../references.html#REF360">[2]</a></sup></span
+            >: Enter 0 in cell E16 and E16
+          </li>
+          <li>
+            Additional PAYE income up to 9440: Reduce
+            <span class="ref" data-ref="REF359"
+              >the personal allowance<sup><a href="../references.html#REF359">[3]</a></sup></span
+            >
+            (cell E6) by the amount earned up to 9440
+          </li>
+          <li>
+            Additional PAYE income over 9440: Reduce the lower limit of
+            <span class="ref" data-ref="REF021"
+              >the 40% band<sup><a href="../references.html#REF021">[4]</a></sup></span
+            >
+            (cell C9) by the amount earned above 9440 These steps permanently alter the formula, take a backup if you are unsure if you want
+            to make the changes.
+          </li>
+        </ol>
+
+        <p class="tax-reference">
+          Tax reference: Income tax rates and Personal Allowance - Source:
+          <a href="https://www.gov.uk/income-tax-rates">GOV.UK: income tax rates</a> (applicable tax year 2025/26)
+        </p>
+        <p class="citation-check-date">Citations checked: <time datetime="2026-02-06">6 February 2026</time></p>
+      </article>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <a href="https://diyaccounting.co.uk">diyaccounting.co.uk</a>
+          <a href="../knowledge-base.html">knowledge base</a>
+          <a href="https://submit.diyaccounting.co.uk/privacy.html">privacy</a>
+          <a href="https://submit.diyaccounting.co.uk/terms.html">terms</a>
+          <a href="https://submit.diyaccounting.co.uk/accessibility.html">accessibility</a>
+        </div>
+        <div class="footer-center">
+          <p>&copy; 2025-2026 DIY Accounting Limited</p>
+        </div>
+      </div>
+    </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Basic Sole Trader Income Tax Calculation",
+        "description": "This article explains the use of the Income Tax sheet within the Basic Sole Trader package",
+        "url": "https://spreadsheets.diyaccounting.co.uk/articles/basic-sole-trader-income-tax-calculation.html",
+        "author": {
+          "@type": "Organization",
+          "name": "DIY Accounting Limited"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "DIY Accounting Limited",
+          "url": "https://diyaccounting.co.uk"
+        },
+        "citation": [
+          {
+            "@type": "CreativeWork",
+            "name": "Self Assessment: self-employment (short) (SA103S)",
+            "url": "https://www.gov.uk/government/publications/self-assessment-self-employment-short-sa103s",
+            "publisher": { "@type": "Organization", "name": "GOV.UK / HM Revenue & Customs" }
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Self-employed National Insurance rates",
+            "url": "https://www.gov.uk/self-employed-national-insurance-rates",
+            "publisher": { "@type": "Organization", "name": "GOV.UK / HM Revenue & Customs" }
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Income Tax rates and Personal Allowances",
+            "url": "https://www.gov.uk/income-tax-rates",
+            "publisher": { "@type": "Organization", "name": "GOV.UK / HM Revenue & Customs" }
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+[[reference]]
+id = "REF219"
+claim = "Self-employed sole traders earning more than £1,000 must send a Self Assessment tax return"
+category = "self-assessment"
+articles = ["sole-trader-self-employed-tax-return"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA-WHO"
+url = "https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return"
+title = "Self Assessment tax returns: Who must send a tax return"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "you were self-employed as a 'sole trader' and earned more than £1,000 (before taking off anything you can claim tax relief on)"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF220"
+claim = "Self-employed people must keep records for at least 5 years after the 31 January submission deadline"
+category = "self-employment"
+articles = ["sole-trader-self-employed-tax-return"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-RECORDS"
+url = "https://www.gov.uk/self-employed-records/how-long-to-keep-your-records"
+title = "Self-employed records: How long to keep your records"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must keep your records for at least 5 years after the 31 January submission deadline of the relevant tax year."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF221"
+claim = "The short self-employment form (SA103S) is used when annual turnover is below the VAT threshold"
+category = "self-assessment"
+articles = ["sole-trader-self-employed-tax-return"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA103S"
+url = "https://www.gov.uk/government/publications/self-assessment-self-employment-short-sa103s"
+title = "Self Assessment: self-employment (short) (SA103S)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "your annual business turnover was below the VAT threshold for the tax year"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF222"
+claim = "Self-employed with turnover below the VAT threshold may declare total expenses instead of listing by category"
+category = "self-assessment"
+articles = ["sole-trader-self-employed-tax-return"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA103S-NOTES"
+url = "https://www.gov.uk/government/publications/self-assessment-self-employment-short-sa103s/self-employment-short-notes-2022"
+title = "Self-employment (short) notes 2022"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If your annual turnover was below £85,000, you may just put your total expenses in box 20."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF223"
+claim = "A separate self-employment tax return must be completed for each business"
+category = "self-assessment"
+articles = ["sole-trader-self-employed-tax-return"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA103S-NOTES"
+url = "https://www.gov.uk/government/publications/self-assessment-self-employment-short-sa103s/self-employment-short-notes-2022"
+title = "Self-employment (short) notes 2022"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Do not include income from another trade or business. This goes on separate Self-employment pages."
+accessed = "2026-02-06"
+authority = "primary"

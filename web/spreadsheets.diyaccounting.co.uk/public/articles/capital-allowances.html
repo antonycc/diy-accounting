@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Capital Allowances - DIY Accounting Spreadsheets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This article explains how Capital Allowances are calculated within the accounts" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <meta property="og:title" content="Capital Allowances - DIY Accounting Spreadsheets" />
+    <meta property="og:description" content="This article explains how Capital Allowances are calculated within the accounts" />
+    <meta property="og:url" content="https://spreadsheets.diyaccounting.co.uk/articles/capital-allowances.html" />
+    <meta property="og:site_name" content="DIY Accounting" />
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="../spreadsheets.css" />
+    <script src="../lib/analytics.js"></script>
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../index.html">Products</a>
+      <a href="../download.html">Download</a>
+      <a href="../knowledge-base.html" class="nav-current">Knowledge Base</a>
+      <a href="../community.html">Community</a>
+      <a href="https://submit.diyaccounting.co.uk">Submit VAT MTD</a>
+      <a href="../donate.html">Donate</a>
+    </nav>
+    <header>
+      <h1>DIY Accounting Spreadsheets</h1>
+      <p class="subtitle">Excel bookkeeping and accounting software for UK small businesses</p>
+    </header>
+    <main id="mainContent">
+      <nav class="nav-back" aria-label="Breadcrumb">
+        <a href="../all-articles.html">&larr; All articles</a> &middot;
+        <a href="../knowledge-base.html">Knowledge Base</a>
+      </nav>
+      <article class="kb-article">
+        <span class="kb-category-badge">Expenses &amp; Allowances</span>
+        <h2>Capital Allowances</h2>
+        <p>This article explains how Capital Allowances are calculated within the accounts.</p>
+        <p>
+          <span class="ref" data-ref="REF008"
+            >The tax written down value is the price paid less the capital allowances<sup
+              ><a href="../references.html#REF008">[1]</a></sup
+            ></span
+          >
+          whereas the written down book value is the price paid less depreciation. You can use any depreciation rate you like for an asset
+          but
+          <span class="ref" data-ref="REF010"
+            >the HMRC prescribes specific capital allowance percentages<sup><a href="../references.html#REF010">[2]</a></sup></span
+          >. Try this example (entering it into the Year End 2012 accounts): A machine was bought in 10th April 2010 for £1000 and has
+          deprecated by £100 before the April 2011. It continues to depreciate at 10% per year. The written down value on 6th April 2011 is
+          £900 (matching the depreciation) Enter:
+        </p>
+        <ol>
+          <li>B14: 10/04/2010</li>
+          <li>V14: A Machine</li>
+          <li>E14: 1000</li>
+          <li>F10: 100</li>
+          <li>
+            O14: 900 A written down value of £720 is calculated for the end of 2012, Columns W through Z remain blank. The machine is sold
+            on the 1st August 2012 for £500. Enter:
+          </li>
+          <li>U14: 01/08/2010</li>
+          <li>
+            V14: 500 As soon as the 500 is entered columns W through Z, including Y are calculated.
+            <span class="ref" data-ref="REF017"
+              >Selling below the written down value is a loss bringing in more to claim for a Capital Allowance<sup
+                ><a href="../references.html#REF017">[3]</a></sup
+              ></span
+            >
+            £220 in this case.
+          </li>
+        </ol>
+
+        <p class="tax-reference">
+          Tax reference: Capital allowances for business assets - Source:
+          <a href="https://www.gov.uk/capital-allowances">GOV.UK: capital allowances</a> (applicable tax year 2025/26)
+        </p>
+        <p class="citation-check-date">Citations checked: <time datetime="2026-02-05">5 February 2026</time></p>
+      </article>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <a href="https://diyaccounting.co.uk">diyaccounting.co.uk</a>
+          <a href="../knowledge-base.html">knowledge base</a>
+          <a href="https://submit.diyaccounting.co.uk/privacy.html">privacy</a>
+          <a href="https://submit.diyaccounting.co.uk/terms.html">terms</a>
+          <a href="https://submit.diyaccounting.co.uk/accessibility.html">accessibility</a>
+        </div>
+        <div class="footer-center">
+          <p>&copy; 2025-2026 DIY Accounting Limited</p>
+        </div>
+      </div>
+    </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Capital Allowances",
+        "description": "This article explains how Capital Allowances are calculated within the accounts",
+        "url": "https://spreadsheets.diyaccounting.co.uk/articles/capital-allowances.html",
+        "author": {
+          "@type": "Organization",
+          "name": "DIY Accounting Limited"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "DIY Accounting Limited",
+          "url": "https://diyaccounting.co.uk"
+        },
+        "citation": [
+          {
+            "@type": "CreativeWork",
+            "name": "Claim capital allowances",
+            "url": "https://www.gov.uk/capital-allowances",
+            "publisher": {
+              "@type": "GovernmentOrganization",
+              "name": "HM Revenue & Customs"
+            },
+            "dateAccessed": "2026-02-05"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Capital allowances when you sell an asset",
+            "url": "https://www.gov.uk/capital-allowances-sell-asset",
+            "publisher": {
+              "@type": "GovernmentOrganization",
+              "name": "HM Revenue & Customs"
+            },
+            "dateAccessed": "2026-02-05"
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

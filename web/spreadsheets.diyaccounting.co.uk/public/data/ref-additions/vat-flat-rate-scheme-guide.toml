@@ -1,0 +1,88 @@
+# New references for vat-flat-rate-scheme-guide.html
+# Generated: 2026-02-05
+# Merge into references.toml when reviewed
+#
+# Reused references (already list this article in references.toml):
+#   REF012 — £150,000 eligibility threshold
+#   REF013 — £230,000 leave threshold
+#   REF014 — 16.5% limited cost trader rate
+#   REF015 — 1% first year discount
+#
+# Reused references (add "vat-flat-rate-scheme-guide" to articles):
+#   REF004 — MTD for VAT digital submission requirement
+#   REF024 — standard VAT rate is 20% (in ref-additions/v-a-t-registration-schemes-thresholds.toml)
+
+[[reference]]
+id = "REF084"
+claim = "Capital expenditure goods over £2,000 can be reclaimed outside the Flat Rate Scheme"
+category = "vat-flat-rate"
+articles = ["vat-flat-rate-scheme-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FRS-NOTICE733"
+url = "https://www.gov.uk/guidance/flat-rate-scheme-for-small-businesses-vat-notice-733--2"
+title = "Flat Rate Scheme for small businesses (VAT Notice 733)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "In some cases you may have VAT to account for outside the Flat Rate Scheme, for example the single purchase or disposal of capital expenditure goods of more than £2,000 in value."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF085"
+claim = "Flat rate percentages vary by trade sector, e.g. Accountancy 14.5%, Management consultancy 14%, Hairdressing 13%, Pubs 6.5%, Retailing food etc. 4%"
+category = "vat-flat-rate"
+articles = ["vat-flat-rate-scheme-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FRS-RATES"
+url = "https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay"
+title = "VAT Flat Rate Scheme: How much you pay"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Accountancy or book-keeping: 14.5. Computer and IT consultancy or data processing: 14.5. Hairdressing or other beauty treatment services: 13. Labour-only building or construction services: 14.5. Management consultancy: 14. Pubs: 6.5. Retailing food, confectionery, tobacco, newspapers or children's clothing: 4. Retailing not listed elsewhere: 7.5."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF086"
+claim = "Limited cost business if goods cost less than 2% of turnover, or more than 2% but less than £1,000 per year (£250 per quarter)"
+category = "vat-flat-rate"
+articles = ["vat-flat-rate-scheme-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FRS-NOTICE733"
+url = "https://www.gov.uk/guidance/flat-rate-scheme-for-small-businesses-vat-notice-733--2"
+title = "Flat Rate Scheme for small businesses (VAT Notice 733)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You're a limited cost business if the amount you spend on relevant goods including VAT is either: less than 2% of your VAT flat rate turnover...greater than 2% of your VAT flat rate turnover but less than £1,000 per year. If your return is less than one year the figure is the relevant proportion of £1,000. For a quarterly return this is £250."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF087"
+claim = "Relevant goods for limited cost trader test do not include capital expenditure goods, food or drink, or vehicle costs including fuel (unless in transport sector)"
+category = "vat-flat-rate"
+articles = ["vat-flat-rate-scheme-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FRS-NOTICE733"
+url = "https://www.gov.uk/guidance/flat-rate-scheme-for-small-businesses-vat-notice-733--2"
+title = "Flat Rate Scheme for small businesses (VAT Notice 733)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Relevant goods...do not include: vehicle costs including fuel, unless you're operating in the transport sector...food or drink for you or your staff; capital expenditure goods of any value"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF088"
+claim = "Limited cost trader rules took effect from 1 April 2017"
+category = "vat-flat-rate"
+articles = ["vat-flat-rate-scheme-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FRS-ABUSE"
+url = "https://www.gov.uk/government/publications/tackling-aggressive-abuse-of-the-vat-flat-rate-scheme-technical-note/tackling-aggressive-abuse-of-the-vat-flat-rate-scheme-technical-note"
+title = "Tackling aggressive abuse of the VAT Flat Rate Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "From 1 April 2017, FRS businesses must also determine whether they meet the definition of a limited cost trader."
+accessed = "2026-02-05"
+authority = "primary"

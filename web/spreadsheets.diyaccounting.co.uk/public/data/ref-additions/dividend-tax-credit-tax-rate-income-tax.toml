@@ -1,0 +1,110 @@
+# Citation references for dividend-tax-credit-tax-rate-income-tax.html
+# New references: REF139, REF140, REF141, REF142, REF143
+# Reused references: REF021, REF056
+# OUTDATED claims flagged:
+#   - Employee NI "11.5 per cent" — current rate is 8% (category A)
+#   - Employer NI "12.5 per cent" — current rate is 15%
+#   - Dividend tax rate "10 per cent" basic / "32.5 per cent" higher — current rates are 8.75% / 33.75%
+#   - "10 per cent dividend tax credit" — abolished April 2016, replaced by dividend allowance (£500 for 2024/25)
+
+[[reference]]
+id = "REF139"
+claim = "Corporation tax small profits rate is 19% for profits of £50,000 or less; main rate is 25%"
+category = "corporation-tax"
+articles = ["dividend-tax-credit-tax-rate-income-tax"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CT-RATES"
+url = "https://www.gov.uk/corporation-tax-rates"
+title = "Corporation Tax rates"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If your company made a profit of £50,000 or less, you'll pay the 'small profits rate', which is 19%."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-CT-RATES-MAIN"
+url = "https://www.gov.uk/corporation-tax-rates"
+title = "Corporation Tax rates"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The Corporation Tax rate for company profits is 25%"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF140"
+claim = "Dividend tax rates are 8.75% basic rate, 33.75% higher rate, and 39.35% additional rate (not 10% and 32.5% as formerly)"
+category = "dividends"
+articles = ["dividend-tax-credit-tax-rate-income-tax"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIV-TAX-RATES"
+url = "https://www.gov.uk/tax-on-dividends"
+title = "Tax on dividends"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Basic rate: 8.75%. Higher rate: 33.75%. Additional rate: 39.35%."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF141"
+claim = "The 10% dividend tax credit was abolished from April 2016 and replaced by a dividend allowance; the allowance is £500 for 2024/25"
+category = "dividends"
+articles = ["dividend-tax-credit-tax-rate-income-tax", "directors-loansand-dividends"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIV-ALLOWANCE"
+url = "https://www.gov.uk/tax-on-dividends"
+title = "Tax on dividends"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You only pay tax on any dividend income above the dividend allowance."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-DIV-ALLOWANCE-AMT"
+url = "https://www.gov.uk/tax-on-dividends"
+title = "Tax on dividends"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "6 April 2024 to 5 April 2025: £500"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF142"
+claim = "Under IR35 off-payroll working rules, the deemed employer must deduct Income Tax and employee National Insurance from fees paid to the worker's intermediary"
+category = "ir35"
+articles = ["dividend-tax-credit-tax-rate-income-tax"]
+
+[[reference.source]]
+id = "SRC-GOVUK-IR35"
+url = "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35"
+title = "Understanding off-payroll working (IR35)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "the deemed employer must deduct Income Tax and employee National Insurance contributions from fees paid to the worker's intermediary"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF143"
+claim = "Directors must hold a meeting to declare a dividend, keep minutes, and produce a dividend voucher for each shareholder"
+category = "dividends"
+articles = ["dividend-tax-credit-tax-rate-income-tax"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-DIVIDENDS"
+url = "https://www.gov.uk/running-a-limited-company/taking-money-out-of-a-limited-company"
+title = "Running a limited company: Taking money out of a limited company"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "hold a directors' meeting to 'declare' the dividend"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-VOUCHER"
+url = "https://www.gov.uk/running-a-limited-company/taking-money-out-of-a-limited-company"
+title = "Running a limited company: Taking money out of a limited company"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must give a copy of the voucher to recipients of the dividend and keep a copy for your company's records."
+accessed = "2026-02-06"
+authority = "primary"

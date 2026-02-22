@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Download - DIY Accounting Spreadsheets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Download DIY Accounting Excel spreadsheets. Select your product, accounting period, and Excel format."
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta property="og:title" content="Download - DIY Accounting Spreadsheets" />
+    <meta
+      property="og:description"
+      content="Download DIY Accounting Excel spreadsheets. Select your product, accounting period, and Excel format."
+    />
+    <meta property="og:url" content="https://spreadsheets.diyaccounting.co.uk/download.html" />
+    <meta property="og:site_name" content="DIY Accounting" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://spreadsheets.diyaccounting.co.uk/images/spreadsheets/diyaccounting-spreadsheets-product-grid.png"
+    />
+    <link rel="stylesheet" href="spreadsheets.css" />
+    <script src="lib/analytics.js"></script>
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="index.html">Products</a>
+      <a href="download.html" class="nav-current">Download</a>
+      <a href="knowledge-base.html">Knowledge Base</a>
+      <a href="community.html">Community</a>
+      <a href="https://submit.diyaccounting.co.uk">Submit VAT MTD</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+
+    <header>
+      <h1>DIY Accounting Spreadsheets</h1>
+      <p class="subtitle">Excel bookkeeping and accounting software for UK small businesses</p>
+    </header>
+
+    <main id="mainContent">
+      <nav class="nav-back" aria-label="Breadcrumb">
+        <a href="index.html">&larr; Back to products</a>
+      </nav>
+
+      <div class="download-section">
+        <h2 id="product-title">Download</h2>
+        <p id="product-description">Select your product and accounting period below.</p>
+
+        <noscript>
+          <p>
+            JavaScript is required to load the product catalogue. Alternatively, download packages directly from
+            <a href="https://github.com/antonycc/diy-accounting/releases">GitHub releases</a>.
+          </p>
+        </noscript>
+
+        <div class="download-form hidden" id="download-form">
+          <div class="form-group">
+            <label for="product-select">Product</label>
+            <select id="product-select">
+              <option value="">Loading catalogue...</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="period-select">Accounting period (year-end)</label>
+            <select id="period-select">
+              <option value="">Select a product first</option>
+            </select>
+          </div>
+
+          <div class="download-actions">
+            <a href="donate.html" id="download-donate-btn" class="btn-download btn-primary"> Download with optional donation </a>
+            <p class="donate-skip">
+              <a href="#" id="download-direct-btn">Download without donating</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="download-available hidden" id="download-available" role="alert">
+          <h3>&#11015; Your download is available</h3>
+          <p>Your spreadsheet is ready to download.</p>
+          <div class="download-available-actions">
+            <a href="#" id="download-available-btn" class="btn-download btn-primary" download>Download Now</a>
+            <a href="#" id="download-available-link" class="download-available-url">Download link</a>
+          </div>
+        </div>
+
+        <div class="license-notice">
+          <p>
+            DIY Accounting spreadsheets are released under the
+            <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank" rel="noopener">Mozilla Public License 2.0</a>. Source files are
+            available on <a href="https://github.com/antonycc/diy-accounting" target="_blank" rel="noopener">GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <a href="https://diyaccounting.co.uk">diyaccounting.co.uk</a>
+          <a href="knowledge-base.html">knowledge base</a>
+          <a href="https://submit.diyaccounting.co.uk/privacy.html">privacy</a>
+          <a href="https://submit.diyaccounting.co.uk/terms.html">terms</a>
+          <a href="https://submit.diyaccounting.co.uk/accessibility.html">accessibility</a>
+        </div>
+        <div class="footer-center">
+          <p>&copy; 2025-2026 DIY Accounting Limited</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="lib/toml-parser.js"></script>
+    <script src="lib/download-page.js"></script>
+  </body>
+</html>

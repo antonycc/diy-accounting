@@ -1,0 +1,18 @@
+# Citation references for c-i-svs-corporation-tax.html
+# New references: REF289
+# Reused references: REF129 (from c-i-s-deductions.toml)
+
+[[reference]]
+id = "REF289"
+claim = "Under CIS, contractors deduct 20% from registered subcontractors' payments; 30% if unregistered"
+category = "cis"
+articles = ["c-i-svs-corporation-tax"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CIS-SUBCONTRACTOR"
+url = "https://www.gov.uk/what-you-must-do-as-a-cis-subcontractor"
+title = "What you must do as a CIS subcontractor"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "a contractor must deduct 20% from your payments and pass it to HM Revenue and Customs"
+accessed = "2026-02-06"
+authority = "primary"

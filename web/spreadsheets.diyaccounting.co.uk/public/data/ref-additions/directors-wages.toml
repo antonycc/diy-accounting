@@ -1,0 +1,50 @@
+# Citation references for directors-wages.html
+# New references: REF054, REF055, REF056
+# NOTE: Article states dividends "attract capital gains tax" — GOV.UK confirms
+# dividends are taxed as Income Tax, not capital gains tax. REF054 cites the
+# correct GOV.UK source so readers can verify.
+
+[[reference]]
+id = "REF054"
+claim = "Dividends are subject to Income Tax, not capital gains tax"
+category = "dividends"
+articles = ["directors-wages"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIVIDENDS"
+url = "https://www.gov.uk/tax-on-dividends"
+title = "Tax on dividends"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You may have to pay Income Tax on dividends you get from a company."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF055"
+claim = "A director's salary must go through PAYE, with Income Tax and National Insurance deducted"
+category = "paye-directors"
+articles = ["directors-wages"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-MONEY"
+url = "https://www.gov.uk/running-a-limited-company/taking-money-out-of-a-limited-company"
+title = "Running a limited company: Taking money out of a limited company"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The company must take Income Tax and National Insurance contributions from your salary payments and pay these to HM Revenue and Customs"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF056"
+claim = "A company must not pay out more in dividends than its available profits"
+category = "dividends"
+articles = ["directors-wages", "directors-loansand-dividends"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-MONEY"
+url = "https://www.gov.uk/running-a-limited-company/taking-money-out-of-a-limited-company"
+title = "Running a limited company: Taking money out of a limited company"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Your company must not pay out more in dividends than its available profits from current and previous financial years."
+accessed = "2026-02-05"
+authority = "primary"

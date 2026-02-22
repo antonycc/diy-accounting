@@ -1,0 +1,74 @@
+[[reference]]
+id = "REF199"
+claim = "Approved mileage allowance payment for cars and vans is 45 pence per mile for the first 10,000 miles"
+category = "mileage-allowances"
+articles = ["subsistence-travel-expenses-tax-allowances-car-mileage-rates"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MILEAGE-RATES"
+url = "https://www.gov.uk/government/publications/rates-and-allowances-travel-mileage-and-fuel-allowances/travel-mileage-and-fuel-rates-and-allowances"
+title = "Travel -- mileage and fuel rates and allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Cars and vans: first 10,000 miles 45p per mile"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF200"
+claim = "Approved mileage allowance payment for cars and vans is 25 pence per mile above 10,000 miles"
+category = "mileage-allowances"
+articles = ["subsistence-travel-expenses-tax-allowances-car-mileage-rates"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MILEAGE-RATES"
+url = "https://www.gov.uk/government/publications/rates-and-allowances-travel-mileage-and-fuel-allowances/travel-mileage-and-fuel-rates-and-allowances"
+title = "Travel -- mileage and fuel rates and allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Cars and vans: above 10,000 miles 25p per mile"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF201"
+claim = "Passenger supplement of 5p per mile for carrying fellow employees, making the total 50p per mile"
+category = "mileage-allowances"
+articles = ["subsistence-travel-expenses-tax-allowances-car-mileage-rates"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PASSENGER"
+url = "https://www.gov.uk/expenses-and-benefits-business-travel-mileage/passenger-payments"
+title = "Expenses and benefits: business travel mileage - passenger payments"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If your employee carries another employee in their own car or van on a business journey, you can pay them passenger payments of up to 5p per mile tax-free."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF202"
+claim = "Approved mileage allowance payment for bicycles is 20 pence per mile"
+category = "mileage-allowances"
+articles = ["subsistence-travel-expenses-tax-allowances-car-mileage-rates"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MILEAGE-RATES"
+url = "https://www.gov.uk/government/publications/rates-and-allowances-travel-mileage-and-fuel-allowances/travel-mileage-and-fuel-rates-and-allowances"
+title = "Travel -- mileage and fuel rates and allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Bicycles: 20p per mile"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF203"
+claim = "Lodging allowance of 25 pounds for overnight stay with family or friends (OUTDATED - HMRC no longer sets a rate for this)"
+category = "subsistence-allowances"
+articles = ["subsistence-travel-expenses-tax-allowances-car-mileage-rates"]
+
+[[reference.source]]
+id = "SRC-HMRC-EIM30240"
+url = "https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim30240"
+title = "Employment Income Manual EIM30240 - benchmark scale rates"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "A rate has not been set for a scale rate payment for staying with friends and family."
+accessed = "2026-02-06"
+authority = "primary"

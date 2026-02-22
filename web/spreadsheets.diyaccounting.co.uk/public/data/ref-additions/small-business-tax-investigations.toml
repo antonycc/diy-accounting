@@ -1,0 +1,59 @@
+[[reference]]
+id = "REF169"
+claim = "A taxpayer does not have to attend a meeting with HMRC during a compliance check"
+category = "tax-compliance-checks"
+articles = ["small-business-tax-investigations"]
+
+[[reference.source]]
+id = "SRC-GOVUK-COMPLIANCE-MEETING"
+url = "https://www.gov.uk/guidance/hmrc-compliance-checks-help-and-support"
+title = "HMRC compliance checks: help and support"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "you do not have to meet us if you do not want to"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF170"
+claim = "HMRC does not have an automatic right to enter business premises and people have the right to refuse entry"
+category = "tax-compliance-checks"
+articles = ["small-business-tax-investigations"]
+
+[[reference.source]]
+id = "SRC-HMRC-CH255520"
+url = "https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch255520"
+title = "Compliance Handbook CH255520 - Failure to allow an inspection"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "People have the right to refuse you entry to those premises or to terminate the visit at any time. Officers must not use force or subterfuge to gain entry."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF171"
+claim = "A taxpayer can have an accountant or legal adviser with them during an HMRC compliance check visit"
+category = "tax-compliance-checks"
+articles = ["small-business-tax-investigations"]
+
+[[reference.source]]
+id = "SRC-GOVUK-COMPLIANCE-RIGHTS"
+url = "https://www.gov.uk/tax-compliance-checks"
+title = "Tax compliance checks"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You can have an accountant or legal adviser with you during a visit."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF172"
+claim = "HMRC cannot require personal records and restrictions apply to information outside the scope of a compliance check"
+category = "tax-compliance-checks"
+articles = ["small-business-tax-investigations"]
+
+[[reference.source]]
+id = "SRC-HMRC-CH22100"
+url = "https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch22100"
+title = "Compliance Handbook CH22100 - Information and Inspection Powers: Restrictions"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "We can only require or inspect documents that are in a person's possession or power. There are restrictions on what we can require or inspect even if the documents or information are reasonably required: personal records, journalistic material, legally privileged information."
+accessed = "2026-02-06"
+authority = "primary"

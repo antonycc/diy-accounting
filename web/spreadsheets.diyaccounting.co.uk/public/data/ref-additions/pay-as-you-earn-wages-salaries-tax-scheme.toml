@@ -1,0 +1,147 @@
+# Citation references for pay-as-you-earn-wages-salaries-tax-scheme.html
+# New references: REF149, REF150, REF151, REF152, REF153, REF154, REF155, REF156, REF157
+# Reused references: REF104, REF105
+
+[[reference]]
+id = "REF149"
+claim = "Employers cannot register for PAYE more than 2 months before they start paying people"
+category = "paye-registration"
+articles = ["pay-as-you-earn-wages-salaries-tax-scheme", "new-employers-payroll-essentials"]
+
+[[reference.source]]
+id = "SRC-GOVUK-REGISTER-EMPLOYER"
+url = "https://www.gov.uk/register-employer"
+title = "Register as an employer"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You cannot register more than 2 months before you start paying people."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF150"
+claim = "PAYE registration is required when an employee is paid £96 or more a week"
+category = "paye-registration"
+articles = ["pay-as-you-earn-wages-salaries-tax-scheme", "new-employers-payroll-essentials"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-SETUP"
+url = "https://www.gov.uk/paye-for-employers/paye-set-up"
+title = "PAYE and payroll for employers: Setting up payroll"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "they're paid £96 or more a week"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF151"
+claim = "PAYE cheque payments must reach HMRC by the 19th of the month; electronic payments by the 22nd"
+category = "paye-payment"
+articles = ["pay-as-you-earn-wages-salaries-tax-scheme", "new-employers-payroll-essentials"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-DEADLINES"
+url = "https://www.gov.uk/pay-paye-tax/deadlines"
+title = "Pay PAYE tax: Deadlines"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "it must reach HMRC by the 19th of the month"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-DEADLINES-ELEC"
+url = "https://www.gov.uk/pay-paye-tax/deadlines"
+title = "Pay PAYE tax: Deadlines"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "the 22nd of the next tax month if you pay monthly"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF152"
+claim = "Small employers paying less than £1,500 a month can arrange to pay PAYE quarterly"
+category = "paye-payment"
+articles = ["pay-as-you-earn-wages-salaries-tax-scheme", "new-employers-payroll-essentials"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-QUARTERLY"
+url = "https://www.gov.uk/paye-for-employers/paying-hmrc"
+title = "PAYE and payroll for employers: Paying HMRC"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If you're a small employer that expects to pay less than £1,500 a month, you can arrange to pay quarterly - contact HMRC's payment enquiry helpline."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF153"
+claim = "The UK tax year runs from 6 April to 5 April"
+category = "tax-year"
+articles = ["pay-as-you-earn-wages-salaries-tax-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-P60"
+url = "https://www.gov.uk/paye-forms-p45-p60-p11d/p60"
+title = "P45, P60 and P11D forms: P60"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Your P60 shows the tax you've paid on your salary in the tax year (6 April to 5 April)."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF154"
+claim = "Employers must give employees a P45 when they leave"
+category = "paye-forms"
+articles = ["pay-as-you-earn-wages-salaries-tax-scheme", "income-tax-p-a-y-e-employers-payroll", "new-employers-payroll-essentials", "inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-EMPLOYEE-LEAVING"
+url = "https://www.gov.uk/employee-leaving"
+title = "Tell HMRC and your employee: Employee leaving"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must give your employee a P45 when they leave."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF155"
+claim = "Employers must give each employee a P60 showing tax paid during the tax year"
+category = "paye-forms"
+articles = ["pay-as-you-earn-wages-salaries-tax-scheme", "income-tax-p-a-y-e-employers-payroll", "new-employers-payroll-essentials", "inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-P60"
+url = "https://www.gov.uk/paye-forms-p45-p60-p11d/p60"
+title = "P45, P60 and P11D forms: P60"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Your P60 shows the tax you've paid on your salary in the tax year (6 April to 5 April)."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF156"
+claim = "Tax code numbers represent approximately one tenth of the tax-free personal allowance"
+category = "paye-tax-codes"
+articles = ["pay-as-you-earn-wages-salaries-tax-scheme", "income-tax-p-a-y-e-employers-payroll"]
+
+[[reference.source]]
+id = "SRC-GOVUK-TAX-CODES"
+url = "https://www.gov.uk/employee-tax-codes"
+title = "Tax codes"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The numbers in an employee's tax code show how much tax-free income they get in that tax year."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF157"
+claim = "Employers must give employees a payslip showing gross pay, deductions, and net pay on or before payday"
+category = "payroll"
+articles = ["pay-as-you-earn-wages-salaries-tax-scheme", "income-tax-p-a-y-e-employers-payroll", "new-employers-payroll-essentials", "inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYSLIPS"
+url = "https://www.gov.uk/running-payroll/payslips"
+title = "Running payroll: Payslips"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Employers must provide payslips to employees and workers on or before their payday."
+accessed = "2026-02-06"
+authority = "primary"

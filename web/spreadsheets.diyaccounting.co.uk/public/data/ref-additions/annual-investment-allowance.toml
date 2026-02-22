@@ -1,0 +1,44 @@
+[[reference]]
+id = "REF109"
+claim = "Annual Investment Allowance applies to most plant and machinery"
+category = "capital-allowances"
+articles = ["annual-investment-allowance"]
+
+[[reference.source]]
+id = "SRC-GOVUK-AIA"
+url = "https://www.gov.uk/capital-allowances/annual-investment-allowance"
+title = "Annual investment allowance"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You can claim AIA on most plant and machinery up to the AIA amount."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF110"
+claim = "Cars do not qualify for Annual Investment Allowance"
+category = "capital-allowances"
+articles = ["annual-investment-allowance"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CA-CARS"
+url = "https://www.gov.uk/capital-allowances"
+title = "Claim capital allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Cars do not qualify for annual investment allowance, super-deduction, full expensing or 50% first-year allowances."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF111"
+claim = "Small pools allowance: can write off balance of £1,000 or less in full"
+category = "capital-allowances"
+articles = ["annual-investment-allowance"]
+
+[[reference.source]]
+id = "SRC-GOVUK-WDA"
+url = "https://www.gov.uk/work-out-capital-allowances"
+title = "Work out your writing down allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You can claim the full amount if the balance in your main or special rate pool is £1,000 or less"
+accessed = "2026-02-06"
+authority = "primary"

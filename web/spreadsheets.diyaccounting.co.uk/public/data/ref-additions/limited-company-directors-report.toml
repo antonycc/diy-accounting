@@ -1,0 +1,63 @@
+# Citation references for limited-company-directors-report.html
+# New references: REF329, REF330, REF331, REF332
+# Reused references: REF181, REF184
+
+[[reference]]
+id = "REF329"
+claim = "Statutory accounts must include a directors report unless the company is a micro-entity"
+category = "company-accounts"
+articles = ["limited-company-directors-report"]
+
+[[reference.source]]
+id = "SRC-GOVUK-ANNUAL-ACCOUNTS"
+url = "https://www.gov.uk/annual-accounts/your-annual-accounts"
+title = "Prepare annual accounts for a private limited company"
+publisher = "GOV.UK / Companies House"
+extract = "a director's report (unless you're a 'micro-entity')"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF330"
+claim = "Abridged accounts for small companies must contain a simpler balance sheet along with any notes"
+category = "company-accounts"
+articles = ["limited-company-directors-report"]
+
+[[reference.source]]
+id = "SRC-GOVUK-ANNUAL-ACCOUNTS-SMALL"
+url = "https://www.gov.uk/annual-accounts/microentities-small-and-dormant-companies"
+title = "Prepare annual accounts for a private limited company: Microentities, small and dormant companies"
+publisher = "GOV.UK / Companies House"
+extract = "Abridged accounts must contain a simpler balance sheet, along with any notes."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF331"
+claim = "Directors must prepare annual accounts and file a Company Tax Return"
+category = "company-accounts"
+articles = ["limited-company-directors-report"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIRECTORS-RESP"
+url = "https://www.gov.uk/running-a-limited-company/directors-responsibilities"
+title = "Running a limited company: Directors' responsibilities"
+publisher = "GOV.UK / Companies House"
+extract = "prepare your annual accounts"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF332"
+claim = "Directors are legally responsible for the company's records, accounts and performance"
+category = "company-accounts"
+articles = ["limited-company-directors-report"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIRECTORS-RESP"
+url = "https://www.gov.uk/running-a-limited-company/directors-responsibilities"
+title = "Running a limited company: Directors' responsibilities"
+publisher = "GOV.UK / Companies House"
+extract = "you're still legally responsible for your company's records, accounts and performance"
+accessed = "2026-02-06"
+authority = "primary"
