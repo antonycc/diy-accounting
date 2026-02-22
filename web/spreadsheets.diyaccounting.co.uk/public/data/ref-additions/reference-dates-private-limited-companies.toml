@@ -1,0 +1,183 @@
+# Citation references for reference-dates-private-limited-companies.html
+# New references: REF339, REF340, REF341, REF342, REF343, REF344, REF345, REF346
+# Reused: REF182 — add "reference-dates-private-limited-companies" to articles list
+# NOTE: Article contains several outdated figures:
+#   - Says "22 months" for first accounts filing; current GOV.UK says 21 months
+#   - Says "10 months" for subsequent accounts; current GOV.UK says 9 months
+#   - Says "form 225" for changing ARD; now done online or via form AA01
+#   - Penalty amounts (£100/£250/£500/£1000) are outdated; current are £150/£375/£750/£1,500
+# References cite current GOV.UK sources so readers can verify the up-to-date position.
+
+[[reference]]
+id = "REF339"
+claim = "A new company's first accounting reference date is the last day of the month in which the anniversary of incorporation falls"
+category = "company-accounts"
+articles = ["reference-dates-private-limited-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LIFE-OF-CO-ACCOUNTS"
+url = "https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts"
+title = "Life of a company - part 1: accounts"
+publisher = "GOV.UK / Companies House"
+extract = "For all new companies, their first accounting reference date will be the last day of the month in which the anniversary of their incorporation falls."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-FIRST-CO-ACCOUNTS"
+url = "https://www.gov.uk/first-company-accounts-and-return"
+title = "Your limited company's first accounts and Company Tax Return"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "end on the 'accounting reference date' that Companies House sets for the end of your company's financial year"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF340"
+claim = "A company can change its accounting reference date by filing online or sending form AA01 to Companies House"
+category = "company-accounts"
+articles = ["reference-dates-private-limited-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CHANGE-YEAR-END"
+url = "https://www.gov.uk/change-your-companys-year-end"
+title = "Change your company's year end"
+publisher = "GOV.UK / Companies House"
+extract = "You can change your company's year end (also known as its 'accounting reference date')"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-LIFE-OF-CO-ACCOUNTS"
+url = "https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts"
+title = "Life of a company - part 1: accounts"
+publisher = "GOV.UK / Companies House"
+extract = "send a paper form AA01 to Companies House"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF341"
+claim = "A company can only extend its financial year once every 5 years unless specific exceptions apply"
+category = "company-accounts"
+articles = ["reference-dates-private-limited-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CHANGE-YEAR-END"
+url = "https://www.gov.uk/change-your-companys-year-end"
+title = "Change your company's year end"
+publisher = "GOV.UK / Companies House"
+extract = "You can lengthen your company's financial year once every 5 years"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-LIFE-OF-CO-ACCOUNTS"
+url = "https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts"
+title = "Life of a company - part 1: accounts"
+publisher = "GOV.UK / Companies House"
+extract = "You can only extend more than once in 5 years if the: company is in administration"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF342"
+claim = "A new private company must file its first accounts within 21 months of incorporation"
+category = "company-accounts"
+articles = ["reference-dates-private-limited-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PREPARE-FILE-ACCOUNTS"
+url = "https://www.gov.uk/prepare-file-annual-accounts-for-limited-company"
+title = "File your accounts and Company Tax Return"
+publisher = "GOV.UK / Companies House"
+extract = "21 months after the date you registered with Companies House"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-LIFE-OF-CO-ACCOUNTS"
+url = "https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts"
+title = "Life of a company - part 1: accounts"
+publisher = "GOV.UK / Companies House"
+extract = "within 21 months of the date of incorporation for private companies, or 3 months from the accounting reference date (whichever is longer)"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF343"
+claim = "A private company must file subsequent annual accounts within 9 months of the accounting reference date"
+category = "company-accounts"
+articles = ["reference-dates-private-limited-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PREPARE-FILE-ACCOUNTS"
+url = "https://www.gov.uk/prepare-file-annual-accounts-for-limited-company"
+title = "File your accounts and Company Tax Return"
+publisher = "GOV.UK / Companies House"
+extract = "9 months after your company's financial year ends"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-LIFE-OF-CO-ACCOUNTS"
+url = "https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts"
+title = "Life of a company - part 1: accounts"
+publisher = "GOV.UK / Companies House"
+extract = "9 months from the accounting reference date, for a private company"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF344"
+claim = "Late filing penalties for private companies: up to 1 month £150, 1-3 months £375, 3-6 months £750, over 6 months £1,500"
+category = "company-accounts"
+articles = ["reference-dates-private-limited-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-ANNUAL-ACCOUNTS"
+url = "https://www.gov.uk/annual-accounts"
+title = "Prepare annual accounts for a private limited company"
+publisher = "GOV.UK / Companies House"
+extract = "The penalty is doubled if your accounts are late 2 years in a row."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-LIFE-OF-CO-ACCOUNTS"
+url = "https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts"
+title = "Life of a company - part 1: accounts"
+publisher = "GOV.UK / Companies House"
+extract = "Not more than 1 month £150"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF345"
+claim = "Statutory accounts must include a balance sheet, profit and loss account, notes about the accounts, and a director's report"
+category = "company-accounts"
+articles = ["reference-dates-private-limited-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-ANNUAL-ACCOUNTS"
+url = "https://www.gov.uk/annual-accounts"
+title = "Prepare annual accounts for a private limited company"
+publisher = "GOV.UK / Companies House"
+extract = "a 'balance sheet', which shows the value of everything the company owns, owes and is owed on the last day of the financial year"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF346"
+claim = "An auditor's report may be required depending on the size of the company"
+category = "company-accounts"
+articles = ["reference-dates-private-limited-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-ANNUAL-ACCOUNTS"
+url = "https://www.gov.uk/annual-accounts"
+title = "Prepare annual accounts for a private limited company"
+publisher = "GOV.UK / Companies House"
+extract = "You might have to include an auditor's report - this depends on the size of your company."
+accessed = "2026-02-06"
+authority = "primary"

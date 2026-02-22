@@ -1,0 +1,57 @@
+# Citation references for basic-sole-trader-income-tax-calculation.html
+# New references: REF359, REF360, REF361
+# Reused references: REF021
+
+[[reference]]
+id = "REF359"
+claim = "The standard Personal Allowance is £12,570"
+category = "income-tax"
+articles = ["basic-sole-trader-income-tax-calculation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-INCOME-TAX-PA"
+url = "https://www.gov.uk/income-tax-rates"
+title = "Income Tax rates and Personal Allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The standard Personal Allowance is £12,570, which is the amount of income you do not have to pay tax on."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF360"
+claim = "Self-employed people pay Class 4 National Insurance at 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270"
+category = "self-employed-national-insurance"
+articles = ["basic-sole-trader-income-tax-calculation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-NI-RATES"
+url = "https://www.gov.uk/self-employed-national-insurance-rates"
+title = "Self-employed National Insurance rates"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Most people pay Class 2 and Class 4 National Insurance through Self Assessment."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-NI-CLASS4"
+url = "https://www.gov.uk/self-employed-national-insurance-rates"
+title = "Self-employed National Insurance rates"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "6% on profits over £12,570 up to £50,270"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF361"
+claim = "Self-employment supplementary pages SA103S are used to record self-employment income on the SA100 tax return"
+category = "self-assessment"
+articles = ["basic-sole-trader-income-tax-calculation"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA103S"
+url = "https://www.gov.uk/government/publications/self-assessment-self-employment-short-sa103s"
+title = "Self Assessment: self-employment (short) (SA103S)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Use supplementary pages SA103S to record self-employment income on your SA100 tax return"
+accessed = "2026-02-06"
+authority = "primary"

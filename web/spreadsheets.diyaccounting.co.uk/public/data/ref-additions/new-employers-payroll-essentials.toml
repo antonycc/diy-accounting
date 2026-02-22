@@ -1,0 +1,48 @@
+# Citation references for new-employers-payroll-essentials.html
+# New references: REF239, REF240, REF241
+# Reused references: REF104, REF105, REF149, REF150, REF151, REF152, REF154, REF155, REF157
+
+[[reference]]
+id = "REF239"
+claim = "Employers must keep payroll records for 3 years from the end of the tax year they relate to"
+category = "payroll"
+articles = ["new-employers-payroll-essentials"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-RECORDS"
+url = "https://www.gov.uk/paye-for-employers/keeping-records"
+title = "PAYE and payroll for employers: Keeping records"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "for 3 years from the end of the tax year they relate to"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF240"
+claim = "The National Living Wage for workers aged 21 and over is £12.21 per hour from April 2025"
+category = "minimum-wage"
+articles = ["new-employers-payroll-essentials"]
+
+[[reference.source]]
+id = "SRC-GOVUK-NMW-RATES"
+url = "https://www.gov.uk/national-minimum-wage-rates"
+title = "National Minimum Wage and National Living Wage rates"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "21 and over (National Living Wage): £12.21"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF241"
+claim = "Employers must register for PAYE before the first payday"
+category = "paye-registration"
+articles = ["new-employers-payroll-essentials", "inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-REGISTER-EMPLOYER"
+url = "https://www.gov.uk/register-employer"
+title = "Register as an employer"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "before the first payday to get your employer PAYE reference number"
+accessed = "2026-02-06"
+authority = "primary"

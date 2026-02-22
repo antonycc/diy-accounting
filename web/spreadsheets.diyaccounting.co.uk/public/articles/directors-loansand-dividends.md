@@ -1,0 +1,12 @@
+This article gives information on Directors Loans & Dividends
+
+A shareholder is entitled to take dividends from a company which he/ she holds shares in a company which is not repayable to the company. Any money taken out of the company which is not a salary or dividend, over and above the amount you have put in by a company director or "participator", is called a Directors Loan and is repayable to the company. Alternatively, a director can loan money to the Company.
+    An existing Directors Loan from the previous year would be entered in DIY Accounting's Limited Company Financial Accounts Software in Financialaccounts.xls > OpenAccounts > Cell E30. If the company owes you money the loan amount would be positive.
+When you want the company to pay the Director back, you make an entry in the payments section of currentaccount.xls using code DL.
+The Balance Sheet (Financialaccount.xls > PubBalSht) shows you the current Directors Loan amount and the balance at the start of the year.
+The Directors Loan can be overdrawn too (meaning the director owes the company). To pay the company back after going overdrawn this would be a receipt entered into currentaccount.xls also using code DL but in the receipts section.
+    There are tax implications for having an outstanding loan from the company, so it's best not to abuse this. When the directors loan account becomes overdrawn (the company has loaned money to a director) personal tax will then be liable on the benefit of the tax free loan. HMRC may also consider a regular pattern of taking loans as if they are wages.
+When you want to draw down on profits you can take a dividend. It's best to do this at the end of the year when you know your profit after tax. Some companies take mid year dividends where they can forecast profits. In a similar way to loans, regular payments that look a lot like wages can be considered wages.
+The dividend amount is decided at the company annual meeting and the amount entered in the Companysecretary.xls > Boardmeeting to record the decision and the payment transactions are recorded in Currentaccount.xls using code DV.
+The dividend is paid out of profits which have already paid or due to pay tax on. Tax credits are therefore available for the shareholder to offset any income tax from their dividend against.
+If you need to submit a Self Assessment Tax Return, you will need to declare dividends when doing so. If you do not but use a higher tax rate, contact HMRC.

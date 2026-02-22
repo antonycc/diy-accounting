@@ -1,0 +1,158 @@
+[[reference]]
+id = "REF189"
+claim = "Private use expenses are not allowable for tax purposes"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-NOCLAIM"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Allowable expenses do not include money taken from your business for personal use."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF190"
+claim = "Self-employed proprietor's own wages and drawings are not allowable business expenses"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-PERSONAL"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Allowable expenses do not include money taken from your business for personal use."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF191"
+claim = "Entertainment expenses of clients and suppliers are not allowed for tax purposes"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-ENTERTAIN"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "entertaining clients, suppliers and customers"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-HMRC-BIM45010"
+url = "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim45010"
+title = "BIM45010 - Specific deductions: entertainment: legislation"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "specifically denying a deduction from trading profits for expenditure of business entertaining and gifts"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF192"
+claim = "Specific identified bad debts are allowed for tax purposes but general bad debt provisions based on a percentage are not"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-HMRC-BIM42701"
+url = "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim42701"
+title = "BIM42701 - Specific deductions: bad & doubtful debts: overview"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "A general reserve, for example, one calculated as a percentage of total debts or of total sales, should not be admitted as a deduction if made without regard to the circumstances of the particular debtors."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF193"
+claim = "Depreciation of fixed assets is not allowable for tax purposes"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-DEPREC"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "depreciation of equipment"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF194"
+claim = "Specific work uniforms and protective clothing are allowable but ordinary everyday clothing is not"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-CLOTHING"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You cannot claim for everyday clothing (even if you wear it for work)."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF195"
+claim = "Fines for breaking the law including motoring fines are not allowable for tax purposes"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-FINES"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "fines for breaking the law"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF196"
+claim = "Repayments of loans, overdrafts or finance arrangements (capital element) are not allowable as business expenses"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-LOANS"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "repayments of loans, overdrafts or finance arrangements"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF197"
+claim = "Donations to political parties are not allowable for tax purposes"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-POLITICAL"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "payments to political parties"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF198"
+claim = "Employee entertainment at annual events is allowed within limits as a tax deduction"
+category = "disallowed-expenses"
+articles = ["disallowed-business-expenses"]
+
+[[reference.source]]
+id = "SRC-HMRC-BIM45000"
+url = "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim45000"
+title = "BIM45000 - Specific deductions: entertainment and gifts: contents"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "expenditure on business entertainment or gifts is not allowable as a deduction against profits, even if it is a genuine expense"
+accessed = "2026-02-06"
+authority = "primary"

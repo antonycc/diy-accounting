@@ -1,0 +1,44 @@
+[[reference]]
+id = "REF129"
+claim = "Under CIS, contractors deduct money from subcontractor payments and pass it to HMRC"
+category = "cis"
+articles = ["c-i-s-deductions", "c-i-svs-corporation-tax"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CIS-OVERVIEW"
+url = "https://www.gov.uk/what-is-the-construction-industry-scheme"
+title = "What is the Construction Industry Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Under the Construction Industry Scheme (CIS), contractors deduct money from a subcontractor's payments and pass it to HM Revenue and Customs (HMRC)."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF130"
+claim = "CIS contractors must file monthly returns to HMRC by the 19th of every month"
+category = "cis"
+articles = ["c-i-s-deductions"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CIS-CONTRACTOR"
+url = "https://www.gov.uk/what-you-must-do-as-a-cis-contractor"
+title = "What you must do as a CIS contractor"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Send your monthly returns to HMRC by the 19th of every month following the last tax month."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF131"
+claim = "CIS deductions count as advance payments towards the subcontractor's tax and National Insurance"
+category = "cis"
+articles = ["c-i-s-deductions"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CIS-OVERVIEW"
+url = "https://www.gov.uk/what-is-the-construction-industry-scheme"
+title = "What is the Construction Industry Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The deductions count as advance payments towards the subcontractor's tax and National Insurance."
+accessed = "2026-02-06"
+authority = "primary"

@@ -1,0 +1,100 @@
+# Citation references for directors-loansand-dividends.html
+# New references: REF209, REF210, REF211, REF212, REF213
+# Reused references: REF056, REF141
+# OUTDATED claims flagged:
+#   - "Tax credits are therefore available for the shareholder to offset any income tax
+#     from their dividend against" — the 10% dividend tax credit was abolished April 2016,
+#     replaced by a dividend allowance (currently £500 for 2024/25). See REF141.
+
+[[reference]]
+id = "REF209"
+claim = "A shareholder is entitled to take dividends from a company in which they hold shares; dividends are not repayable to the company"
+category = "dividends"
+articles = ["directors-loansand-dividends"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-DIVIDENDS-DEF"
+url = "https://www.gov.uk/running-a-limited-company/taking-money-out-of-a-limited-company"
+title = "Running a limited company: Taking money out of a limited company"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "A dividend is a payment a company can make to shareholders if it has made a profit."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF210"
+claim = "Money taken from the company that is not salary or dividend is called a director's loan and is repayable to the company"
+category = "directors-loans"
+articles = ["directors-loansand-dividends"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIRECTORS-LOANS-DEF"
+url = "https://www.gov.uk/directors-loans"
+title = "Director's loans"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "A director's loan is when you (or other close family members) get money from your company that is not: a salary, dividend or expense repayment; money you've previously paid into or loaned the company"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-LTD-CO-DIRECTORS-LOAN"
+url = "https://www.gov.uk/running-a-limited-company/taking-money-out-of-a-limited-company"
+title = "Running a limited company: Taking money out of a limited company"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If you take more money out of a company than you've put in - and it's not salary or dividend - it's called a 'directors' loan'."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF211"
+claim = "There are tax implications for having an outstanding director's loan — company pays Corporation Tax at 33.75% on loans not repaid within 9 months of accounting period end"
+category = "directors-loans"
+articles = ["directors-loansand-dividends"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIRECTORS-LOANS-S455"
+url = "https://www.gov.uk/directors-loans/you-owe-your-company-money"
+title = "Director's loans: You owe your company money"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "33.75% of the original loan, or 32.5% if the loan was made before 6 April 2022"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF212"
+claim = "When a director owes the company more than £10,000, the loan must be treated as a benefit in kind with Class 1 NI deducted"
+category = "directors-loans"
+articles = ["directors-loansand-dividends"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIRECTORS-LOANS-BIK"
+url = "https://www.gov.uk/directors-loans/you-owe-your-company-money"
+title = "Director's loans: You owe your company money"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If you're a shareholder and director and you owe your company more than £10,000 (£5,000 in 2013 to 2014) at any time in the year, your company must: treat the loan as a 'benefit in kind'"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-DIRECTORS-LOANS-BIK-NI"
+url = "https://www.gov.uk/directors-loans/you-owe-your-company-money"
+title = "Director's loans: You owe your company money"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "deduct Class 1 National Insurance"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF213"
+claim = "Dividends must be reported on a Self Assessment tax return"
+category = "dividends"
+articles = ["directors-loansand-dividends"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIV-SA"
+url = "https://www.gov.uk/tax-on-dividends"
+title = "Tax on dividends"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If you send a Self Assessment tax return, you must report any dividend income on your tax return."
+accessed = "2026-02-06"
+authority = "primary"

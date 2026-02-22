@@ -1,0 +1,17 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "wait": 2000,
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox"]
+    }
+  },
+  "urls": [
+    "https://ci-spreadsheets.diyaccounting.co.uk/",
+    "https://ci-spreadsheets.diyaccounting.co.uk/download.html",
+    "https://ci-spreadsheets.diyaccounting.co.uk/donate.html",
+    "https://ci-spreadsheets.diyaccounting.co.uk/knowledge-base.html",
+    "https://ci-spreadsheets.diyaccounting.co.uk/community.html"
+  ]
+}

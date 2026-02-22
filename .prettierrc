@@ -1,0 +1,41 @@
+{
+  "singleQuote": false,
+  "trailingComma": "all",
+  "printWidth": 140,
+  "tabWidth": 2,
+  "useTabs": false,
+  "quoteProps": "consistent",
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": { "parser": "json" }
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html",
+        "printWidth": 140,
+        "tabWidth": 2,
+        "useTabs": false
+      }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "parser": "css",
+        "printWidth": 140,
+        "tabWidth": 2,
+        "useTabs": false
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "parser": "json",
+        "printWidth": 140,
+        "tabWidth": 2,
+        "useTabs": false
+      }
+    }
+  ]
+}

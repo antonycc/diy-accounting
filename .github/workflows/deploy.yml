@@ -1,0 +1,209 @@
+name: deploy spreadsheets
+run-name: "deploy spreadsheets from ${{ github.ref_name }}"
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!gh_pages'
+      - '!dependabot/**'
+    paths:
+      - 'infra/main/**'
+      - 'web/spreadsheets.diyaccounting.co.uk/**'
+      - 'packages/**'
+      - 'scripts/**'
+      - '**/cdk.json'
+      - 'LICENSE'
+      - 'package.json'
+      - 'pom.xml'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+    inputs:
+      environment-name:
+        type: choice
+        description: 'Environment name: ci or prod'
+        required: false
+        options:
+          - '(auto)'
+          - 'ci'
+          - 'prod'
+        default: '(auto)'
+      skipDeploy:
+        type: boolean
+        description: 'Skip deployment and only run the smoke test'
+        required: false
+        default: false
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  JAVA_VERSION: '25'
+  NODE_VERSION: '24'
+  AWS_REGION: 'us-east-1'
+
+jobs:
+
+  params:
+    runs-on: ubuntu-24.04
+    permissions: {}
+    steps:
+      - name: "github.event_name=[${{ github.event_name }}]"
+        run: ":"
+      - name: "github.ref=[${{ github.ref }}]"
+        run: ":"
+      - name: "inputs.environment-name=[${{ inputs.environment-name }}]"
+        run: ":"
+      - name: "inputs.skipDeploy=[${{ inputs.skipDeploy }}]"
+        run: ":"
+      - name: Normalise Params
+        id: normalise
+        shell: bash
+        run: |
+          # Convert '(auto)' to empty string for downstream processing
+          ENV_NAME='${{ inputs.environment-name }}'; [[ "$ENV_NAME" == "(auto)" ]] && ENV_NAME=""
+          # Resolve GitHub Actions environment from explicit input or branch
+          GH_ENV="${ENV_NAME}"
+          if [ -z "$GH_ENV" ]; then
+            if [ "${{ github.ref }}" == "refs/heads/main" ]; then GH_ENV="prod"; else GH_ENV="ci"; fi
+          fi
+          echo "github-environment=${GH_ENV}" | tee -a "$GITHUB_OUTPUT"
+          echo "environment-name=${GH_ENV}" | tee -a "$GITHUB_OUTPUT"
+          # Default skipDeploy to false for non-dispatch triggers
+          SKIP_DEPLOY='${{ inputs.skipDeploy }}'; [[ -z "$SKIP_DEPLOY" ]] && SKIP_DEPLOY="false"
+          echo "skip-deploy=${SKIP_DEPLOY}" | tee -a "$GITHUB_OUTPUT"
+    outputs:
+      environment-name: ${{ steps.normalise.outputs.environment-name }}
+      skip-deploy: ${{ steps.normalise.outputs.skip-deploy }}
+      github-environment: ${{ steps.normalise.outputs.github-environment }}
+
+  deploy-spreadsheets:
+    name: 'deploy spreadsheets stack'
+    if: ${{ needs.params.outputs.skip-deploy != 'true' }}
+    needs:
+      - params
+    runs-on: ubuntu-24.04
+    environment: ${{ needs.params.outputs.github-environment }}
+    steps:
+
+      - name: Configure AWS role via GitHub OIDC
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.SPREADSHEETS_ACTIONS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+          role-chaining: false
+          audience: sts.amazonaws.com
+          role-skip-session-tagging: true
+          output-credentials: true
+          retry-max-attempts: 3
+
+      - name: Assume AWS deployment role
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.SPREADSHEETS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+          role-chaining: true
+          audience: sts.amazonaws.com
+          role-skip-session-tagging: true
+          output-credentials: true
+          retry-max-attempts: 3
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Node dependencies
+        run: npm ci
+
+      - name: Build spreadsheets redirects
+        run: node scripts/build-spreadsheets-redirects.cjs
+
+      - name: Build sitemaps
+        run: node scripts/build-sitemaps.cjs
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: 'maven'
+
+      - name: Build CDK JARs
+        run: ./mvnw --errors clean verify -DskipTests -Dmaven.compiler.source=${{ env.JAVA_VERSION }} -Dmaven.compiler.target=${{ env.JAVA_VERSION }}
+
+      - name: Build packages (zips + catalogue)
+        run: node scripts/build-packages.cjs
+
+      - name: Deploy SpreadsheetsStack (CDK)
+        run: |
+          STACK_NAME="${{ needs.params.outputs.environment-name }}-spreadsheets-SpreadsheetsStack"
+          echo "Deploying stack: $STACK_NAME"
+          cd cdk-spreadsheets \
+            && npx cdk deploy \
+              "$STACK_NAME" \
+              --require-approval never \
+              --ci true \
+              --no-notices \
+              --concurrency 4 \
+              --asset-parallelism \
+              --outputs-file ../cdk-spreadsheets.out/cdk-outputs-spreadsheets.json \
+          ;
+        env:
+          ENVIRONMENT_NAME: ${{ needs.params.outputs.environment-name }}
+          CERTIFICATE_ARN: ${{ vars.SPREADSHEETS_CERTIFICATE_ARN }}
+          DOC_ROOT_PATH: '../web/spreadsheets.diyaccounting.co.uk/public'
+
+      - name: Upload zip packages to S3
+        run: |
+          STACK_NAME="${{ needs.params.outputs.environment-name }}-spreadsheets-SpreadsheetsStack"
+          BUCKET_NAME=$(jq -r ".\"${STACK_NAME}\".OriginBucketName" cdk-spreadsheets.out/cdk-outputs-spreadsheets.json)
+          echo "Uploading zips to s3://${BUCKET_NAME}/zips/"
+          aws s3 sync target/zips/ "s3://${BUCKET_NAME}/zips/" --delete
+
+      - name: Show stack outputs
+        run: |
+          echo "=== Spreadsheets Stack Outputs ==="
+          cat cdk-spreadsheets.out/cdk-outputs-spreadsheets.json | jq '.'
+          echo ""
+          echo ">>> Copy the CloudFrontDomainName value above and use it as input to root.diyaccounting.co.uk deploy.yml <<<"
+
+  test-spreadsheets:
+    name: 'spreadsheets smoke test'
+    if: ${{ !cancelled() && !failure() }}
+    needs:
+      - params
+      - deploy-spreadsheets
+    runs-on: ubuntu-24.04
+    container:
+      image: mcr.microsoft.com/playwright:v1.58.1-jammy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci --ignore-scripts
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+
+      - name: Run spreadsheets behaviour tests
+        run: npm run test:spreadsheetsBehaviour-${{ needs.params.outputs.environment-name }}
+
+      - name: Upload artifacts
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: spreadsheets-behaviour-test
+          retention-days: 7
+          path: target/behaviour-test-results/

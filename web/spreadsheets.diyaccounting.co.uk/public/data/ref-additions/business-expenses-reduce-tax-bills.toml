@@ -1,0 +1,98 @@
+# Citation references for business-expenses-reduce-tax-bills.html
+# Existing references reused in this article:
+# REF259 - Employee costs (salaries, bonuses, pensions, employer's NI, agency fees, subcontractors)
+# REF260 - Premises costs (rent, rates, utility bills, insurance)
+# REF261 - Household expenses proportionally claimable when working from home
+# REF262 - Financial costs (bank charges, interest, hire purchase, leasing)
+# REF193 - Depreciation not allowable for tax purposes
+# REF008 - Capital allowances deduct value of business assets from profits
+
+[[reference]]
+id = "REF309"
+claim = "Allowable costs for tax purposes include the cost of goods bought for resale, raw materials, and direct costs of production"
+category = "self-employment-expenses"
+articles = ["business-expenses-reduce-tax-bills"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-STOCK"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "goods for resale (stock), raw materials, direct costs from producing goods"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF310"
+claim = "Travel expenses including vehicle running costs, fuel, servicing, insurance, vehicle licence fees, breakdown cover, public transport fares, hotel rooms, and meals on overnight business trips are allowable"
+category = "self-employment-expenses"
+articles = ["business-expenses-reduce-tax-bills"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-TRAVEL"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "vehicle insurance, repairs and servicing, fuel, parking, hire charges, vehicle tax licence fees, breakdown cover, train, bus, tram, air and taxi fares, hotel rooms, meals on overnight business trips"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF311"
+claim = "Advertising and marketing costs including newspapers, directories, mailshots, free samples and website costs are allowable expenses"
+category = "self-employment-expenses"
+articles = ["business-expenses-reduce-tax-bills"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-ADVERTISING"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "advertising in newspapers or directories, bulk mail advertising (mailshots), free samples, website costs"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF312"
+claim = "Legal and professional fees for accountants, solicitors, surveyors, architects and professional indemnity insurance premiums are allowable expenses"
+category = "self-employment-expenses"
+articles = ["business-expenses-reduce-tax-bills"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-LEGAL"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "hiring of accountants, solicitors, surveyors and architects only for business reasons, professional indemnity insurance premiums"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF313"
+claim = "Bad debts included in turnover that will not be recovered can be deducted as an expense under traditional accounting"
+category = "self-employment-expenses"
+articles = ["business-expenses-reduce-tax-bills"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-BADDEBT"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If you're using traditional accounting, you can claim for amounts of money you include in your turnover but will not ever receive ('bad debts')."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF314"
+claim = "Repairs and maintenance of business premises and equipment are allowable expenses"
+category = "self-employment-expenses"
+articles = ["business-expenses-reduce-tax-bills"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-REPAIRS"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "repairs and maintenance of business premises and equipment"
+accessed = "2026-02-06"
+authority = "primary"

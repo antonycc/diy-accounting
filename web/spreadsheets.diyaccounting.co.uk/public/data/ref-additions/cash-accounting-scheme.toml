@@ -1,0 +1,17 @@
+# Citation references for cash-accounting-scheme.html
+# New references: REF044
+
+[[reference]]
+id = "REF044"
+claim = "Under VAT Cash Accounting, you account for VAT when payments are received or made, not when invoices are issued"
+category = "vat-cash-accounting"
+articles = ["cash-accounting-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-CASH"
+url = "https://www.gov.uk/vat-cash-accounting-scheme"
+title = "VAT Cash Accounting Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "pay VAT on your sales when your customers pay you … reclaim VAT on your purchases when you have paid your supplier"
+accessed = "2026-02-05"
+authority = "primary"

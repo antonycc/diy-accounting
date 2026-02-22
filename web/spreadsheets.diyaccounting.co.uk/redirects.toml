@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+# Copyright (C) 2025-2026 DIY Accounting Ltd
+#
+# redirects.toml - Spreadsheets site redirect configuration
+# Processed by scripts/build-spreadsheets-redirects.cjs → redirect-function.js
+# The generated CloudFront Function returns HTTP 301 for matched URLs
+#
+# Targets:
+#   "spreadsheets" → spreadsheets.diyaccounting.co.uk (ci: ci-spreadsheets.diyaccounting.co.uk)
+#   "submit"       → submit.diyaccounting.co.uk (ci: ci.submit.diyaccounting.co.uk)
+#   "self"         → same host (internal redirect, no 301)
+
+# Placeholder redirect to exercise the redirect engine
+[[redirect]]
+from = "/about-redirect-test.html"
+to = "/about.html"
+target = "self"

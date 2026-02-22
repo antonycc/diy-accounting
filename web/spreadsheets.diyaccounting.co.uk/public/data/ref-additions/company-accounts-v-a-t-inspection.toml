@@ -1,0 +1,74 @@
+[[reference]]
+id = "REF389"
+claim = "A VAT invoice must show a sequential number, time of supply, supplier name/address/VAT number, customer name/address, description of goods/services, quantity, rate of VAT, and amount of VAT"
+category = "vat-invoices"
+articles = ["company-accounts-v-a-t-inspection"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-NOTICE-70021-INVOICES"
+url = "https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021"
+title = "Record keeping (VAT Notice 700/21)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "a sequential number based on one or more series which uniquely identifies the document; the time of the supply; the name, address and VAT registration number of the supplier; the name and address of the person to whom the goods or services are supplied; a description sufficient to identify the goods or services supplied; for each description, the quantity of the goods or the extent of the services, and the rate of VAT and the amount payable, excluding VAT; the total amount of VAT chargeable, expressed in sterling"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF390"
+claim = "Input VAT cannot be reclaimed on the cost of entertaining or providing hospitality to business contacts"
+category = "vat-input-tax"
+articles = ["company-accounts-v-a-t-inspection"]
+
+[[reference.source]]
+id = "SRC-GOVUK-RECLAIM-VAT"
+url = "https://www.gov.uk/reclaim-vat/what-you-can-and-cannot-reclaim"
+title = "Reclaim VAT: What you can and cannot reclaim"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "the cost of entertaining or providing hospitality to people you do business with (for example theatre or sports tickets)"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF391"
+claim = "VAT errors within the reporting threshold can be corrected on the next VAT return; larger or deliberate errors must be reported separately to HMRC"
+category = "vat-errors"
+articles = ["company-accounts-v-a-t-inspection"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-CORRECTIONS"
+url = "https://www.gov.uk/vat-corrections"
+title = "Correct errors in your VAT Return"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must tell HM Revenue and Customs (HMRC) separately about net errors that are: over £50,000; over £10,000 if they exceed 1% of the total value of sales; deliberate errors"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF392"
+claim = "A copy of every VAT invoice issued must be kept"
+category = "vat-records"
+articles = ["company-accounts-v-a-t-inspection"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-NOTICE-70021-COPIES"
+url = "https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021"
+title = "Record keeping (VAT Notice 700/21)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "you must keep a copy of every VAT invoice you issue"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF393"
+claim = "VAT cannot be reclaimed using an invalid invoice, a pro-forma invoice, a statement, or a delivery note"
+category = "vat-input-tax"
+articles = ["company-accounts-v-a-t-inspection"]
+
+[[reference.source]]
+id = "SRC-GOVUK-RECLAIM-VAT-INVALID"
+url = "https://www.gov.uk/reclaim-vat"
+title = "Reclaim VAT"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You cannot reclaim VAT using an invalid invoice, a pro-forma invoice, a statement or a delivery note."
+accessed = "2026-02-06"
+authority = "primary"

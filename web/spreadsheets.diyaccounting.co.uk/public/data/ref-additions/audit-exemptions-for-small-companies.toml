@@ -1,0 +1,89 @@
+[[reference]]
+id = "REF179"
+claim = "Small company audit exemption requires satisfying at least two of three qualifying conditions"
+category = "audit-exemption"
+articles = ["audit-exemptions-for-small-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-AUDIT-EXEMPT"
+url = "https://www.gov.uk/audit-exemptions-for-private-limited-companies"
+title = "Audit exemptions for private limited companies"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Your company may qualify for an audit exemption if it has at least 2 of the following"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF180"
+claim = "Small company audit exemption employee threshold is 50 or fewer employees on average"
+category = "audit-exemption"
+articles = ["audit-exemptions-for-small-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-AUDIT-EXEMPT"
+url = "https://www.gov.uk/audit-exemptions-for-private-limited-companies"
+title = "Audit exemptions for private limited companies"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "50 or fewer employees on average"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF181"
+claim = "Small companies can choose not to file the directors report and profit and loss account to Companies House"
+category = "audit-exemption"
+articles = ["audit-exemptions-for-small-companies", "limited-company-directors-report"]
+
+[[reference.source]]
+id = "SRC-GOVUK-ANNUAL-ACCOUNTS-SMALL"
+url = "https://www.gov.uk/annual-accounts/microentities-small-and-dormant-companies"
+title = "Prepare annual accounts for a private limited company: Microentities, small and dormant companies"
+publisher = "GOV.UK / Companies House"
+extract = "choose whether or not to send a copy of the director's report and profit and loss account to Companies House"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF182"
+claim = "Under audit exemption the year end accounts for a small company do not have to include an auditors report"
+category = "audit-exemption"
+articles = ["audit-exemptions-for-small-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-ANNUAL-ACCOUNTS-SMALL"
+url = "https://www.gov.uk/annual-accounts/microentities-small-and-dormant-companies"
+title = "Prepare annual accounts for a private limited company: Microentities, small and dormant companies"
+publisher = "GOV.UK / Companies House"
+extract = "use the exemption so your company's accounts do not need to be audited"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF183"
+claim = "Audit exempt balance sheet must include a statement of entitlement to exemption under section 477 of the Companies Act 2006"
+category = "audit-exemption"
+articles = ["audit-exemptions-for-small-companies"]
+
+[[reference.source]]
+id = "SRC-GOVUK-AUDIT-EXEMPT"
+url = "https://www.gov.uk/audit-exemptions-for-private-limited-companies"
+title = "Audit exemptions for private limited companies"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "For the year ending [your company's year end date], the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF184"
+claim = "Small companies must send statutory accounts to HMRC as part of their Company Tax Return"
+category = "audit-exemption"
+articles = ["audit-exemptions-for-small-companies", "limited-company-directors-report"]
+
+[[reference.source]]
+id = "SRC-GOVUK-ANNUAL-ACCOUNTS-SMALL"
+url = "https://www.gov.uk/annual-accounts/microentities-small-and-dormant-companies"
+title = "Prepare annual accounts for a private limited company: Microentities, small and dormant companies"
+publisher = "GOV.UK / Companies House"
+extract = "You must still send statutory accounts to your members and to HM Revenue and Customs (HMRC) as part of your Company Tax Return if you're a small company or micro-entity."
+accessed = "2026-02-06"
+authority = "primary"

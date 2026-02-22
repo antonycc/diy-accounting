@@ -1,0 +1,63 @@
+# Citation additions for time-to-pay.html
+# New references REF379-REF382, checked 2026-02-06
+
+[[reference]]
+id = "REF379"
+claim = "If you cannot pay your tax bill in full, you may be able to set up a payment plan to pay it in instalments"
+category = "tax-payment"
+articles = ["time-to-pay"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DIFFICULTIES-PAYING"
+url = "https://www.gov.uk/difficulties-paying-hmrc"
+title = "If you cannot pay your tax bill on time"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If you cannot pay your tax bill in full, you may be able to set up a payment plan to pay it in instalments."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF380"
+claim = "You can set up an online Self Assessment payment plan if you owe £30,000 or less"
+category = "tax-payment"
+articles = ["time-to-pay"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAY-INSTALMENTS"
+url = "https://www.tax.service.gov.uk/pay-what-you-owe-in-instalments"
+title = "Set up a Self Assessment payment plan"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Owe £30,000 or less"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF381"
+claim = "Self Assessment payment enquiries telephone number is 0300 200 3820, Monday to Friday 8am to 6pm"
+category = "tax-payment"
+articles = ["time-to-pay"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYMENT-SUPPORT"
+url = "https://www.gov.uk/government/organisations/hm-revenue-customs/contact/business-payment-support-service"
+title = "Problems paying HMRC"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "0300 200 3820. Monday to Friday, 8am to 6pm. Closed bank holidays."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF382"
+claim = "COVID-19 Self Assessment payment deferral allowed July 2020 payment on account to be deferred until 31 January 2021"
+category = "tax-payment"
+articles = ["time-to-pay"]
+
+[[reference.source]]
+id = "SRC-GOVUK-COVID-DEFER"
+url = "https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19"
+title = "Defer your Self Assessment payment on account due to coronavirus (COVID-19)"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Self Assessment taxpayers were given the option of deferring payment of their July 2020 Payment on Account until 31 January 2021."
+accessed = "2026-02-06"
+authority = "primary"
+note = "Guidance withdrawn 6 July 2021"

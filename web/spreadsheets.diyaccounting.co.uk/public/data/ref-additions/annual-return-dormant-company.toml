@@ -1,0 +1,136 @@
+# Citation references for annual-return-dormant-company.html
+# New references: REF319, REF320, REF321, REF323, REF324, REF325, REF326, REF327
+# Reused references: REF181 (directors report and P&L not required — from audit-exemptions-for-small-companies)
+# NOTE: Article refers to "annual return, form 363" which has been replaced by the
+# confirmation statement. Article states filing fee of £30/£15 but current fees are
+# £50 online / £110 postal. Article states 10-month filing deadline but GOV.UK now
+# says 9 months. References cite current GOV.UK sources.
+
+[[reference]]
+id = "REF319"
+claim = "A dormant company is one that has had no significant accounting transactions during its financial year"
+category = "dormant-company"
+articles = ["annual-return-dormant-company"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DORMANT"
+url = "https://www.gov.uk/dormant-company"
+title = "Dormant company"
+publisher = "GOV.UK / Companies House"
+extract = "Your company is called dormant by Companies House if it's had no 'significant' transactions in the financial year."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF320"
+claim = "Allowable transactions for dormant status: shares on incorporation, filing fees, and late filing penalties"
+category = "dormant-company"
+articles = ["annual-return-dormant-company"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DORMANT"
+url = "https://www.gov.uk/dormant-company"
+title = "Dormant company"
+publisher = "GOV.UK / Companies House"
+extract = "filing fees paid to Companies House, penalties for late filing of accounts, money paid for shares when the company was incorporated"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF321"
+claim = "Dormant companies must file a confirmation statement (previously annual return) containing details of directors, secretary, registered office and shareholders"
+category = "dormant-company"
+articles = ["annual-return-dormant-company"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CONFIRMATION-STMT"
+url = "https://www.gov.uk/running-a-limited-company/confirmation-statement"
+title = "Running a limited company: Confirmation statement"
+publisher = "GOV.UK / Companies House"
+extract = "the details of your registered office, directors, secretary and the address where you keep your records"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-DORMANT"
+url = "https://www.gov.uk/dormant-company"
+title = "Dormant company"
+publisher = "GOV.UK / Companies House"
+extract = "You must file your confirmation statement (previously annual return) and annual accounts with Companies House even if your limited company is dormant for Corporation Tax."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF323"
+claim = "Failure to file confirmation statement can result in a fine up to £5,000 and the company being struck off"
+category = "dormant-company"
+articles = ["annual-return-dormant-company"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CONFIRMATION-STMT"
+url = "https://www.gov.uk/running-a-limited-company/confirmation-statement"
+title = "Running a limited company: Confirmation statement"
+publisher = "GOV.UK / Companies House"
+extract = "You can be fined up to £5,000 and your company may be struck off if you do not send your confirmation statement."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF324"
+claim = "A company can apply to Companies House for voluntary striking off and dissolution if it meets eligibility requirements"
+category = "dormant-company"
+articles = ["annual-return-dormant-company"]
+
+[[reference.source]]
+id = "SRC-GOVUK-STRIKE-OFF"
+url = "https://www.gov.uk/strike-off-your-company-from-companies-register"
+title = "Strike off your company from the Companies Register"
+publisher = "GOV.UK / Companies House"
+extract = "has not traded or sold off any stock in the last 3 months"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF325"
+claim = "Dormant companies must file annual accounts with Companies House each year"
+category = "dormant-company"
+articles = ["annual-return-dormant-company"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DORMANT"
+url = "https://www.gov.uk/dormant-company"
+title = "Dormant company"
+publisher = "GOV.UK / Companies House"
+extract = "You must file your confirmation statement (previously annual return) and annual accounts with Companies House even if your limited company is dormant for Corporation Tax."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF326"
+claim = "Private company annual accounts must be filed within 9 months of the financial year end"
+category = "company-accounts"
+articles = ["annual-return-dormant-company"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FILE-ACCOUNTS"
+url = "https://www.gov.uk/prepare-file-annual-accounts-for-limited-company"
+title = "Prepare and file annual accounts for a private limited company"
+publisher = "GOV.UK / Companies House"
+extract = "9 months after your company's financial year ends"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF327"
+claim = "Dormant company accounts that qualify as small do not need to be audited"
+category = "dormant-company"
+articles = ["annual-return-dormant-company"]
+
+[[reference.source]]
+id = "SRC-GOVUK-DORMANT-ACCOUNTS"
+url = "https://www.gov.uk/annual-accounts/microentities-small-and-dormant-companies"
+title = "Prepare annual accounts for a private limited company: Microentities, small and dormant companies"
+publisher = "GOV.UK / Companies House"
+extract = "Dormant companies that qualify as 'small' do not need to be audited."
+accessed = "2026-02-06"
+authority = "primary"

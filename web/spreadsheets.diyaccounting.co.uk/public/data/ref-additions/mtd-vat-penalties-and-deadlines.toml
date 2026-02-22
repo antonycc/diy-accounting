@@ -1,0 +1,122 @@
+[[reference]]
+id = "REF119"
+claim = "From 1 January 2023, late VAT returns incur penalty points under the new points-based penalty system"
+category = "vat-penalties"
+articles = ["mtd-vat-penalties-and-deadlines"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-LATE-SUB"
+url = "https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late"
+title = "Penalty points and penalties if you submit your VAT return late"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "From 1 January 2023, you'll get penalty points if you submit a VAT Return late"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF120"
+claim = "VAT return deadline is one calendar month and 7 days after the end of the accounting period"
+category = "vat-deadlines"
+articles = ["mtd-vat-penalties-and-deadlines"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-DEADLINES"
+url = "https://www.gov.uk/vat-returns/deadlines"
+title = "Sending a VAT Return: Deadlines"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The deadline for submitting your return online is usually one calendar month and 7 days after the end of an accounting period."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF121"
+claim = "Annual VAT accounting scheme return is due 2 months after the end of the accounting period"
+category = "vat-deadlines"
+articles = ["mtd-vat-penalties-and-deadlines"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-ANNUAL"
+url = "https://www.gov.uk/vat-annual-accounting-scheme"
+title = "VAT Annual Accounting Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If your accounting period is between 4 and 12 months long, your VAT Return is due 2 months after the end of your accounting period."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF122"
+claim = "Penalty points compliance period reset: 24 months for annual, 12 months for quarterly, 6 months for monthly filers"
+category = "vat-penalties"
+articles = ["mtd-vat-penalties-and-deadlines"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-RESET-POINTS"
+url = "https://www.gov.uk/guidance/remove-penalty-points-youve-received-after-submitting-your-vat-return-late"
+title = "Remove penalty points you've received after submitting your VAT Return late"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "complete a period of compliance, submitting all returns by the deadline"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF123"
+claim = "Late VAT payment: no penalty within 15 days; first penalty at 2% of VAT owed at day 15; after 30 days 2% at day 15 plus 2% at day 30; second penalty at 4% per annum daily from day 31"
+category = "vat-penalties"
+articles = ["mtd-vat-penalties-and-deadlines"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LATE-PAY-HARMONISATION"
+url = "https://www.gov.uk/government/publications/penalties-for-late-payment-and-interest-harmonisation/penalties-for-late-payment-and-interest-harmonisation"
+title = "Penalties for late payment and interest harmonisation"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The taxpayer will not incur a penalty if the outstanding tax is paid within the first 15 days after the due date. This penalty is set at 2% of the tax outstanding after day 15. the penalty will be calculated as 2% of the tax outstanding after day 15 plus 2% of the tax outstanding at day 30. It accrues on a daily basis, at a rate of 4% per annum on the outstanding amount."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-LATE-PAY-VAT"
+url = "https://www.gov.uk/guidance/how-late-payment-penalties-work-if-you-pay-vat-late"
+title = "How late payment penalties work if you pay VAT late"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The first late payment penalty is calculated at 3% on the VAT you owe at day 15. The first late payment penalty is calculated at 3% of what was outstanding at day 15 plus 3% of what is still outstanding at day 30. The second late payment penalty is calculated at a daily rate of 10% per year on the outstanding balance."
+accessed = "2026-02-06"
+authority = "secondary"
+
+[[reference]]
+id = "REF124"
+claim = "Late payment interest is calculated at the Bank of England base rate plus 2.5%"
+category = "vat-interest"
+articles = ["mtd-vat-penalties-and-deadlines"]
+
+[[reference.source]]
+id = "SRC-GOVUK-LATE-PAY-INTEREST-POLICY"
+url = "https://www.gov.uk/government/publications/penalties-for-late-payment-and-interest-harmonisation/penalties-for-late-payment-and-interest-harmonisation"
+title = "Penalties for late payment and interest harmonisation"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Late payment interest will be calculated as simple interest at a rate of 2.5% plus the Bank of England base rate."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-LATE-PAY-INTEREST-VAT"
+url = "https://www.gov.uk/guidance/late-payment-interest-if-you-do-not-pay-vat-or-penalties-on-time"
+title = "Late payment interest if you do not pay VAT or penalties on time"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Late payment interest is charged from the first day that the payment is overdue until the day it's paid in full. It's calculated at the Bank of England base rate plus 4%."
+accessed = "2026-02-06"
+authority = "secondary"
+
+[[reference]]
+id = "REF125"
+claim = "Repayment interest is set at the Bank of England base rate minus 1%, with a minimum rate of 0.5%"
+category = "vat-interest"
+articles = ["mtd-vat-penalties-and-deadlines"]
+
+[[reference.source]]
+id = "SRC-GOVUK-HMRC-INTEREST-RATES"
+url = "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates"
+title = "HMRC interest rates for late and early payments"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "repayment interest, set at base rate minus 1%, with a lower limit of 0.5%"
+accessed = "2026-02-06"
+authority = "primary"

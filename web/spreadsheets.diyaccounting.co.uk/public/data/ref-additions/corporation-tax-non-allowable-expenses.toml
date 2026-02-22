@@ -1,0 +1,54 @@
+# Citation references for corporation-tax-non-allowable-expenses.html
+# New references: REF229, REF230
+# Reused references: REF189, REF008
+
+[[reference]]
+id = "REF229"
+claim = "Business running costs such as travel expenses, cost of stock, and payroll costs are allowable expenses for tax purposes"
+category = "allowable-expenses"
+articles = ["corporation-tax-non-allowable-expenses"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-ALLOW"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "travel costs, for example fuel, parking, train or bus fares"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-STOCK"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "things you buy to sell on, for example stock or raw materials"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-EXPENSES-STAFF"
+url = "https://www.gov.uk/expenses-if-youre-self-employed"
+title = "Expenses if you're self-employed"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "staff costs, for example salaries or subcontractor costs"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF230"
+claim = "An expense incurred for both business and private purposes fails the wholly and exclusively test and is not allowable"
+category = "disallowed-expenses"
+articles = ["corporation-tax-non-allowable-expenses"]
+
+[[reference.source]]
+id = "SRC-HMRC-BIM37007"
+url = "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim37007"
+title = "BIM37007 - Wholly and exclusively: expenditure and the sole purpose test"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If one of the reasons is not for business purposes, the expenditure fails the statutory test and there is no provision that allows a 'business' proportion."
+accessed = "2026-02-06"
+authority = "primary"
+
+# Reused: REF189 — add "corporation-tax-non-allowable-expenses" to articles list
+# Reused: REF008 — add "corporation-tax-non-allowable-expenses" to articles list

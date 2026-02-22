@@ -1,0 +1,349 @@
+# DIY Accounting Knowledge Base — Citation Reference Database
+# Each [[reference]] has a unique ID, a claim summary, and one or more [[reference.source]] entries.
+# Sources include verbatim extracts, access dates, and authority level.
+# This file is the single source of truth; references.html and sources.html are generated from it.
+
+[[reference]]
+id = "REF001"
+claim = "The VAT registration threshold is £90,000"
+category = "vat-registration"
+articles = ["introduction-v-a-t-registration", "v-a-t-registration-schemes-thresholds", "self-employed-tax-returns", "sole-trader-self-employed-tax-return", "sole-trader-business-start-up"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-REG"
+url = "https://www.gov.uk/vat-registration/when-to-register"
+title = "When to register for VAT"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "your total taxable turnover for the last 12 months goes over £90,000 (the VAT threshold)"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF002"
+claim = "VAT deregistration threshold is £88,000"
+category = "vat-registration"
+articles = ["introduction-v-a-t-registration", "v-a-t-registration-schemes-thresholds"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-DEREG"
+url = "https://www.gov.uk/vat-registration/when-to-register"
+title = "When to register for VAT"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If your taxable turnover falls below £88,000 you can ask HM Revenue and Customs (HMRC) to cancel your registration"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF003"
+claim = "You must register for VAT within 30 days of exceeding the threshold"
+category = "vat-registration"
+articles = ["introduction-v-a-t-registration"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-REG"
+url = "https://www.gov.uk/vat-registration/when-to-register"
+title = "When to register for VAT"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You have to register within 30 days of the end of the month when you went over the threshold"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF004"
+claim = "All VAT-registered businesses must submit VAT returns digitally through Making Tax Digital since April 2022"
+category = "mtd-vat"
+articles = ["accounting-for-v-a-t-with-making-tax-digital", "example-making-tax-digital", "mtd-vat-submission-guide", "free-mtd-vat-bridging-software"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-RECORDS"
+url = "https://www.gov.uk/vat-record-keeping"
+title = "VAT record keeping"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must keep some VAT records digitally (also known as an 'electronic account') - unless you're exempt from following 'Making Tax Digital for VAT' rules."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF005"
+claim = "VAT records must be kept for at least 6 years"
+category = "vat-records"
+articles = ["mtd-vat-penalties-and-deadlines", "company-accounts-v-a-t-inspection"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-RECORDS"
+url = "https://www.gov.uk/vat-record-keeping"
+title = "VAT record keeping"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must keep VAT records for at least 6 years (or 10 years if you are using the VAT One Stop Shop (OSS) scheme"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF006"
+claim = "Late VAT return penalty: £200 at threshold, plus £200 for each subsequent late return"
+category = "vat-penalties"
+articles = ["mtd-vat-penalties-and-deadlines"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-PENALTY"
+url = "https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late"
+title = "Penalty points and penalties if you submit your VAT return late"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "you'll receive a £200 penalty. You'll also receive a further £200 penalty for each subsequent late submission while you're at the threshold."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF007"
+claim = "Quarterly VAT returns: penalty threshold is 4 points; annual returns: 2 points"
+category = "vat-penalties"
+articles = ["mtd-vat-penalties-and-deadlines"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-PENALTY"
+url = "https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late"
+title = "Penalty points and penalties if you submit your VAT return late"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Quarterly accounting period has a penalty points threshold of 4. Annually accounting period has a penalty points threshold of 2."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF008"
+claim = "Capital allowances let you deduct the value of business assets from profits before tax"
+category = "capital-allowances"
+articles = ["capital-allowances", "self-employed-tax-return-form-capital-tax-allowances", "annual-investment-allowance"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CAPITAL-ALLOW"
+url = "https://www.gov.uk/capital-allowances"
+title = "Claim capital allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Capital allowances are a type of tax relief for businesses. They let you deduct some or all of the value of an item from your profits before you pay tax."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF009"
+claim = "Annual Investment Allowance (AIA) is £1 million"
+category = "capital-allowances"
+articles = ["capital-allowances", "annual-investment-allowance"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CAPITAL-ALLOW"
+url = "https://www.gov.uk/capital-allowances"
+title = "Claim capital allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The AIA amount is £1 million."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF010"
+claim = "Writing down allowance: 18% main rate, 6% special rate"
+category = "capital-allowances"
+articles = ["capital-allowances", "written-down-book-value-and-tax-value", "annual-investment-allowance"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CAPITAL-ALLOW"
+url = "https://www.gov.uk/capital-allowances"
+title = "Claim capital allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "18% of the car's value (main rate allowances) or 6% of the car's value (special rate allowances)"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF011"
+claim = "Full expensing allows 100% deduction of qualifying plant and machinery costs"
+category = "capital-allowances"
+articles = ["capital-allowances"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CAPITAL-ALLOW"
+url = "https://www.gov.uk/capital-allowances"
+title = "Claim capital allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Full expensing lets you deduct 100% of the cost of qualifying plant and machinery from your profits before tax in the year it was bought."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF012"
+claim = "VAT Flat Rate Scheme eligibility: VAT taxable turnover £150,000 or less"
+category = "vat-flat-rate"
+articles = ["vat-flat-rate-scheme-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FRS"
+url = "https://www.gov.uk/vat-flat-rate-scheme"
+title = "VAT Flat Rate Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "you expect your VAT taxable turnover to be £150,000 or less (excluding VAT) in the next 12 months"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF013"
+claim = "Must leave VAT Flat Rate Scheme if turnover exceeds £230,000 including VAT"
+category = "vat-flat-rate"
+articles = ["vat-flat-rate-scheme-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FRS"
+url = "https://www.gov.uk/vat-flat-rate-scheme"
+title = "VAT Flat Rate Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "on the anniversary of joining, your turnover in the last 12 months was more than £230,000 (including VAT)"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF014"
+claim = "Limited cost trader flat rate is 16.5%"
+category = "vat-flat-rate"
+articles = ["vat-flat-rate-scheme-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FRS"
+url = "https://www.gov.uk/vat-flat-rate-scheme"
+title = "VAT Flat Rate Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "This means you pay a higher rate of 16.5%."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF015"
+claim = "First-year VAT Flat Rate Scheme discount is 1%"
+category = "vat-flat-rate"
+articles = ["vat-flat-rate-scheme-guide"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FRS"
+url = "https://www.gov.uk/vat-flat-rate-scheme"
+title = "VAT Flat Rate Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You get a 1% discount if you're in your first year as a VAT-registered business."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF016"
+claim = "MTD for Income Tax Self Assessment mandatory from April 2026 for income over £50,000"
+category = "mtd-itsa"
+articles = ["mtd-income-tax-self-assessment"]
+
+[[reference.source]]
+id = "SRC-GOVUK-MTD-ITSA"
+url = "https://www.gov.uk/government/publications/making-tax-digital/overview-of-making-tax-digital"
+title = "Overview of Making Tax Digital"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "From 6 April 2026, sole traders and landlords must use it if their annual income from self-employment and property is over £50,000."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF017"
+claim = "Selling an asset below its written down value creates a balancing allowance that can be claimed as a capital allowance"
+category = "capital-allowances"
+articles = ["capital-allowances"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CA-SELL"
+url = "https://www.gov.uk/capital-allowances-sell-asset"
+title = "Capital allowances when you sell an asset"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "For items in single asset pools, claim any amount that's left as a capital allowance. The leftover amount is known as a 'balancing allowance'."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF018"
+claim = "Sole traders must register as self-employed with HMRC"
+category = "self-employment"
+articles = ["sole-trader-business-start-up"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SOLE-TRADER"
+url = "https://www.gov.uk/set-up-sole-trader"
+title = "Set up as a sole trader"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "you must register for Self Assessment as a sole trader if you earn more than £1,000 in a tax year (from 6 April to 5 April)"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF019"
+claim = "Paper Self Assessment tax returns must be submitted by 31 October"
+category = "self-assessment"
+articles = ["sole-trader-business-start-up"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA-DEADLINES"
+url = "https://www.gov.uk/self-assessment-tax-returns/deadlines"
+title = "Self Assessment tax returns: Deadlines"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "HMRC must receive your paper tax return by 11:59pm on 31 October 2025 or you'll get a late filing penalty."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF020"
+claim = "Online Self Assessment tax returns must be submitted by 31 January"
+category = "self-assessment"
+articles = ["sole-trader-business-start-up"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA-DEADLINES"
+url = "https://www.gov.uk/self-assessment-tax-returns/deadlines"
+title = "Self Assessment tax returns: Deadlines"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must submit your online tax return by 11:59pm on 31 January 2026 or you'll get a late filing penalty."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF021"
+claim = "Income tax basic rate is 20% and higher rate is 40%"
+category = "income-tax"
+articles = ["sole-trader-business-start-up"]
+
+[[reference.source]]
+id = "SRC-GOVUK-INCOME-TAX"
+url = "https://www.gov.uk/income-tax-rates"
+title = "Income Tax rates and Personal Allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "£12,571 to £50,270 taxable income is taxed at 20%. £50,271 to £125,140 taxable income is taxed at 40%."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF022"
+claim = "Self Assessment tax must be paid in full by 31 January following the end of the tax year"
+category = "self-assessment"
+articles = ["sole-trader-business-start-up"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA-DEADLINES"
+url = "https://www.gov.uk/self-assessment-tax-returns/deadlines"
+title = "Self Assessment tax returns: Deadlines"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You need to pay your Self Assessment tax by 11:59pm on 31 January 2026 or you'll get a penalty."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF023"
+claim = "Payments on account are each half the previous year's tax bill, due 31 January and 31 July"
+category = "self-assessment"
+articles = ["sole-trader-business-start-up"]
+
+[[reference.source]]
+id = "SRC-GOVUK-POA"
+url = "https://www.gov.uk/understand-self-assessment-bill/payments-on-account"
+title = "Understand your Self Assessment tax bill: Payments on account"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Each payment is half of the tax you owed last year. These payments are due by midnight on 31 January and 31 July."
+accessed = "2026-02-05"
+authority = "primary"

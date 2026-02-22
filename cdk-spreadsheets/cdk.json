@@ -1,0 +1,14 @@
+{
+  "app": "java -jar ../target/spreadsheets.jar",
+  "output": "../cdk-spreadsheets.out",
+  "context": {
+    "@aws-cdk/customresources:installLatestAwsSdkDefault": false,
+    "@aws-cdk/core:newStyleStackSynthesis": true,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "envName": "",
+    "certificateArn": "arn:aws:acm:us-east-1:064390746177:certificate/placeholder-for-synth",
+    "docRootPath": "../web/spreadsheets.diyaccounting.co.uk/public",
+    "domainNames": "",
+    "prodFQDomainName": "spreadsheets.diyaccounting.co.uk"
+  }
+}

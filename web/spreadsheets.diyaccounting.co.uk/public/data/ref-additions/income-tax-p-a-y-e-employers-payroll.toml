@@ -1,0 +1,48 @@
+# Citation references for income-tax-p-a-y-e-employers-payroll.html
+# New references: REF249, REF250, REF251
+# Reused references: REF105, REF154, REF155, REF156, REF157
+
+[[reference]]
+id = "REF249"
+claim = "Employers use National Insurance category letters to determine how much employer and employee must contribute"
+category = "paye-national-insurance"
+articles = ["income-tax-p-a-y-e-employers-payroll"]
+
+[[reference.source]]
+id = "SRC-GOVUK-NI-CATEGORIES"
+url = "https://www.gov.uk/national-insurance-rates-letters/category-letters"
+title = "National Insurance rates and categories: Category letters"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Employers use an employee's National Insurance category letter when they run payroll to work out how much they both need to contribute."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF250"
+claim = "Payroll software must calculate pay and deductions including income tax and National Insurance"
+category = "payroll-software"
+articles = ["income-tax-p-a-y-e-employers-payroll", "inland-revenue-p-a-y-e-returns-national-insurance-scheme"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-SETUP"
+url = "https://www.gov.uk/paye-for-employers/paye-set-up"
+title = "PAYE and payroll for employers: Setting up payroll"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Choose payroll software to record employee's details, calculate pay and deductions, and report to HMRC."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF251"
+claim = "Employers must pay employer's National Insurance contribution on employee earnings above £96 a week"
+category = "paye-national-insurance"
+articles = ["income-tax-p-a-y-e-employers-payroll"]
+
+[[reference.source]]
+id = "SRC-GOVUK-PAYE-SETUP"
+url = "https://www.gov.uk/paye-for-employers/paye-set-up"
+title = "PAYE and payroll for employers: Setting up payroll"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "employer's National Insurance contribution on each employee's earnings above £96 a week"
+accessed = "2026-02-06"
+authority = "primary"

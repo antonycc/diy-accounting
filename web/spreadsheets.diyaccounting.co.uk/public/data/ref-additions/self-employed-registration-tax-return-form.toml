@@ -1,0 +1,78 @@
+# Existing refs to update — add "self-employed-registration-tax-return-form" to articles[]:
+# REF018 (Sole traders must register as self-employed with HMRC)
+# REF010 (Writing down allowance: 18% main rate, 6% special rate)
+
+[[reference]]
+id = "REF369"
+claim = "Self-employed must register for Self Assessment by 5 October or face a penalty"
+category = "self-assessment"
+articles = ["self-employed-registration-tax-return-form"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA-REGISTER"
+url = "https://www.gov.uk/register-for-self-assessment"
+title = "Register for Self Assessment"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If you tell HMRC after 5 October 2025, you could get a penalty."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF370"
+claim = "The UK tax year runs from 6 April to 5 April"
+category = "self-assessment"
+articles = ["self-employed-registration-tax-return-form"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SA-DEADLINES"
+url = "https://www.gov.uk/self-assessment-tax-returns/deadlines"
+title = "Self Assessment tax returns: Deadlines"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "The last tax year started on 6 April 2024 and ended on 5 April 2025."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF371"
+claim = "Self-employed must keep records of all business income and expenses including receipts"
+category = "self-employment"
+articles = ["self-employed-registration-tax-return-form"]
+
+[[reference.source]]
+id = "SRC-GOVUK-SE-RECORDS"
+url = "https://www.gov.uk/self-employed-records"
+title = "Self-employed records"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "all receipts for goods and stock"
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF373"
+claim = "Cars do not qualify for Annual Investment Allowance and are subject to writing down allowances based on CO2 emissions"
+category = "capital-allowances"
+articles = ["self-employed-registration-tax-return-form"]
+
+[[reference.source]]
+id = "SRC-GOVUK-CA-CARS"
+url = "https://www.gov.uk/capital-allowances"
+title = "Claim capital allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "Cars do not qualify for annual investment allowance, super-deduction, full expensing or 50% first-year allowances."
+accessed = "2026-02-06"
+authority = "primary"
+
+[[reference]]
+id = "REF374"
+claim = "100% first-year allowances can be claimed on qualifying plant and machinery"
+category = "capital-allowances"
+articles = ["self-employed-registration-tax-return-form"]
+
+[[reference.source]]
+id = "SRC-GOVUK-FYA"
+url = "https://www.gov.uk/capital-allowances/first-year-allowances"
+title = "First-year allowances"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "If you buy an asset that qualifies for 100% first-year allowances you can deduct the full cost from your profits before tax."
+accessed = "2026-02-06"
+authority = "primary"

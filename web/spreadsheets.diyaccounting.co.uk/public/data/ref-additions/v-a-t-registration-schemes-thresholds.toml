@@ -1,0 +1,70 @@
+# New references for v-a-t-registration-schemes-thresholds.html
+# Generated: 2026-02-05
+# Merge into references.toml when reviewed
+#
+# Reused references (update articles arrays in references.toml):
+#   REF001 — already lists this article
+#   REF003 — add "v-a-t-registration-schemes-thresholds" to articles
+#   REF012 — add "v-a-t-registration-schemes-thresholds" to articles
+#   REF015 — add "v-a-t-registration-schemes-thresholds" to articles
+
+[[reference]]
+id = "REF024"
+claim = "The standard rate of VAT is 20%"
+category = "vat-rates"
+articles = ["v-a-t-registration-schemes-thresholds"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-RATES"
+url = "https://www.gov.uk/vat-rates"
+title = "VAT rates"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "20% Standard rate — Most goods and services"
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF025"
+claim = "VAT Annual Accounting Scheme eligibility: estimated VAT taxable turnover £1.35 million or less"
+category = "vat-annual-accounting"
+articles = ["v-a-t-registration-schemes-thresholds"]
+note = "OUTDATED IN ARTICLE: article states £1.25m but GOV.UK confirms the current threshold is £1.35 million"
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-ANNUAL"
+url = "https://www.gov.uk/vat-annual-accounting-scheme"
+title = "VAT Annual Accounting Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You can join the scheme if your estimated VAT taxable turnover is £1.35 million or less."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF026"
+claim = "VAT Cash Accounting Scheme eligibility: VAT taxable turnover must be £1.35 million or less"
+category = "vat-cash-accounting"
+articles = ["v-a-t-registration-schemes-thresholds"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-CASH"
+url = "https://www.gov.uk/vat-cash-accounting-scheme"
+title = "VAT Cash Accounting Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "To join the scheme your VAT taxable turnover must be £1.35 million or less."
+accessed = "2026-02-05"
+authority = "primary"
+
+[[reference]]
+id = "REF027"
+claim = "Must leave VAT Cash Accounting Scheme if VAT taxable turnover exceeds £1.6 million"
+category = "vat-cash-accounting"
+articles = ["v-a-t-registration-schemes-thresholds"]
+
+[[reference.source]]
+id = "SRC-GOVUK-VAT-CASH"
+url = "https://www.gov.uk/vat-cash-accounting-scheme"
+title = "VAT Cash Accounting Scheme"
+publisher = "GOV.UK / HM Revenue & Customs"
+extract = "You must leave the scheme if your VAT taxable turnover is more than £1.6 million"
+accessed = "2026-02-05"
+authority = "primary"
