@@ -1,0 +1,14 @@
+[
+  {
+    "path": "target/",
+    "justification": "Build artifacts and test output, not production code"
+  },
+  {
+    "path": "cdk.out/",
+    "justification": "CDK synthesis output, not deployed code"
+  },
+  {
+    "path": "cdk-spreadsheets.out/",
+    "justification": "CDK gateway synthesis output"
+  }
+]

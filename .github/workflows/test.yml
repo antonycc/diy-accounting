@@ -1,0 +1,168 @@
+name: test
+run-name: "test from ${{ github.ref_name }}"
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!gh_pages'
+    paths:
+      - 'infra/**'
+      - 'tests/**'
+      - 'behaviour-tests/**'
+      - 'web/**'
+      - '.env.ci'
+      - '.env.prod'
+      - '**/cdk.json'
+      - 'Dockerfile'
+      - 'LICENSE'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'pom.xml'
+      - '.github/actions/get-names'
+      - '.github/workflows/*.yml'
+      - '.prettierignore'
+      - '.prettierrc'
+      - 'eslint.config.js'
+      - 'jsconfig.json'
+      - 'mock-oauth2-config.json'
+      - 'playwright.config.js'
+      - 'vitest.config.js'
+  pull_request:
+    branches:
+      - main
+  schedule:
+    # Daily at 06:00 UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  JAVA_VERSION: '25'
+  NODE_VERSION: '24'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Node dependencies
+        run: npm ci
+
+      - name: Check formatting (JS/YAML/JSON)
+        run: npx prettier --check .
+
+      - name: Build spreadsheets redirects
+        run: node scripts/build-spreadsheets-redirects.cjs
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: 'maven'
+
+      - name: Build and verify (Maven + Spotless)
+        run: ./mvnw --errors clean verify -Dmaven.compiler.source=${{ env.JAVA_VERSION }} -Dmaven.compiler.target=${{ env.JAVA_VERSION }}
+
+      - name: CDK synth
+        run: npm run cdk:synth
+
+  unit-test:
+    runs-on: ubuntu-24.04
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Node dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm run test:unit
+
+  browser-test:
+    runs-on: ubuntu-24.04
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Node dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium --with-deps
+
+      - name: Run browser tests
+        run: npm run test:browser
+
+      - name: Upload artifacts
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: browser-test-results
+          retention-days: 7
+          path: target/browser-test-results/
+
+  behaviour-test:
+    name: 'behaviour test (local)'
+    runs-on: ubuntu-24.04
+    container:
+      image: mcr.microsoft.com/playwright:v1.58.1-jammy
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci --ignore-scripts
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+
+      - name: Start local server
+        run: npm start &
+
+      - name: Wait for server
+        run: npx wait-on http://localhost:3000 --timeout 30000
+
+      - name: Run spreadsheets behaviour tests
+        run: npm run test:spreadsheetsBehaviour-local
+
+      - name: Upload artifacts
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: behaviour-test-local
+          retention-days: 7
+          path: target/behaviour-test-results/

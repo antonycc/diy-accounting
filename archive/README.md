@@ -7,7 +7,7 @@ License Version 2.0. See: https://www.mozilla.org/en-US/MPL/2.0/
 
 # The relationship to DIY Accounting Limited
 
-https://www.diyaccounting.co.uk/
+https://www.spreadsheets.diyaccounting.co.uk/
 
 DIY Accounting Limited continues to maintain these packages and remains a for-profit company. DIY Accounting Limited 
 shall be releasing new proprietary products in the future and if you wish to help with our running costs while we do

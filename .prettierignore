@@ -1,0 +1,13 @@
+build/
+coverage/
+node_modules/
+target/
+cdk.out/
+cdk-spreadsheets.out/
+.*
+*.env
+*.md
+*.sh
+LICENSE
+pom.xml
+package-lock.json

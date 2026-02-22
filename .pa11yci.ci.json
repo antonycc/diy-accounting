@@ -1,0 +1,14 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "wait": 2000,
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox"]
+    }
+  },
+  "urls": [
+    "https://ci-gateway.spreadsheets.diyaccounting.co.uk/",
+    "https://ci-gateway.spreadsheets.diyaccounting.co.uk/about.html"
+  ]
+}
