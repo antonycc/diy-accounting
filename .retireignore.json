@@ -10,5 +10,13 @@
   {
     "path": "cdk-spreadsheets.out/",
     "justification": "CDK spreadsheets synthesis output"
+  },
+  {
+    "path": "packages/",
+    "justification": "Excel workbook source files, not scannable code"
+  },
+  {
+    "path": "packages-archive/",
+    "justification": "Archived Excel workbooks, not scannable code"
   }
 ]

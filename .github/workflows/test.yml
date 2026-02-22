@@ -93,6 +93,9 @@ jobs:
       - name: Node dependencies
         run: npm ci
 
+      - name: Build sitemaps
+        run: node scripts/build-sitemaps.cjs
+
       - name: Run unit tests
         run: npm run test:unit
 
@@ -144,6 +147,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          apt-get update && apt-get install -y zip
           npm ci --ignore-scripts
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1

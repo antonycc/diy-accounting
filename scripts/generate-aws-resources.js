@@ -137,7 +137,8 @@ function categoriseRole(name) {
   if (name === "OrganizationAccountAccessRole") return "org";
   if (name.startsWith("cdk-hnb659fds-")) return "cdk-bootstrap";
   if (name.includes("github-actions") || name.includes("deployment")) return "cicd";
-  if (name.includes("SpreadsheetsStack") || name.includes("spreadsheets-Spreadshee") || name.includes("spreadsheets-Spreads")) return "stack";
+  if (name.includes("SpreadsheetsStack") || name.includes("spreadsheets-Spreadshee") || name.includes("spreadsheets-Spreads"))
+    return "stack";
   return "other";
 }
 
@@ -147,7 +148,9 @@ function generateReport(accountId, data) {
   const cdkStacks = data.stacks.filter((s) => s.name !== "CDKToolkit" && s.status !== "DELETE_COMPLETE");
   const cdkToolkit = data.stacks.find((s) => s.name === "CDKToolkit");
 
-  const stackBuckets = data.buckets.filter((b) => !b.startsWith("cdk-hnb659fds-") && (b.includes("spreadsheets") || b.includes("originbucket")));
+  const stackBuckets = data.buckets.filter(
+    (b) => !b.startsWith("cdk-hnb659fds-") && (b.includes("spreadsheets") || b.includes("originbucket")),
+  );
   const cdkBuckets = data.buckets.filter((b) => b.startsWith("cdk-hnb659fds-"));
 
   const rolesByCategory = {};

@@ -4,6 +4,8 @@ node_modules/
 target/
 cdk.out/
 cdk-spreadsheets.out/
+packages/
+packages-archive/
 .*
 *.env
 *.md
