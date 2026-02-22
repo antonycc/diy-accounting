@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: AGPL-3.0-only
-// Copyright (C) 2026 DIY Accounting Ltd
+// Copyright (C) 2025-2026 DIY Accounting Ltd
 
 import { describe, it, expect } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 
-// Site configuration for the gateway site
+// Site configuration for the spreadsheets site
 const site = {
-  dir: path.join(process.cwd(), "web/www.spreadsheets.diyaccounting.co.uk/public"),
+  dir: path.join(process.cwd(), "web/spreadsheets.diyaccounting.co.uk/public"),
   domain: "https://spreadsheets.diyaccounting.co.uk",
 };
 
@@ -147,23 +147,13 @@ describe("Meta tag validation", () => {
 });
 
 describe("Structured data validation", () => {
-  it('index.html has JSON-LD with @type "Organization"', () => {
+  it('index.html has JSON-LD with @type "SoftwareApplication"', () => {
     const html = readFile(path.join(site.dir, "index.html"));
     const jsonLdBlocks = extractJsonLd(html);
     expect(jsonLdBlocks.length).toBeGreaterThan(0);
-    const org = jsonLdBlocks.find((b) => b["@type"] === "Organization");
-    expect(org, "Should have an Organization JSON-LD block").toBeTruthy();
-    expect(org["@context"]).toBe("https://schema.org");
-    expect(org.name).toBe("DIY Accounting Ltd");
-  });
-
-  it("about.html has JSON-LD structured data", () => {
-    const aboutPath = path.join(site.dir, "about.html");
-    if (!fs.existsSync(aboutPath)) return;
-    const html = readFile(aboutPath);
-    const jsonLdBlocks = extractJsonLd(html);
-    expect(jsonLdBlocks.length).toBeGreaterThan(0);
-    const org = jsonLdBlocks.find((b) => b["@type"] === "Organization");
-    expect(org, "Should have an Organization JSON-LD block").toBeTruthy();
+    const app = jsonLdBlocks.find((b) => b["@type"] === "SoftwareApplication");
+    expect(app, "Should have a SoftwareApplication JSON-LD block").toBeTruthy();
+    expect(app["@context"]).toBe("https://schema.org");
+    expect(app.name).toContain("DIY Accounting");
   });
 });

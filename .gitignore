@@ -27,11 +27,17 @@ CLAUDE.local.md
 *.drawio
 *.svg
 
-# Generated gateway redirect function (built from redirects.toml by scripts/build-gateway-redirects.cjs)
-web/www.diyaccounting.co.uk/redirect-function.js
+# Generated spreadsheets redirect function (built from redirects.toml by scripts/build-spreadsheets-redirects.cjs)
+web/spreadsheets.diyaccounting.co.uk/redirect-function.js
+
+# Generated data files (built by scripts)
+web/spreadsheets.diyaccounting.co.uk/public/catalogue.toml
+web/spreadsheets.diyaccounting.co.uk/public/sitemap.xml
+web/spreadsheets.diyaccounting.co.uk/public/knowledge-base.toml
+
+# Generated zip packages
+target/zips/
 
 # Test output and reports
-web/www.diyaccounting.co.uk/public/tests/
+web/spreadsheets.diyaccounting.co.uk/public/tests/
 *.log
-/cdk-spreadsheets-ci-gateway-GatewayStack.drawio.bak
-/Users/antony/projects/diy-accounting/.template-cleaned

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: AGPL-3.0-only
-// Copyright (C) 2026 DIY Accounting Ltd
+// Copyright (C) 2025-2026 DIY Accounting Ltd
 
 import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { createServer } from "node:http";
 import { readFileSync, existsSync } from "node:fs";
 import { join, extname } from "node:path";
 
-const PUBLIC_DIR = join(process.cwd(), "web/www.spreadsheets.diyaccounting.co.uk/public");
+const PUBLIC_DIR = join(process.cwd(), "web/spreadsheets.diyaccounting.co.uk/public");
 
 const MIME_TYPES = {
   ".html": "text/html",
@@ -18,6 +18,7 @@ const MIME_TYPES = {
   ".ico": "image/x-icon",
   ".svg": "image/svg+xml",
   ".png": "image/png",
+  ".toml": "application/toml",
 };
 
 let server;
@@ -55,21 +56,36 @@ describe("Smoke test — local server renders pages", () => {
     const res = await fetch(`${baseUrl}/`);
     expect(res.status).toBe(200);
     const html = await res.text();
-    expect(html).toContain("DIY Accounting");
+    expect(html).toContain("DIY Accounting Spreadsheets");
   });
 
-  it("index.html contains navigation buttons", async () => {
+  it("index.html contains product cards", async () => {
     const res = await fetch(`${baseUrl}/`);
     const html = await res.text();
-    expect(html).toContain("Spreadsheets");
-    expect(html).toContain("Submit");
+    expect(html).toContain("product-card");
+    expect(html).toContain("download.html?product=");
   });
 
-  it("about.html returns 200 and contains company name", async () => {
-    const res = await fetch(`${baseUrl}/about.html`);
+  it("download.html returns 200", async () => {
+    const res = await fetch(`${baseUrl}/download.html`);
     expect(res.status).toBe(200);
     const html = await res.text();
-    expect(html).toContain("DIY Accounting Ltd");
+    expect(html).toContain("Download");
+  });
+
+  it("donate.html returns 200 and has Stripe links", async () => {
+    const res = await fetch(`${baseUrl}/donate.html`);
+    expect(res.status).toBe(200);
+    const html = await res.text();
+    expect(html).toContain("buy.stripe.com");
+    expect(html).toContain("paypal.com/donate");
+  });
+
+  it("knowledge-base.html returns 200", async () => {
+    const res = await fetch(`${baseUrl}/knowledge-base.html`);
+    expect(res.status).toBe(200);
+    const html = await res.text();
+    expect(html).toContain("Knowledge Base");
   });
 
   it("non-existent page returns 404", async () => {
@@ -84,8 +100,8 @@ describe("Smoke test — local server renders pages", () => {
     expect(text).toContain("User-agent");
   });
 
-  it("gateway.css returns 200", async () => {
-    const res = await fetch(`${baseUrl}/gateway.css`);
+  it("spreadsheets.css returns 200", async () => {
+    const res = await fetch(`${baseUrl}/spreadsheets.css`);
     expect(res.status).toBe(200);
   });
 });

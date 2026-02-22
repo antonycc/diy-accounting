@@ -8,7 +8,10 @@
     }
   },
   "urls": [
-    "https://ci-gateway.spreadsheets.diyaccounting.co.uk/",
-    "https://ci-gateway.spreadsheets.diyaccounting.co.uk/about.html"
+    "https://ci-spreadsheets.diyaccounting.co.uk/",
+    "https://ci-spreadsheets.diyaccounting.co.uk/download.html",
+    "https://ci-spreadsheets.diyaccounting.co.uk/donate.html",
+    "https://ci-spreadsheets.diyaccounting.co.uk/knowledge-base.html",
+    "https://ci-spreadsheets.diyaccounting.co.uk/community.html"
   ]
 }

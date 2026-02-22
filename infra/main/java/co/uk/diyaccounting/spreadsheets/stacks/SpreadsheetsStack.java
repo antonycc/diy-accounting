@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: AGPL-3.0-only
- * Copyright (C) 2026 DIY Accounting Ltd
+ * Copyright (C) 2025-2026 DIY Accounting Ltd
  */
 
 package co.uk.diyaccounting.spreadsheets.stacks;
@@ -74,11 +74,12 @@ import software.constructs.Construct;
 /**
  * SpreadsheetsStack: S3 + CloudFront for the spreadsheets.diyaccounting.co.uk static site.
  * <p>
- * Key differences from ApexStack:
+ * Modelled on GatewayStack with the same pattern:
  * - No Route53 records (those live in root account, managed by root.diyaccounting.co.uk repo)
  * - No Lambda function URL integration
- * - Simpler CSP (no RUM endpoint, no API connections, no Cognito domain)
+ * - Simple CSP for static site with PayPal Donate SDK
  * - Cert referenced by ARN, not created by CDK (cross-account zone problem)
+ * - Optional CloudFront Function for URL redirects (generated from redirects.toml)
  */
 public class SpreadsheetsStack extends Stack {
 
@@ -164,7 +165,7 @@ public class SpreadsheetsStack extends Stack {
                 this.originBucket,
                 S3BucketOriginWithOACProps.builder().originAccessControl(oac).build());
 
-        // Response headers policy: simpler CSP for static site (no RUM, no API, no Cognito)
+        // Response headers policy: CSP allows PayPal Donate SDK and self
         ResponseHeadersPolicy responseHeadersPolicy = ResponseHeadersPolicy.Builder.create(
                         this, resourcePrefix + "-HeadersPolicy")
                 .responseHeadersPolicyName(resourcePrefix + "-headers")
@@ -181,13 +182,14 @@ public class SpreadsheetsStack extends Stack {
                 .securityHeadersBehavior(ResponseSecurityHeadersBehavior.builder()
                         .contentSecurityPolicy(ResponseHeadersContentSecurityPolicy.builder()
                                 .contentSecurityPolicy("default-src 'self'; "
-                                        + "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; "
+                                        + "script-src 'self' 'unsafe-inline' https://www.paypalobjects.com https://www.googletagmanager.com; "
                                         + "style-src 'self' 'unsafe-inline'; "
-                                        + "img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; "
+                                        + "img-src 'self' data: https://www.paypalobjects.com https://www.google-analytics.com https://www.googletagmanager.com https://avatars.githubusercontent.com; "
                                         + "font-src 'self'; "
-                                        + "connect-src 'self' https://*.google-analytics.com https://www.googletagmanager.com; "
+                                        + "connect-src 'self' https://www.paypal.com https://www.paypalobjects.com https://*.google-analytics.com https://www.googletagmanager.com https://api.github.com; "
+                                        + "frame-src https://www.paypal.com; "
                                         + "frame-ancestors 'none'; "
-                                        + "form-action 'self';")
+                                        + "form-action 'self' https://www.paypal.com;")
                                 .override(true)
                                 .build())
                         .strictTransportSecurity(ResponseHeadersStrictTransportSecurity.builder()
@@ -223,7 +225,7 @@ public class SpreadsheetsStack extends Stack {
                                         .build(),
                                 ResponseCustomHeader.builder()
                                         .header("Cross-Origin-Embedder-Policy")
-                                        .value("require-corp")
+                                        .value("unsafe-none")
                                         .override(true)
                                         .build(),
                                 ResponseCustomHeader.builder()
@@ -339,8 +341,27 @@ public class SpreadsheetsStack extends Stack {
                 .sources(List.of(webDocRootSource))
                 .destinationBucket(this.originBucket)
                 .distribution(distribution)
-                .distributionPaths(
-                        List.of("/index.html", "/about.html", "/gateway.css", "/lib/*", "/robots.txt", "/sitemap.xml"))
+                .distributionPaths(List.of(
+                        "/index.html",
+                        "/download.html",
+                        "/donate.html",
+                        "/knowledge-base.html",
+                        "/all-articles.html",
+                        "/references.html",
+                        "/sources.html",
+                        "/recently-updated.html",
+                        "/community.html",
+                        "/recently-updated.toml",
+                        "/knowledge-base.toml",
+                        "/references.toml",
+                        "/catalogue.toml",
+                        "/spreadsheets.css",
+                        "/lib/*",
+                        "/articles/*",
+                        "/robots.txt",
+                        "/sitemap.xml",
+                        "/favicon.svg",
+                        "/favicon.ico"))
                 .retainOnDelete(true)
                 .expires(Expiration.after(Duration.minutes(5)))
                 .prune(false)

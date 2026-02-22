@@ -7,9 +7,8 @@
     "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
     "envName": "",
     "certificateArn": "arn:aws:acm:us-east-1:064390746177:certificate/placeholder-for-synth",
-    "docRootPath": "../web/www.spreadsheets.diyaccounting.co.uk/public",
+    "docRootPath": "../web/spreadsheets.diyaccounting.co.uk/public",
     "domainNames": "",
-    "prodFQDomainName": "www.spreadsheets.diyaccounting.co.uk",
-    "prodFQNakedDomainName": "spreadsheets.diyaccounting.co.uk"
+    "prodFQDomainName": "spreadsheets.diyaccounting.co.uk"
   }
 }

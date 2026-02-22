@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-only
-// Copyright (C) 2026 DIY Accounting Ltd
+// Copyright (C) 2025-2026 DIY Accounting Ltd
 
 // playwright.config.js
 import { defineConfig } from "@playwright/test";
@@ -7,9 +7,9 @@ import { defineConfig } from "@playwright/test";
 export default defineConfig({
   projects: [
     {
-      name: "gatewayBehaviour",
+      name: "spreadsheetsBehaviour",
       testDir: "behaviour-tests",
-      testMatch: ["**/gateway.behaviour.test.js"],
+      testMatch: ["**/spreadsheets.behaviour.test.js"],
       workers: 1,
       outputDir: "./target/behaviour-test-results/",
       timeout: 300_000,
@@ -17,6 +17,7 @@ export default defineConfig({
     {
       name: "browser-tests",
       testDir: "web/browser-tests",
+      testMatch: ["**/spreadsheets-content.browser.test.js"],
       workers: 1,
       outputDir: "./target/browser-test-results/",
     },

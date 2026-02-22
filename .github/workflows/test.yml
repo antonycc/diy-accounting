@@ -8,24 +8,19 @@ on:
       - '!gh_pages'
     paths:
       - 'infra/**'
-      - 'tests/**'
       - 'behaviour-tests/**'
       - 'web/**'
-      - '.env.ci'
-      - '.env.prod'
+      - 'packages/**'
+      - 'scripts/**'
       - '**/cdk.json'
-      - 'Dockerfile'
       - 'LICENSE'
       - 'package.json'
       - 'package-lock.json'
       - 'pom.xml'
-      - '.github/actions/get-names'
       - '.github/workflows/*.yml'
       - '.prettierignore'
       - '.prettierrc'
       - 'eslint.config.js'
-      - 'jsconfig.json'
-      - 'mock-oauth2-config.json'
       - 'playwright.config.js'
       - 'vitest.config.js'
   pull_request:
@@ -66,6 +61,9 @@ jobs:
 
       - name: Build spreadsheets redirects
         run: node scripts/build-spreadsheets-redirects.cjs
+
+      - name: Build sitemaps
+        run: node scripts/build-sitemaps.cjs
 
       - uses: actions/setup-java@v5
         with:

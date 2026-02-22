@@ -9,15 +9,13 @@ on:
       - '!dependabot/**'
     paths:
       - 'infra/main/**'
-      - 'web/public/**'
-      - '.env.ci'
-      - '.env.prod'
+      - 'web/spreadsheets.diyaccounting.co.uk/**'
+      - 'packages/**'
+      - 'scripts/**'
       - '**/cdk.json'
-      - 'Dockerfile'
       - 'LICENSE'
       - 'package.json'
       - 'pom.xml'
-      - 'web/public/**'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
     inputs:
@@ -92,7 +90,7 @@ jobs:
       - name: Configure AWS role via GitHub OIDC
         uses: aws-actions/configure-aws-credentials@v6
         with:
-          role-to-assume: ${{ vars.Spreadsheets_ACTIONS_ROLE_ARN }}
+          role-to-assume: ${{ vars.SPREADSHEETS_ACTIONS_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
           role-chaining: false
           audience: sts.amazonaws.com
@@ -103,7 +101,7 @@ jobs:
       - name: Assume AWS deployment role
         uses: aws-actions/configure-aws-credentials@v6
         with:
-          role-to-assume: ${{ vars.Spreadsheets_DEPLOY_ROLE_ARN }}
+          role-to-assume: ${{ vars.SPREADSHEETS_DEPLOY_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
           role-chaining: true
           audience: sts.amazonaws.com
@@ -126,6 +124,9 @@ jobs:
       - name: Build spreadsheets redirects
         run: node scripts/build-spreadsheets-redirects.cjs
 
+      - name: Build sitemaps
+        run: node scripts/build-sitemaps.cjs
+
       - uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
@@ -135,9 +136,12 @@ jobs:
       - name: Build CDK JARs
         run: ./mvnw --errors clean verify -DskipTests -Dmaven.compiler.source=${{ env.JAVA_VERSION }} -Dmaven.compiler.target=${{ env.JAVA_VERSION }}
 
-      - name: Deploy GatewayStack (CDK)
+      - name: Build packages (zips + catalogue)
+        run: node scripts/build-packages.cjs
+
+      - name: Deploy SpreadsheetsStack (CDK)
         run: |
-          STACK_NAME="${{ needs.params.outputs.environment-name }}-spreadsheets-GatewayStack"
+          STACK_NAME="${{ needs.params.outputs.environment-name }}-spreadsheets-SpreadsheetsStack"
           echo "Deploying stack: $STACK_NAME"
           cd cdk-spreadsheets \
             && npx cdk deploy \
@@ -151,15 +155,22 @@ jobs:
           ;
         env:
           ENVIRONMENT_NAME: ${{ needs.params.outputs.environment-name }}
-          CERTIFICATE_ARN: ${{ vars.Spreadsheets_CERTIFICATE_ARN }}
-          DOC_ROOT_PATH: '../web/www.spreadsheets.diyaccounting.co.uk/public'
+          CERTIFICATE_ARN: ${{ vars.SPREADSHEETS_CERTIFICATE_ARN }}
+          DOC_ROOT_PATH: '../web/spreadsheets.diyaccounting.co.uk/public'
+
+      - name: Upload zip packages to S3
+        run: |
+          STACK_NAME="${{ needs.params.outputs.environment-name }}-spreadsheets-SpreadsheetsStack"
+          BUCKET_NAME=$(jq -r ".\"${STACK_NAME}\".OriginBucketName" cdk-spreadsheets.out/cdk-outputs-spreadsheets.json)
+          echo "Uploading zips to s3://${BUCKET_NAME}/zips/"
+          aws s3 sync target/zips/ "s3://${BUCKET_NAME}/zips/" --delete
 
       - name: Show stack outputs
         run: |
-          echo "=== Gateway Stack Outputs ==="
+          echo "=== Spreadsheets Stack Outputs ==="
           cat cdk-spreadsheets.out/cdk-outputs-spreadsheets.json | jq '.'
           echo ""
-          echo ">>> Copy the CloudFrontDomainName value above and use it as input to root.spreadsheets.diyaccounting.co.uk deploy.yml <<<"
+          echo ">>> Copy the CloudFrontDomainName value above and use it as input to root.diyaccounting.co.uk deploy.yml <<<"
 
   test-spreadsheets:
     name: 'spreadsheets smoke test'
