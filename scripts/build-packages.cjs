@@ -5,7 +5,8 @@
 // build-packages.cjs — Scan packages/ directories, create zip files, generate catalogue.toml
 //
 // Usage:
-//   node scripts/build-packages.cjs
+//   node scripts/build-packages.cjs              # Build all packages
+//   node scripts/build-packages.cjs --years 2    # Build only packages from last 2 years
 //
 // Reads:  packages/   (product directories with Excel workbooks and PDFs)
 // Writes: target/zips/          (zip files for S3 upload)
@@ -14,6 +15,11 @@
 const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
+
+// Parse --years N argument (default: no filter, build all)
+const yearsArg = process.argv.indexOf("--years");
+const YEARS_LIMIT = yearsArg !== -1 && process.argv[yearsArg + 1] ? parseInt(process.argv[yearsArg + 1], 10) : null;
+const CUTOFF_DATE = YEARS_LIMIT ? new Date(Date.now() - YEARS_LIMIT * 365.25 * 24 * 60 * 60 * 1000) : null;
 
 // Paths
 const ROOT = path.resolve(__dirname, "..");
@@ -181,6 +187,13 @@ function scanAndBuild() {
       const startYear = parseInt(anyMatch[1], 10);
       const endYear = parseInt(anyMatch[2], 10);
       const format = anyMatch[3];
+
+      // For Company (Any), the latest year-end is in the endYear+1 range
+      if (CUTOFF_DATE && new Date(`${endYear + 1}-04-01`) < CUTOFF_DATE) {
+        console.log(`Skipping (older than ${YEARS_LIMIT}y): ${dirName}`);
+        continue;
+      }
+
       console.log(`Company (Any): ${dirName} → generating monthly variants`);
       const variants = generateCompanyVariants(dirPath, startYear, endYear, format);
       allPackages.push(...variants);
@@ -195,6 +208,12 @@ function scanAndBuild() {
     }
 
     const [, productName, date, shortLabel, format] = match;
+
+    // Skip by year-end date cutoff
+    if (CUTOFF_DATE && new Date(date) < CUTOFF_DATE) {
+      console.log(`Skipping (older than ${YEARS_LIMIT}y): ${dirName}`);
+      continue;
+    }
 
     // Skip non-public products
     if (!PRODUCTS[productName]) {
@@ -291,6 +310,9 @@ function generateCatalogue(allPackages) {
 console.log("=== build-packages.cjs ===");
 console.log(`Packages dir: ${PACKAGES_DIR}`);
 console.log(`Output zips:  ${ZIPS_DIR}`);
+if (YEARS_LIMIT) {
+  console.log(`Year filter:  last ${YEARS_LIMIT} year(s) (cutoff: ${CUTOFF_DATE.toISOString().split("T")[0]})`);
+}
 console.log("");
 
 const packages = scanAndBuild();

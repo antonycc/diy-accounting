@@ -98,6 +98,31 @@
           </p>
         </div>
       </div>
+
+      <div class="download-section" style="margin-top: 2em">
+        <h2>Documentation &amp; User Guides</h2>
+        <p>Download user guides and documentation for DIY Accounting spreadsheets.</p>
+
+        <div class="download-form" id="docs-download-form">
+          <div class="form-group">
+            <label for="doc-title-select">Document</label>
+            <select id="doc-title-select">
+              <option value="">Select a document&hellip;</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="doc-format-select">Format</label>
+            <select id="doc-format-select">
+              <option value="">Select a document first</option>
+            </select>
+          </div>
+
+          <div class="download-actions">
+            <a id="doc-download-btn" class="btn-download btn-primary" download>Download Document</a>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -117,5 +142,6 @@
 
     <script src="lib/toml-parser.js"></script>
     <script src="lib/download-page.js"></script>
+    <script src="lib/docs-download.js"></script>
   </body>
 </html>

@@ -5,6 +5,7 @@
   "description": "Spreadsheets download site for spreadsheets.diyaccounting.co.uk",
   "private": true,
   "scripts": {
+    "prestart": "node scripts/build-packages.cjs --years 2 && ln -sfn ../../../target/zips web/spreadsheets.diyaccounting.co.uk/public/zips",
     "start": "npx http-server web/spreadsheets.diyaccounting.co.uk/public -p 3000",
     "build": "./mvnw clean verify",
     "build:packages": "node scripts/build-packages.cjs",

@@ -2,7 +2,6 @@
 # Copyright (C) 2025-2026 DIY Accounting Ltd
 #
 # redirects.toml - Spreadsheets site redirect configuration
-# Maps old www.diyaccounting.co.uk URLs to new locations
 # Processed by scripts/build-spreadsheets-redirects.cjs → redirect-function.js
 # The generated CloudFront Function returns HTTP 301 for matched URLs
 #
@@ -11,73 +10,8 @@
 #   "submit"       → submit.diyaccounting.co.uk (ci: ci.submit.diyaccounting.co.uk)
 #   "self"         → same host (internal redirect, no 301)
 
-# Static page redirects
-# Each maps an old path to a new path on the specified target host
-
+# Placeholder redirect to exercise the redirect engine
 [[redirect]]
-from = "/home.html"
-to = "/"
-target = "self"
-
-[[redirect]]
-from = "/products.html"
-to = "/"
-target = "spreadsheets"
-
-[[redirect]]
-from = "/articles.html"
-to = "/knowledge-base.html"
-target = "spreadsheets"
-
-[[redirect]]
-from = "/get.html"
-to = "/download.html"
-target = "spreadsheets"
-
-[[redirect]]
-from = "/download.html"
-to = "/download.html"
-target = "spreadsheets"
-
-[[redirect]]
-from = "/donatepaypal.html"
-to = "/donate.html"
-target = "spreadsheets"
-
-[[redirect]]
-from = "/whatsnew.html"
-to = "/knowledge-base.html"
-target = "spreadsheets"
-
-[[redirect]]
-from = "/support.html"
+from = "/about-redirect-test.html"
 to = "/about.html"
 target = "self"
-
-[[redirect]]
-from = "/contact.html"
-to = "/about.html"
-target = "self"
-
-[[redirect]]
-from = "/history.html"
-to = "/about.html"
-target = "self"
-
-[[redirect]]
-from = "/ourcustomers.html"
-to = "/about.html"
-target = "self"
-
-[[redirect]]
-from = "/mtdtest.html"
-to = "/"
-target = "submit"
-
-# Product ID mapping (old ?product= value on product.html → new product ID for download page)
-[product_map]
-BasicSoleTraderProduct = "BasicSoleTrader"
-CompanyAccountsProduct = "Company"
-TaxiDriverProduct = "TaxiDriver"
-SelfEmployedProduct = "SelfEmployed"
-PayslipProduct = "Payslip05"

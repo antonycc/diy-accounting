@@ -148,8 +148,14 @@ jobs:
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
 
+      - name: Build packages (zips + catalogue)
+        run: node scripts/build-packages.cjs --years 2
+
+      - name: Symlink zips into public directory
+        run: ln -sfn ../../../target/zips web/spreadsheets.diyaccounting.co.uk/public/zips
+
       - name: Start local server
-        run: npm start &
+        run: npm start --ignore-scripts &
 
       - name: Wait for server
         run: npx wait-on http://localhost:3000 --timeout 30000

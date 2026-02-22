@@ -38,6 +38,9 @@ web/spreadsheets.diyaccounting.co.uk/public/knowledge-base.toml
 # Generated zip packages
 target/zips/
 
+# Symlink for local dev (points to target/zips/)
+web/spreadsheets.diyaccounting.co.uk/public/zips
+
 # Test output and reports
 web/spreadsheets.diyaccounting.co.uk/public/tests/
 *.log
