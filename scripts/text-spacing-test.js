@@ -16,7 +16,7 @@
  *
  * Options:
  *   --url URL      Base URL to test (required)
- *   --output FILE  Output JSON file (default: web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/text-spacing-results.json)
+ *   --output FILE  Output JSON file (default: web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/text-spacing-results.json)
  */
 
 import { chromium } from "@playwright/test";
@@ -39,7 +39,7 @@ const getArg = (name, defaultValue) => {
 };
 
 const baseUrl = getArg("--url", null);
-const outputFile = getArg("--output", "web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/text-spacing-results.json");
+const outputFile = getArg("--output", "web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/text-spacing-results.json");
 
 if (!baseUrl) {
   console.error("Error: --url is required");
@@ -47,8 +47,8 @@ if (!baseUrl) {
   process.exit(1);
 }
 
-// Gateway pages to test
-const PAGES = ["/", "/about.html"];
+// Spreadsheets pages to test
+const PAGES = ["/", "/download.html", "/donate.html", "/knowledge-base.html", "/community.html"];
 
 // WCAG 1.4.12 Text Spacing CSS
 const TEXT_SPACING_CSS = `

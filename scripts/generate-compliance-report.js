@@ -6,12 +6,12 @@
  * Generate Compliance Report
  *
  * Generates a markdown compliance report from existing test reports.
- * Does NOT run tests - expects reports to already exist in web/www.spreadsheets.diyaccounting.co.uk/public/tests/.
+ * Does NOT run tests - expects reports to already exist in web/spreadsheets.diyaccounting.co.uk/public/tests/.
  *
  * Usage:
  *   node scripts/generate-compliance-report.js --target URL [--output FILE]
  *
- * Expected report files in web/www.spreadsheets.diyaccounting.co.uk/public/tests/:
+ * Expected report files in web/spreadsheets.diyaccounting.co.uk/public/tests/:
  *   - accessibility/pa11y-report.txt
  *   - accessibility/axe-results.json
  *   - accessibility/axe-wcag22-results.json
@@ -46,7 +46,7 @@ if (!targetUrl) {
   process.exit(1);
 }
 
-const targetDir = join(projectRoot, "web/www.spreadsheets.diyaccounting.co.uk/public/tests");
+const targetDir = join(projectRoot, "web/spreadsheets.diyaccounting.co.uk/public/tests");
 const accessibilityDir = join(targetDir, "accessibility");
 const penetrationDir = join(targetDir, "penetration");
 
@@ -193,7 +193,7 @@ function generateReport(sourceFiles) {
 
   return `# Compliance Report
 
-**Application**: DIY Accounting Gateway
+**Application**: DIY Accounting Spreadsheets
 **Version**: ${version}
 **Target URL**: ${targetUrl}
 **Generated**: ${timestamp}
@@ -238,7 +238,7 @@ ${
 | **Total** | **${npmAudit.total}** |
 
 **Status**: ${statusIcon(npmAudit.critical === 0 && npmAudit.high === 0)} ${npmAudit.critical === 0 && npmAudit.high === 0 ? "No critical/high vulnerabilities in production dependencies" : "Critical/high vulnerabilities in production dependencies require attention"}`
-    : "Report not found: \`web/www.spreadsheets.diyaccounting.co.uk/public/tests/penetration/npm-audit.json\`"
+    : "Report not found: \`web/spreadsheets.diyaccounting.co.uk/public/tests/penetration/npm-audit.json\`"
 }
 
 ### 1.2 ESLint Security Analysis
@@ -251,7 +251,7 @@ ${
 | Warnings | ${eslint.warnings} |
 
 **Status**: ${statusIcon(eslint.errors === 0)} ${eslint.errors === 0 ? "No security errors" : "Security errors require attention"}`
-    : "Report not found: \`web/www.spreadsheets.diyaccounting.co.uk/public/tests/penetration/eslint-security.txt\`"
+    : "Report not found: \`web/spreadsheets.diyaccounting.co.uk/public/tests/penetration/eslint-security.txt\`"
 }
 
 ### 1.3 retire.js (Known Vulnerabilities)
@@ -265,7 +265,7 @@ ${
 | Low | ${retire.low} |
 
 **Status**: ${statusIcon(retire.high === 0)} ${retire.high === 0 ? "No high severity vulnerabilities" : "High severity vulnerabilities require attention"}`
-    : "Report not found: \`web/www.spreadsheets.diyaccounting.co.uk/public/tests/penetration/retire.json\`"
+    : "Report not found: \`web/spreadsheets.diyaccounting.co.uk/public/tests/penetration/retire.json\`"
 }
 
 ---
@@ -293,7 +293,7 @@ ${
 ${pa11y.results.map((r) => `| ${r.url.replace(targetUrl, "") || "/"} | ${r.errorCount} |`).join("\n")}`
     : ""
 }`
-    : "Report not found: \`web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/pa11y-report.txt\`"
+    : "Report not found: \`web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/pa11y-report.txt\`"
 }
 
 ### 2.2 axe-core (Automated Accessibility)
@@ -317,7 +317,7 @@ ${
 ${axe.violationDetails.map((v) => `| ${v.id} | ${v.impact} | ${v.description} | ${v.nodes} |`).join("\n")}`
     : ""
 }`
-    : "Report not found: \`web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/axe-results.json\`"
+    : "Report not found: \`web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/axe-results.json\`"
 }
 
 ### 2.3 axe-core (WCAG 2.2 Level AA)
@@ -341,7 +341,7 @@ ${
 ${axeWcag22.violationDetails.map((v) => `| ${v.id} | ${v.impact} | ${v.description} | ${v.nodes} |`).join("\n")}`
     : ""
 }`
-    : "Report not found: \`web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/axe-wcag22-results.json\`"
+    : "Report not found: \`web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/axe-wcag22-results.json\`"
 }
 
 ### 2.4 Lighthouse
@@ -356,7 +356,7 @@ ${
 | SEO | ${lighthouse.seo}% |
 
 **Status**: ${statusIcon(lighthouse.accessibility >= 90)} ${lighthouse.accessibility >= 90 ? "Accessibility score meets threshold (90%+)" : "Accessibility score below 90% threshold"}`
-    : "Report not found: \`web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/lighthouse-results.json\`"
+    : "Report not found: \`web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/lighthouse-results.json\`"
 }
 
 ### 2.5 Text Spacing (WCAG 1.4.12)
@@ -387,7 +387,7 @@ ${
 ${textSpacing.failedPages.map((p) => `| ${p.url.replace(targetUrl, "") || "/"} | ${p.clippedCount} |`).join("\n")}`
     : ""
 }`
-    : "Report not found: \`web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/text-spacing-results.json\`"
+    : "Report not found: \`web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/text-spacing-results.json\`"
 }
 
 ---
@@ -396,14 +396,14 @@ ${textSpacing.failedPages.map((p) => `| ${p.url.replace(targetUrl, "") || "/"} |
 
 | Report | Path | Status |
 |--------|------|--------|
-| npm audit | web/www.spreadsheets.diyaccounting.co.uk/public/tests/penetration/npm-audit.json | ${npmAudit.found ? "Found" : "Missing"} |
-| ESLint Security | web/www.spreadsheets.diyaccounting.co.uk/public/tests/penetration/eslint-security.txt | ${eslint.found ? "Found" : "Missing"} |
-| retire.js | web/www.spreadsheets.diyaccounting.co.uk/public/tests/penetration/retire.json | ${retire.found ? "Found" : "Missing"} |
-| Pa11y | web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/pa11y-report.txt | ${pa11y.found ? "Found" : "Missing"} |
-| axe-core | web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/axe-results.json | ${axe.found ? "Found" : "Missing"} |
-| axe-core (WCAG 2.2) | web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/axe-wcag22-results.json | ${axeWcag22.found ? "Found" : "Missing"} |
-| Lighthouse | web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/lighthouse-results.json | ${lighthouse.found ? "Found" : "Missing"} |
-| Text Spacing | web/www.spreadsheets.diyaccounting.co.uk/public/tests/accessibility/text-spacing-results.json | ${textSpacing.found ? "Found" : "Missing"} |
+| npm audit | web/spreadsheets.diyaccounting.co.uk/public/tests/penetration/npm-audit.json | ${npmAudit.found ? "Found" : "Missing"} |
+| ESLint Security | web/spreadsheets.diyaccounting.co.uk/public/tests/penetration/eslint-security.txt | ${eslint.found ? "Found" : "Missing"} |
+| retire.js | web/spreadsheets.diyaccounting.co.uk/public/tests/penetration/retire.json | ${retire.found ? "Found" : "Missing"} |
+| Pa11y | web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/pa11y-report.txt | ${pa11y.found ? "Found" : "Missing"} |
+| axe-core | web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/axe-results.json | ${axe.found ? "Found" : "Missing"} |
+| axe-core (WCAG 2.2) | web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/axe-wcag22-results.json | ${axeWcag22.found ? "Found" : "Missing"} |
+| Lighthouse | web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/lighthouse-results.json | ${lighthouse.found ? "Found" : "Missing"} |
+| Text Spacing | web/spreadsheets.diyaccounting.co.uk/public/tests/accessibility/text-spacing-results.json | ${textSpacing.found ? "Found" : "Missing"} |
 
 ---
 

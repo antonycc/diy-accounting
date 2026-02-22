@@ -19,7 +19,7 @@ const KB_TOML = path.join(ROOT, "web", "spreadsheets.diyaccounting.co.uk", "publ
 const CATALOGUE_TOML = path.join(ROOT, "web", "spreadsheets.diyaccounting.co.uk", "public", "catalogue.toml");
 const SPREADSHEETS_SITEMAP = path.join(ROOT, "web", "spreadsheets.diyaccounting.co.uk", "public", "sitemap.xml");
 
-// Minimal TOML parser (same as build-gateway-redirects.cjs)
+// Minimal TOML parser (same as build-spreadsheets-redirects.cjs)
 function parseTOML(src) {
   var res = {};
   var currentSection = res;

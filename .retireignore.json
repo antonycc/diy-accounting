@@ -9,6 +9,6 @@
   },
   {
     "path": "cdk-spreadsheets.out/",
-    "justification": "CDK gateway synthesis output"
+    "justification": "CDK spreadsheets synthesis output"
   }
 ]

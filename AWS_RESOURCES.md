@@ -1,4 +1,4 @@
-# AWS Resources — Gateway Account (283165661847)
+# AWS Resources — Spreadsheets Account (064390746177)
 
 Catalogued from AWS CLI on 2026-02-22.
 
@@ -8,48 +8,44 @@ Resources below exist for both `ci` and `prod` environments. Replace `{env}` wit
 
 | Resource | Name / ID | Purpose |
 | -------- | --------- | ------- |
-| CloudFormation | `prod-gateway-GatewayStack` | CDK-managed stack (UPDATE_COMPLETE) |
-| CloudFormation | `ci-gateway-GatewayStack` | CDK-managed stack (UPDATE_COMPLETE) |
-| CloudFront dist | `E6YTNLAL2VBNN` / `de9dto3k3vhcf.cloudfront.net` | ci-gateway.spreadsheets.diyaccounting.co.uk |
-| CloudFront dist | `E3U3O7ZH7B8234` / `dnloza7zl3wfi.cloudfront.net` | www.spreadsheets.diyaccounting.co.uk, prod-gateway.spreadsheets.diyaccounting.co.uk, spreadsheets.diyaccounting.co.uk |
-| S3 bucket | `ci-gateway-gatewaystack-cigatewayoriginbucket9f874-neqrnpyfsywp` | Static site content origin |
-| S3 bucket | `prod-gateway-gatewaystack-prodgatewayoriginbucket6-z0miidumzsyk` | Static site content origin |
-| Lambda | `ci-gateway-GatewayStack-CustomS3AutoDeleteObjectsC-jKpVUB...` | Lambda function for auto-deleting objects in ci-gateway-gatewaystack-cigatewayoriginbucket9f874-neqrnpyfsywp S3 bucket. |
-| Lambda | `ci-gateway-GatewayStack-CustomCDKBucketDeployment8-KwpSPc...` | CDK custom resource handler |
-| Lambda | `prod-gateway-GatewayStack-CustomS3AutoDeleteObject-SwPxWf...` | Lambda function for auto-deleting objects in prod-gateway-gatewaystack-prodgatewayoriginbucket6-z0miidumzsyk S3 bucket. |
-| Lambda | `prod-gateway-GatewayStack-AWS679f53fac002430cb0da5-DnXGHK...` | CDK custom resource handler |
-| Lambda | `ci-gateway-GatewayStack-AWS679f53fac002430cb0da5b7-ZijAdF...` | CDK custom resource handler |
-| Lambda | `prod-gateway-GatewayStack-CustomCDKBucketDeploymen-Ik3qPe...` | CDK custom resource handler |
-| IAM roles (6) | `{env}-gateway-GatewayStack-*` | CDK custom resource execution roles |
-| CloudWatch log group | `/aws/lambda/ci-gateway-GatewayStack-AWS679f53fac002430cb0da5b7-ZijAdFOBnWRt` | CloudFront access logs |
-| CloudWatch log group | `/aws/lambda/ci-gateway-GatewayStack-AWS679f53fac002430cb0da5b7-qEfQYZM5xaV6` | CloudFront access logs |
-| CloudWatch log group | `/aws/lambda/ci-gateway-GatewayStack-CustomCDKBucketDeployment8-KwpSPcGHo48R` | CloudFront access logs |
-| CloudWatch log group | `/aws/lambda/ci-gateway-GatewayStack-CustomS3AutoDeleteObjectsC-jKpVUB16NZGY` | CloudFront access logs |
-| CloudWatch log group | `/aws/lambda/prod-gateway-GatewayStack-AWS679f53fac002430cb0da5-DnXGHKCZ2Qr0` | CloudFront access logs |
-| CloudWatch log group | `/aws/lambda/prod-gateway-GatewayStack-CustomCDKBucketDeploymen-Ik3qPeSuQ8Z4` | CloudFront access logs |
-| CloudWatch log group | `/aws/lambda/prod-gateway-GatewayStack-CustomS3AutoDeleteObject-SwPxWfMoz9zs` | CloudFront access logs |
-| CloudWatch log group | `distribution-ci-gateway-logs` | CloudFront access logs |
-| CloudWatch log group | `distribution-prod-gateway-logs` | CloudFront access logs |
+| CloudFormation | `prod-spreadsheets-SpreadsheetsStack` | CDK-managed stack (CREATE_COMPLETE) |
+| CloudFormation | `ci-spreadsheets-SpreadsheetsStack` | CDK-managed stack (CREATE_COMPLETE) |
+| CloudFront dist | `E2TBOSOQKMVM6Q` / `dk6ghpplfgq9t.cloudfront.net` | ci-spreadsheets.diyaccounting.co.uk |
+| CloudFront dist | `EIWDNO6M6DL7R` / `d10s0isuhkjtrs.cloudfront.net` | spreadsheets.diyaccounting.co.uk, prod-spreadsheets.diyaccounting.co.uk |
+| S3 bucket | `ci-spreadsheets-spreadshe-cispreadsheetsoriginbuck-mbkz8lqgzamk` | Static site content origin |
+| S3 bucket | `prod-spreadsheets-spreads-prodspreadsheetsoriginbu-qjetba5uusfd` | Static site content origin |
+| Lambda | `prod-spreadsheets-Spreads-CustomS3AutoDeleteObject-Olawhw...` | Lambda function for auto-deleting objects in prod-spreadsheets-spreads-prodspreadsheetsoriginbu-qjetba5uusfd S3 bucket. |
+| Lambda | `prod-spreadsheets-Spreads-CustomCDKBucketDeploymen-P9xSRc...` | CDK custom resource handler |
+| Lambda | `ci-spreadsheets-Spreadshe-CustomCDKBucketDeploymen-nEV7ko...` | CDK custom resource handler |
+| Lambda | `ci-spreadsheets-Spreadshe-CustomS3AutoDeleteObject-OwadI2...` | Lambda function for auto-deleting objects in ci-spreadsheets-spreadshe-cispreadsheetsoriginbuck-mbkz8lqgzamk S3 bucket. |
+| IAM roles (6) | `{env}-spreadsheets-SpreadsheetsStack-*` | CDK custom resource execution roles |
+| CloudWatch log group | `/aws/lambda/ci-spreadsheets-Spreadshe-AWS679f53fac002430cb0da5-grVpjMJAGjgy` | CloudFront access logs |
+| CloudWatch log group | `/aws/lambda/ci-spreadsheets-Spreadshe-CustomCDKBucketDeploymen-nEV7kohLPwOg` | CloudFront access logs |
+| CloudWatch log group | `/aws/lambda/ci-spreadsheets-Spreadshe-CustomS3AutoDeleteObject-OwadI2UVa2nv` | CloudFront access logs |
+| CloudWatch log group | `/aws/lambda/prod-spreadsheets-Spreads-AWS679f53fac002430cb0da5-RQFgCuyInf46` | CloudFront access logs |
+| CloudWatch log group | `/aws/lambda/prod-spreadsheets-Spreads-CustomCDKBucketDeploymen-P9xSRcUGsFjB` | CloudFront access logs |
+| CloudWatch log group | `/aws/lambda/prod-spreadsheets-Spreads-CustomS3AutoDeleteObject-OlawhwDAzQol` | CloudFront access logs |
+| CloudWatch log group | `distribution-ci-spreadsheets-logs` | CloudFront access logs |
+| CloudWatch log group | `distribution-prod-spreadsheets-logs` | CloudFront access logs |
 
 ## Account-Level Resources
 
 | Resource | ARN / Name | Purpose |
 | -------- | ---------- | ------- |
 | CloudFormation | `CDKToolkit` | CDK bootstrap stack |
-| IAM role | `gateway-deployment-role` | CDK deploy role |
-| IAM role | `gateway-github-actions-role` | OIDC auth for GitHub Actions |
+| IAM role | `spreadsheets-deployment-role` | CDK deploy role |
+| IAM role | `spreadsheets-github-actions-role` | OIDC auth for GitHub Actions |
 | IAM OIDC provider | `token.actions.githubusercontent.com` | GitHub Actions OIDC |
-| ACM certificate | `arn:aws:acm:us-east-1:283165661847:certificate/18008e08-0475-4ba0-8516-834fd5f447d9` | TLS for CloudFront (ci-gateway.spreadsheets.diyaccounting.co.uk) |
-| S3 bucket | `cdk-hnb659fds-assets-283165661847-eu-west-2` | CDK asset staging (west-2) |
-| S3 bucket | `cdk-hnb659fds-assets-283165661847-us-east-1` | CDK asset staging (east-1) |
-| IAM roles (10) | `cdk-hnb659fds-*-283165661847-*` | CDK bootstrap roles |
+| ACM certificate | `arn:aws:acm:us-east-1:064390746177:certificate/bc67c01c-ea52-4b11-8958-68e24bf23727` | TLS for CloudFront (ci-spreadsheets.diyaccounting.co.uk) |
+| S3 bucket | `cdk-hnb659fds-assets-064390746177-eu-west-2` | CDK asset staging (west-2) |
+| S3 bucket | `cdk-hnb659fds-assets-064390746177-us-east-1` | CDK asset staging (east-1) |
+| IAM roles (10) | `cdk-hnb659fds-*-064390746177-*` | CDK bootstrap roles |
 | SSM parameter | `/cdk-bootstrap/hnb659fds/version` | CDK bootstrap version (30) |
 
 ## AWS Service-Linked Roles (auto-created, do not delete)
 
 | Role | Service |
 | ---- | ------- |
-| `AWSServiceRoleForCloudFrontLogger` | Cloud Front Logger |
 | `AWSServiceRoleForOrganizations` | Organizations |
 | `AWSServiceRoleForResourceExplorer` | Resource Explorer |
 | `AWSServiceRoleForSSO` | S S O |
@@ -61,8 +57,8 @@ Resources below exist for both `ci` and `prod` environments. Replace `{env}` wit
 | Resource | Purpose |
 | -------- | ------- |
 | IAM role | `OrganizationAccountAccessRole` — cross-account admin access |
-| SSO reserved roles (2) | `AWSReservedSSO_AdministratorAccess_97db773b3e5283e3`, `AWSReservedSSO_ReadOnlyAccess_e29bc2b9f5604c55` |
+| SSO reserved roles (2) | `AWSReservedSSO_AdministratorAccess_1f02f32487badfde`, `AWSReservedSSO_ReadOnlyAccess_64e03b1c5755f3f4` |
 
 ---
 
-*Generated by `node scripts/generate-aws-resources.js --profile gateway`*
+*Generated by `node scripts/generate-aws-resources.js --profile spreadsheets`*

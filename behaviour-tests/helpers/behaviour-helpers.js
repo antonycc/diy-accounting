@@ -2,7 +2,7 @@
 // Copyright (C) 2026 DIY Accounting Ltd
 
 // behaviour-tests/helpers/behaviour-helpers.js
-// Minimal helper for gateway behaviour tests (addOnPageLogging + timestamp)
+// Minimal helper for spreadsheets behaviour tests (addOnPageLogging + timestamp)
 
 export function addOnPageLogging(page) {
   // Capture browser console and page errors

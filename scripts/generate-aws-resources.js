@@ -5,8 +5,8 @@
 /**
  * Generate AWS Resources Report
  *
- * Catalogues AWS resources in the gateway account from live AWS data.
- * Requires AWS SSO authentication with the gateway profile.
+ * Catalogues AWS resources in the spreadsheets account from live AWS data.
+ * Requires AWS SSO authentication with the spreadsheets profile.
  *
  * Usage:
  *   node scripts/generate-aws-resources.js [--profile PROFILE] [--output FILE]
@@ -31,7 +31,7 @@ const getArg = (name, defaultValue) => {
   return defaultValue;
 };
 
-const profile = getArg("--profile", "gateway");
+const profile = getArg("--profile", "spreadsheets");
 const outputFile = getArg("--output", "AWS_RESOURCES.md");
 
 function aws(command) {
@@ -137,7 +137,7 @@ function categoriseRole(name) {
   if (name === "OrganizationAccountAccessRole") return "org";
   if (name.startsWith("cdk-hnb659fds-")) return "cdk-bootstrap";
   if (name.includes("github-actions") || name.includes("deployment")) return "cicd";
-  if (name.includes("GatewayStack") || name.includes("gateway-Gateway")) return "stack";
+  if (name.includes("SpreadsheetsStack") || name.includes("spreadsheets-Spreadshee") || name.includes("spreadsheets-Spreads")) return "stack";
   return "other";
 }
 
@@ -147,7 +147,7 @@ function generateReport(accountId, data) {
   const cdkStacks = data.stacks.filter((s) => s.name !== "CDKToolkit" && s.status !== "DELETE_COMPLETE");
   const cdkToolkit = data.stacks.find((s) => s.name === "CDKToolkit");
 
-  const stackBuckets = data.buckets.filter((b) => !b.startsWith("cdk-hnb659fds-") && (b.includes("gateway") || b.includes("originbucket")));
+  const stackBuckets = data.buckets.filter((b) => !b.startsWith("cdk-hnb659fds-") && (b.includes("spreadsheets") || b.includes("originbucket")));
   const cdkBuckets = data.buckets.filter((b) => b.startsWith("cdk-hnb659fds-"));
 
   const rolesByCategory = {};
@@ -158,12 +158,12 @@ function generateReport(accountId, data) {
   }
 
   const stackLambdas = data.lambdas.filter(
-    (f) => f.name.includes("GatewayStack") || f.name.includes("CustomCDK") || f.name.includes("CustomS3"),
+    (f) => f.name.includes("SpreadsheetsStack") || f.name.includes("CustomCDK") || f.name.includes("CustomS3"),
   );
 
-  const stackLogGroups = data.logGroups.filter((g) => g.includes("gateway") || g.includes("distribution"));
+  const stackLogGroups = data.logGroups.filter((g) => g.includes("spreadsheets") || g.includes("distribution"));
 
-  let md = `# AWS Resources — Gateway Account (${accountId})
+  let md = `# AWS Resources — Spreadsheets Account (${accountId})
 
 Catalogued from AWS CLI on ${timestamp}.
 
@@ -194,7 +194,7 @@ Resources below exist for both \`ci\` and \`prod\` environments. Replace \`{env}
   }
 
   if (rolesByCategory.stack) {
-    md += `| IAM roles (${rolesByCategory.stack.length}) | \`{env}-gateway-GatewayStack-*\` | CDK custom resource execution roles |\n`;
+    md += `| IAM roles (${rolesByCategory.stack.length}) | \`{env}-spreadsheets-SpreadsheetsStack-*\` | CDK custom resource execution roles |\n`;
   }
 
   for (const group of stackLogGroups) {
