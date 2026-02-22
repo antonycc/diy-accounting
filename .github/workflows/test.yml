@@ -133,7 +133,7 @@ jobs:
     name: 'behaviour test (local)'
     runs-on: ubuntu-24.04
     container:
-      image: mcr.microsoft.com/playwright:v1.58.1-jammy
+      image: mcr.microsoft.com/playwright:v1.58.2-jammy
     steps:
 
       - name: Checkout
@@ -159,13 +159,18 @@ jobs:
         run: ln -sfn ../../../target/zips web/spreadsheets.diyaccounting.co.uk/public/zips
 
       - name: Start local server
-        run: npm start --ignore-scripts &
+        run: |
+          nohup npx http-server web/spreadsheets.diyaccounting.co.uk/public -p 3000 > /tmp/http-server.log 2>&1 &
 
       - name: Wait for server
         run: npx wait-on http://localhost:3000 --timeout 30000
 
       - name: Run spreadsheets behaviour tests
         run: npm run test:spreadsheetsBehaviour-local
+
+      - name: Show server logs
+        if: ${{ !cancelled() }}
+        run: cat /tmp/http-server.log 2>/dev/null || echo "No server log found"
 
       - name: Upload artifacts
         if: ${{ !cancelled() }}
