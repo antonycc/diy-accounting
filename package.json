@@ -80,7 +80,7 @@
     "lighthouse": "^12.6.1",
     "npm-check-updates": "^19.4.1",
     "pa11y": "^9.1.0",
-    "pa11y-ci": "^1.2.0",
+    "pa11y-ci": "^4.0.1",
     "prettier": "^3.8.1",
     "retire": "^5.4.2",
     "structured-data-testing-tool": "^4.5.0",
