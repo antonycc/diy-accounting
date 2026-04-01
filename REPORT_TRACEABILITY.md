@@ -17,7 +17,6 @@ Source: https://www.gov.uk/income-tax-rates
 | 2024-25 | 12,570 | 20% | 37,700 | 40% | 37,701 | `se-2024-2025.toml` |
 | 2025-26 | 12,570 | 20% | 37,700 | 40% | 37,701 | `se-2025-2026.toml` |
 | 2026-27 | 12,570 | 20% | 37,700 | 40% | 37,701 | `se-2026-2027.toml` |
-| 2027-28 | 12,570 | 20% | 37,700 | 40% | 37,701 | `se-2027-2028.toml` |
 
 Notes:
 - Personal allowance increased from £12,500 to £12,570 in 2021-22 and has been frozen since.
@@ -37,7 +36,6 @@ Source: https://www.gov.uk/self-employed-national-insurance-rates
 | 2024-25 | 0 | 6% | 12,570 | 2% | 50,270 | `se-2024-2025.toml` |
 | 2025-26 | 0 | 6% | 12,570 | 2% | 50,270 | `se-2025-2026.toml` |
 | 2026-27 | 0 | 6% | 12,570 | 2% | 50,270 | `se-2026-2027.toml` |
-| 2027-28 | 0 | 6% | 12,570 | 2% | 50,270 | `se-2027-2028.toml` |
 
 Notes:
 - **2022-23**: The Health and Social Care Levy added 1.25% to NI from April 2022, reversed from November 2022. The spreadsheet uses blended annual rates of 9.73% and 2.73%. The Class 4 lower limit was raised mid-year from £9,880 to £12,570 (July 2022); the spreadsheet uses £11,908 as the blended annual threshold.
@@ -57,7 +55,6 @@ Source: https://www.gov.uk/capital-allowances/annual-investment-allowance
 | 2024-25 | 100% | 18% | 12,000 | 3,000 | `se-2024-2025.toml` |
 | 2025-26 | 100% | 18% | 12,000 | 3,000 | `se-2025-2026.toml` |
 | 2026-27 | 100% | 14% | 12,000 | 3,000 | `se-2026-2027.toml` |
-| 2027-28 | 100% | 14% | 12,000 | 3,000 | `se-2027-2028.toml` |
 
 Notes:
 - AIA is stored as 1.00 (100%) in TOML. The monetary limit (£1,000,000 since Jan 2019, made permanent April 2023) is not stored in the spreadsheet — the AIA cell represents the percentage rate applied.
@@ -77,7 +74,6 @@ Source: https://www.gov.uk/expenses-and-benefits-business-travel-mileage/rules-f
 | 2024-25 | 45p | 25p | `se-2024-2025.toml` |
 | 2025-26 | 45p | 25p | `se-2025-2026.toml` |
 | 2026-27 | 45p | 25p | `se-2026-2027.toml` |
-| 2027-28 | 45p | 25p | `se-2027-2028.toml` |
 
 Notes:
 - HMRC approved mileage rates have not changed since 2011-12.
@@ -95,12 +91,11 @@ Source: https://www.gov.uk/vat-registration/when-to-register
 | 2024-25 | 90,000 | `se-2024-2025.toml` |
 | 2025-26 | 90,000 | `se-2025-2026.toml` |
 | 2026-27 | 90,000 | `se-2026-2027.toml` |
-| 2027-28 | 90,000 | `se-2027-2028.toml` |
 
 Notes:
 - VAT registration threshold was frozen at £85,000 from April 2017 to March 2024.
 - Increased to £90,000 from 1 April 2024 (Spring Budget 2024).
-- VAT threshold remains at £90,000 for 2026-27 and 2027-28.
+- VAT threshold remains at £90,000 for 2026-27.
 
 ## Depreciation Rates
 
@@ -116,16 +111,16 @@ These are conventional accounting rates, not HMRC-mandated. Consistent across al
 
 ## Year-on-Year Change Summary
 
-| Field | 2020-21 → 2021-22 | 2021-22 → 2022-23 | 2022-23 → 2023-24 | 2023-24 → 2024-25 | 2024-25 → 2025-26 | 2025-26 → 2026-27 | 2026-27 → 2027-28 |
-|-------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
-| Personal Allowance | 12,500 → 12,570 | — | — | — | — | — | — |
-| Basic Band End | 37,500 → 37,700 | — | — | — | — | — | — |
-| Class 2 NI | — | 3.05 → 3.15 | 3.15 → 3.45 | 3.45 → 0 | — | — | — |
-| Class 4 Lower Rate | — | 9% → 9.73% | 9.73% → 9% | 9% → 6% | — | — | — |
-| Class 4 Lower Limit | 9,500 → 9,568 | 9,568 → 11,908 | 11,908 → 12,570 | — | — | — | — |
-| Class 4 Upper Limit | 50,000 → 50,270 | — | — | — | — | — | — |
-| VAT Threshold | — | — | — | 85,000 → 90,000 | — | — | — |
-| WDA Rate | — | — | — | — | — | 18% → 14% | — |
+| Field | 2020-21 → 2021-22 | 2021-22 → 2022-23 | 2022-23 → 2023-24 | 2023-24 → 2024-25 | 2024-25 → 2025-26 | 2025-26 → 2026-27 |
+|-------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
+| Personal Allowance | 12,500 → 12,570 | — | — | — | — | — |
+| Basic Band End | 37,500 → 37,700 | — | — | — | — | — |
+| Class 2 NI | — | 3.05 → 3.15 | 3.15 → 3.45 | 3.45 → 0 | — | — |
+| Class 4 Lower Rate | — | 9% → 9.73% | 9.73% → 9% | 9% → 6% | — | — |
+| Class 4 Lower Limit | 9,500 → 9,568 | 9,568 → 11,908 | 11,908 → 12,570 | — | — | — |
+| Class 4 Upper Limit | 50,000 → 50,270 | — | — | — | — | — |
+| VAT Threshold | — | — | — | 85,000 → 90,000 | — | — |
+| WDA Rate | — | — | — | — | — | 18% → 14% |
 
 "—" indicates no change.
 

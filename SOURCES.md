@@ -14,9 +14,8 @@ Authoritative references for the rates and thresholds used in `app/data/*.toml`.
 
 | Source | URL |
 |--------|-----|
-| NI rates and thresholds (2027-28) | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2027-to-2028 |
-| NI rates and thresholds (2026-27) | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 |
-| NI rates and thresholds (2025-26) | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 |
+| NI rates and thresholds (current year) | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 |
+| NI rates and thresholds (previous year) | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 |
 | Self-employed NI (Class 2 and Class 4) | https://www.gov.uk/self-employed-national-insurance-rates |
 
 ## Capital Allowances

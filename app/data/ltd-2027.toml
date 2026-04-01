@@ -1,0 +1,55 @@
+# UK Limited Company tax rates and thresholds for Financial Year 2027
+# (1 April 2027 – 31 March 2028)
+# Source: HMRC — https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax
+#
+# Note: Corporation Tax uses Financial Years (1 Apr – 31 Mar), not tax years (6 Apr – 5 Apr).
+# For accounting periods ending 31 March, FY2027 applies to the full period.
+# For other year-ends, profits are time-apportioned between two FYs if rates differ.
+
+[financial_year]
+label = "FY2027"
+start = 2027-04-01
+end = 2028-03-31
+
+[corporation_tax]
+main_rate = 0.25
+small_profits_rate = 0.19
+small_profits_limit = 50000
+main_rate_limit = 250000
+marginal_relief_fraction = 0.015   # 3/200
+
+[capital_allowances]
+annual_investment_allowance = 1.00
+writing_down_allowance_main = 0.14
+writing_down_allowance_special = 0.06
+full_expensing_rate = 1.00         # companies only, main pool P&M
+motor_vehicle_cost_threshold = 12000
+motor_vehicle_restriction = 3000
+
+[depreciation]
+land_and_property = 0.00
+plant_and_machinery = 0.10
+fixtures_and_fittings = 0.20
+computer_equipment = 0.33
+motor_vehicles = 0.25
+
+[mileage]
+higher_rate_limit = 10000
+higher_rate_pence = 0.45
+lower_rate_start = 10001
+lower_rate_pence = 0.25
+
+[vat]
+registration_threshold = 90000
+standard_rate = 0.20
+
+[employer_ni]
+rate = 0.15
+secondary_threshold = 5000
+employment_allowance = 10500
+
+[dividend_tax]
+allowance = 500
+basic_rate = 0.1075
+higher_rate = 0.3575
+additional_rate = 0.3935
