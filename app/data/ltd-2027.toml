@@ -1,6 +1,10 @@
 # UK Limited Company tax rates and thresholds for Financial Year 2027
 # (1 April 2027 – 31 March 2028)
-# Source: HMRC — https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax
+#
+# Sources:
+# - Corporation Tax: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax
+# - Employer NI: https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions
+# - Dividend Tax: https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income
 #
 # Note: Corporation Tax uses Financial Years (1 Apr – 31 Mar), not tax years (6 Apr – 5 Apr).
 # For accounting periods ending 31 March, FY2027 applies to the full period.
