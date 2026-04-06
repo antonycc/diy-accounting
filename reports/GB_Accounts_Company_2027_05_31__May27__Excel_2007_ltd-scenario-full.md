@@ -96,14 +96,19 @@ Status: RECONCILES (with warnings)
 
 | | Amount |
 |---|------:|
-| Fixed Assets (NBV) | 26,500 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Stock | 0 |
-| Current Assets | 544,435 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Creditors < 1 year | -0 |
-| **Net Current Assets** | 305,304.78 |
-| **Total Assets less CL** | 331,804.78 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Other Creditors | 0 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Directors Loan | 1,886,145 |
+| Fixed Assets (NBV) | 70,489 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Stock | 10,000 |
+| Current Assets | 595,735 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Creditors < 1 year | 6,900 |
+| **Net Current Assets** | 348,204.78 |
+| **Total Assets less CL** | 418,693.78 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Other Creditors | 20,000 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Directors Loan | 1,906,145 |
+| **Net Assets** | -1,487,451.22 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Share Capital | 100 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Retained Earnings | 268,846.78 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Capital Reserves | -0 |
+| **Shareholders' Funds** | 268,946.78 |
 
 ## Stock
 
@@ -116,7 +121,7 @@ Status: RECONCILES (with warnings)
 
 | | Amount |
 |---|------:|
-| Audit Accuracy Check | -1,777,485 |
+| Audit Accuracy Check | -1,756,398 |
 
 ---
 
@@ -199,14 +204,19 @@ Status: RECONCILES (with warnings)
 
 | Cell | DIY Label | Value | diya-gl mapping |
 |------|-----------|-------|-----------------|
-| D6 | Fixed Assets (NBV) | 26500 | gl-cor:amount (pubBS.fixedAssets) |
-| D9 | Stock | 0 | accounts.assets.1100 (pubBS) |
-| D13 | Current Assets | 544435 | gl-cor:amount (pubBS.currentAssets) |
-| D15 | Creditors < 1 year | 0 | gl-cor:amount (pubBS.creditors) |
-| D22 | **Net Current Assets** | 305304.7775 | gl-cor:amount (pubBS.netCurrent) |
-| D26 | **Total Assets less CL** | 331804.7775 | gl-cor:amount (pubBS.totalAssetsLessCL) |
-| D28 | Other Creditors | 0 | gl-cor:amount (pubBS.otherCred) |
-| D29 | Directors Loan | 1886145 | accounts.liabilities.2500 (pubBS) |
+| D6 | Fixed Assets (NBV) | 70489 | gl-cor:amount (pubBS.fixedAssets) |
+| D9 | Stock | 10000 | accounts.assets.1100 (pubBS) |
+| D13 | Current Assets | 595735 | gl-cor:amount (pubBS.currentAssets) |
+| D15 | Creditors < 1 year | 6900 | gl-cor:amount (pubBS.creditors) |
+| D22 | **Net Current Assets** | 348204.7775 | gl-cor:amount (pubBS.netCurrent) |
+| D26 | **Total Assets less CL** | 418693.7775 | gl-cor:amount (pubBS.totalAssetsLessCL) |
+| D28 | Other Creditors | 20000 | gl-cor:amount (pubBS.otherCred) |
+| D29 | Directors Loan | 1906145 | accounts.liabilities.2500 (pubBS) |
+| F33 | **Net Assets** | -1487451.2225 | gl-cor:amount (pubBS.netAssets) |
+| F36 | Share Capital | 100 | accounts.capital.3000 (pubBS) |
+| F37 | Retained Earnings | 268846.7775 | accounts.capital.3100 (pubBS) |
+| F38 | Capital Reserves | 0 | gl-cor:amount (pubBS.capitalReserves) |
+| F39 | **Shareholders' Funds** | 268946.7775 | gl-cor:amount (pubBS.equity) |
 
 ### Stock
 
@@ -219,4 +229,4 @@ Status: RECONCILES (with warnings)
 
 | Cell | DIY Label | Value | diya-gl mapping |
 |------|-----------|-------|-----------------|
-| EJ91 | Audit Accuracy Check | -1777485 | gl-cor:amount (trialBalanceCheck) |
+| EJ91 | Audit Accuracy Check | -1756398 | gl-cor:amount (trialBalanceCheck) |
