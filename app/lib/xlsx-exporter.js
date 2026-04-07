@@ -55,8 +55,34 @@ function excelSerialToDate(serial) {
   return `${y}-${m}-${d}`;
 }
 
-const BST_SALES_SHEETS = ["SalesApr", "SalesMay", "SalesJun", "SalesJul", "SalesAug", "SalesSep", "SalesOct", "SalesNov", "SalesDec", "SalesJan", "SalesFeb", "SalesMar"];
-const BST_PURCHASE_SHEETS = ["PurchasesApr", "PurchasesMay", "PurchasesJun", "PurchasesJul", "PurchasesAug", "PurchasesSep", "PurchasesOct", "PurchasesNov", "PurchasesDec", "PurchasesJan", "PurchasesFeb", "PurchasesMar"];
+const BST_SALES_SHEETS = [
+  "SalesApr",
+  "SalesMay",
+  "SalesJun",
+  "SalesJul",
+  "SalesAug",
+  "SalesSep",
+  "SalesOct",
+  "SalesNov",
+  "SalesDec",
+  "SalesJan",
+  "SalesFeb",
+  "SalesMar",
+];
+const BST_PURCHASE_SHEETS = [
+  "PurchasesApr",
+  "PurchasesMay",
+  "PurchasesJun",
+  "PurchasesJul",
+  "PurchasesAug",
+  "PurchasesSep",
+  "PurchasesOct",
+  "PurchasesNov",
+  "PurchasesDec",
+  "PurchasesJan",
+  "PurchasesFeb",
+  "PurchasesMar",
+];
 const MONTH_SHEETS = ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar"];
 
 /**
@@ -264,14 +290,14 @@ export async function extractBankTransactions(sourceDir, product) {
         const firstDate = readCellValue(xml, "A6", sharedStrings);
         if (firstDate !== null && typeof firstDate === "number" && firstDate > 1) {
           lines.push({
-            sourceJournalID: "bank",
-            postingDate: excelSerialToDate(firstDate),
-            accountMainID: accountID,
-            amount: obVal,
-            detailComment: "Opening balance",
+            "sourceJournalID": "bank",
+            "postingDate": excelSerialToDate(firstDate),
+            "accountMainID": accountID,
+            "amount": obVal,
+            "detailComment": "Opening balance",
             "diya-gl:bankCode": "BC",
             "diya-gl:bankAccountID": accountID,
-            entryNumber: `EXP-${String(entryNum++).padStart(4, "0")}`,
+            "entryNumber": `EXP-${String(entryNum++).padStart(4, "0")}`,
           });
           obEmitted = true;
         }
@@ -289,14 +315,14 @@ export async function extractBankTransactions(sourceDir, product) {
         const codeStr = typeof code === "string" ? code : String(code);
 
         lines.push({
-          sourceJournalID: "bank",
-          postingDate: excelSerialToDate(dateVal),
-          accountMainID: accountID,
+          "sourceJournalID": "bank",
+          "postingDate": excelSerialToDate(dateVal),
+          "accountMainID": accountID,
           amount,
-          detailComment: typeof source === "string" ? source : "",
+          "detailComment": typeof source === "string" ? source : "",
           "diya-gl:bankCode": codeStr,
           "diya-gl:bankAccountID": accountID,
-          entryNumber: `EXP-${String(entryNum++).padStart(4, "0")}`,
+          "entryNumber": `EXP-${String(entryNum++).padStart(4, "0")}`,
         });
       }
 
@@ -312,14 +338,14 @@ export async function extractBankTransactions(sourceDir, product) {
         const codeStr = typeof code === "string" ? code : String(code);
 
         lines.push({
-          sourceJournalID: "bank",
-          postingDate: excelSerialToDate(dateVal),
-          accountMainID: accountID,
+          "sourceJournalID": "bank",
+          "postingDate": excelSerialToDate(dateVal),
+          "accountMainID": accountID,
           amount,
-          detailComment: typeof supplier === "string" ? supplier : "",
+          "detailComment": typeof supplier === "string" ? supplier : "",
           "diya-gl:bankCode": codeStr,
           "diya-gl:bankAccountID": accountID,
-          entryNumber: `EXP-${String(entryNum++).padStart(4, "0")}`,
+          "entryNumber": `EXP-${String(entryNum++).padStart(4, "0")}`,
         });
       }
     }
@@ -364,20 +390,21 @@ export async function extractPayrollTransactions(sourceDir) {
       // Derive posting date from month tab (last day of that month, approximate from other data)
       // Use the date from row 49 col M (date wages paid) if available
       const wageDate = readCellValue(xml, "M49", sharedStrings);
-      const postingDate = wageDate && typeof wageDate === "number" && wageDate > 1 ? excelSerialToDate(wageDate) : `${MONTH_SHEETS[mi]}-unknown`;
+      const postingDate =
+        wageDate && typeof wageDate === "number" && wageDate > 1 ? excelSerialToDate(wageDate) : `${MONTH_SHEETS[mi]}-unknown`;
 
       lines.push({
-        sourceJournalID: "payroll",
+        "sourceJournalID": "payroll",
         postingDate,
-        accountMainID: "5101",
-        amount: grossPay,
-        detailComment: typeof name === "string" ? name : "",
+        "accountMainID": "5101",
+        "amount": grossPay,
+        "detailComment": typeof name === "string" ? name : "",
         "diya-gl:grossPay": grossPay,
         "diya-gl:incomeTax": typeof incomeTax === "number" ? incomeTax : 0,
         "diya-gl:employeeNI": typeof employeeNI === "number" ? employeeNI : 0,
         "diya-gl:employerNI": typeof employerNI === "number" ? employerNI : 0,
         "diya-gl:netPay": typeof netPay === "number" ? netPay : 0,
-        entryNumber: `EXP-${String(entryNum++).padStart(4, "0")}`,
+        "entryNumber": `EXP-${String(entryNum++).padStart(4, "0")}`,
       });
     }
   }

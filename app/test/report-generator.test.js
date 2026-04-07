@@ -79,7 +79,7 @@ describe("generateReport", () => {
   });
 
   it("skips empty/null cell values in appendix", () => {
-    const results = { "Sheet1": { A1: 100, A2: null, A3: "", A4: " " } };
+    const results = { Sheet1: { A1: 100, A2: null, A3: "", A4: " " } };
     const { content } = generateReport("Pkg", "scen", results, [], { reportSections: () => [], cellLabels: () => ({}) });
     expect(content).toContain("| A1 |");
     expect(content).not.toContain("| A2 |");

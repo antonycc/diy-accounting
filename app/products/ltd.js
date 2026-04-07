@@ -279,7 +279,12 @@ export function cellWrites(scenario, targetStartYear, yearEndMonth) {
   }
 
   // Bank entries — Ltd has 4 bank files mapped by account ID
-  const BANK_ACCOUNT_FILES = { "1200": "Currentaccount.xlsx", "1210": "Savingaccount.xlsx", "1220": "Cashaccount.xlsx", "1230": "Creditcardaccount.xlsx" };
+  const BANK_ACCOUNT_FILES = {
+    1200: "Currentaccount.xlsx",
+    1210: "Savingaccount.xlsx",
+    1220: "Cashaccount.xlsx",
+    1230: "Creditcardaccount.xlsx",
+  };
   const bankFileWrites = {};
   if (scenario.bank) {
     const receiptRows = {};

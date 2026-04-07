@@ -233,7 +233,16 @@ function parseArgs(argv) {
 async function main() {
   console.log("=== generate.js ===");
 
-  const { packageFilter, tomlFiles, sourceDateEpoch, skipGuide, yearEndFilter, dataDir, outputDir: outputDirOverride, offset } = parseArgs(process.argv);
+  const {
+    packageFilter,
+    tomlFiles,
+    sourceDateEpoch,
+    skipGuide,
+    yearEndFilter,
+    dataDir,
+    outputDir: outputDirOverride,
+    offset,
+  } = parseArgs(process.argv);
 
   // Determine which products to generate
   const productsToGenerate = packageFilter === "all" ? Object.entries(PRODUCTS) : [[packageFilter, PRODUCTS[packageFilter]]];

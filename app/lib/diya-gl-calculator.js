@@ -82,7 +82,20 @@ function aggregateByCode(lines, codeMap) {
 
 // ── BST Calculator ─────────────────────────────────────────────────────────
 
-const BST_MONTH_COLS = { apr: "D", may: "E", jun: "F", jul: "G", aug: "H", sep: "I", oct: "J", nov: "K", dec: "L", jan: "M", feb: "N", mar: "O" };
+const BST_MONTH_COLS = {
+  apr: "D",
+  may: "E",
+  jun: "F",
+  jul: "G",
+  aug: "H",
+  sep: "I",
+  oct: "J",
+  nov: "K",
+  dec: "L",
+  jan: "M",
+  feb: "N",
+  mar: "O",
+};
 
 function calculateBstResults(book, lines, taxData, scenario) {
   // Filter to BST lines only
@@ -132,7 +145,10 @@ function calculateBstResults(book, lines, taxData, scenario) {
   const taxableProfit = netProfit - capitalAllowances;
 
   // Income Tax
-  const { personalAllowance, taxableIncome, basicRateTax, higherRateTax, totalIncomeTax } = calculateIncomeTax(taxableProfit, taxData.income_tax);
+  const { personalAllowance, taxableIncome, basicRateTax, higherRateTax, totalIncomeTax } = calculateIncomeTax(
+    taxableProfit,
+    taxData.income_tax,
+  );
   const cisDeducted = 0;
   const { lowerBand: niLower, upperBand: niUpper } = calculateNIClass4(taxableProfit, taxData.national_insurance);
   const totalTaxAndNI = totalIncomeTax - cisDeducted + niLower + niUpper;
@@ -192,7 +208,7 @@ function calculateBstResults(book, lines, taxData, scenario) {
       E18: totalTaxAndNI,
     },
     "SE Short": {},
-    PurchasesStock: {},
+    "PurchasesStock": {},
     "Debtors & Creditors": {},
   };
 
@@ -306,7 +322,10 @@ function calculateTaxiResults(book, lines, taxData, scenario) {
   const netProfit = grossProfit - totalGenExpenses;
 
   // Tax
-  const { personalAllowance, taxableIncome, basicRateTax, higherRateTax, totalIncomeTax } = calculateIncomeTax(netProfit, taxData.income_tax);
+  const { personalAllowance, taxableIncome, basicRateTax, higherRateTax, totalIncomeTax } = calculateIncomeTax(
+    netProfit,
+    taxData.income_tax,
+  );
   const { lowerBand: niLower, upperBand: niUpper } = calculateNIClass4(netProfit, taxData.national_insurance);
   const totalTaxAndNI = totalIncomeTax + niLower + niUpper;
 
@@ -413,13 +432,16 @@ function calculateSeResults(book, lines, taxData, scenario) {
   // Cannot compute from diya-gl data without the bank sheet formulas
   const bankCharges = 0;
   // Note: codes t,q,u,n,f,z flow through external links to non-admin P&L sections, NOT to totalAdminExpenses
-  const totalAdminExpenses = wages + lightHeat + repairs + genAdmin + motor + travel + advertising + legal + badDebts +
-    bankCharges + charitable;
+  const totalAdminExpenses =
+    wages + lightHeat + repairs + genAdmin + motor + travel + advertising + legal + badDebts + bankCharges + charitable;
   const operatingProfit = grossProfit - totalAdminExpenses;
   const profitBeforeTax = operatingProfit; // No interest income for SE
 
   // Income Tax
-  const { personalAllowance, taxableIncome, basicRateTax, higherRateTax, totalIncomeTax } = calculateIncomeTax(profitBeforeTax, taxData.income_tax);
+  const { personalAllowance, taxableIncome, basicRateTax, higherRateTax, totalIncomeTax } = calculateIncomeTax(
+    profitBeforeTax,
+    taxData.income_tax,
+  );
   const cisDeducted = 0;
   const { lowerBand: niLower, upperBand: niUpper } = calculateNIClass4(profitBeforeTax, taxData.national_insurance);
   const totalTaxAndNI = totalIncomeTax - cisDeducted + niLower + niUpper;
@@ -430,7 +452,12 @@ function calculateSeResults(book, lines, taxData, scenario) {
   // Quarterly sales/expenses for VitalTax
   const qSales = [0, 0, 0, 0];
   const qExpenses = [0, 0, 0, 0];
-  const qMonths = [["apr", "may", "jun"], ["jul", "aug", "sep"], ["oct", "nov", "dec"], ["jan", "feb", "mar"]];
+  const qMonths = [
+    ["apr", "may", "jun"],
+    ["jul", "aug", "sep"],
+    ["oct", "nov", "dec"],
+    ["jan", "feb", "mar"],
+  ];
   for (let qi = 0; qi < 4; qi++) {
     for (const m of qMonths[qi]) {
       qSales[qi] += (monthlySalesGross[m] || 0) / 1.2;
@@ -501,20 +528,41 @@ function calculateSeResults(book, lines, taxData, scenario) {
       D85: 0,
       D94: 0,
       D99: operatingProfit - charitable,
-      A32: totalSalesTurnover > (taxData.vat?.registration_threshold || 90000)
-        ? `SELF-EMPLOYMENT FULL RETURN REQUIRED AS TURNOVER EXCEEDS £${taxData.vat?.registration_threshold || 90000} VAT threshold`
-        : "",
+      A32:
+        totalSalesTurnover > (taxData.vat?.registration_threshold || 90000)
+          ? `SELF-EMPLOYMENT FULL RETURN REQUIRED AS TURNOVER EXCEEDS £${taxData.vat?.registration_threshold || 90000} VAT threshold`
+          : "",
       D106: profitBeforeTax,
     },
-    Wagesinterface: {
-      C4: 0, C5: 0, C6: 0, C7: 0, C8: 0, C9: 0, C10: 0, C11: 0, C12: 0, C13: 0, C14: 0, C15: 0,
-      D4: 0, H4: 0,
+    "Wagesinterface": {
+      C4: 0,
+      C5: 0,
+      C6: 0,
+      C7: 0,
+      C8: 0,
+      C9: 0,
+      C10: 0,
+      C11: 0,
+      C12: 0,
+      C13: 0,
+      C14: 0,
+      C15: 0,
+      D4: 0,
+      H4: 0,
     },
-    VitalTax: {
-      C5: qSales[0], D5: qSales[1], E5: qSales[2], F5: qSales[3], G5: totalSalesTurnover,
-      C7: qExpenses[0], D7: qExpenses[1], E7: qExpenses[2], F7: qExpenses[3], G7: qExpenses[0] + qExpenses[1] + qExpenses[2] + qExpenses[3],
+    "VitalTax": {
+      C5: qSales[0],
+      D5: qSales[1],
+      E5: qSales[2],
+      F5: qSales[3],
+      G5: totalSalesTurnover,
+      C7: qExpenses[0],
+      D7: qExpenses[1],
+      E7: qExpenses[2],
+      F7: qExpenses[3],
+      G7: qExpenses[0] + qExpenses[1] + qExpenses[2] + qExpenses[3],
     },
-    Stock: {
+    "Stock": {
       B5: scenario.stock?.opening ?? 0,
       B8: scenario.stock?.closing ?? 0,
     },
@@ -572,17 +620,43 @@ function calculateLtdResults(book, lines, taxData, scenario) {
   const goodwill = byCode.z || 0;
   // Bank charges: X-code transfers from current account (1200) appear as negative P&L charges
   const bankLines = lines.filter((l) => l.sourceJournalID === "bank");
-  const bankCharges = -(bankLines.filter((l) => l["diya-gl:bankCode"] === "X" && l["diya-gl:bankAccountID"] === "1200").reduce((s, l) => s + l.amount, 0));
+  const bankCharges = -bankLines
+    .filter((l) => l["diya-gl:bankCode"] === "X" && l["diya-gl:bankAccountID"] === "1200")
+    .reduce((s, l) => s + l.amount, 0);
 
-  const totalAdmin = payeWages + employeeWages + directorsNonPaye + premises + lightHeat + distribution +
-    equipmentHire + repairs + consumables + advertising + genAdmin + travel + motor + insurance + leasing +
-    legal + badDebts + bankCharges + charitable + goodwill;
+  const totalAdmin =
+    payeWages +
+    employeeWages +
+    directorsNonPaye +
+    premises +
+    lightHeat +
+    distribution +
+    equipmentHire +
+    repairs +
+    consumables +
+    advertising +
+    genAdmin +
+    travel +
+    motor +
+    insurance +
+    leasing +
+    legal +
+    badDebts +
+    bankCharges +
+    charitable +
+    goodwill;
   const operatingProfit = grossProfit - totalAdmin;
   const interestReceived = 0;
   const profitBeforeTax = operatingProfit + interestReceived;
 
   // Corporation Tax
-  const ctRates = taxData.corporation_tax || { small_profits_rate: 0.19, main_rate: 0.25, small_profits_limit: 50000, small_profits_limit_upper: 250000, marginal_relief_fraction: 0.015 };
+  const ctRates = taxData.corporation_tax || {
+    small_profits_rate: 0.19,
+    main_rate: 0.25,
+    small_profits_limit: 50000,
+    small_profits_limit_upper: 250000,
+    marginal_relief_fraction: 0.015,
+  };
   const depreciation = goodwill; // B38 goodwill + B35/B36 depreciation charges (add back non-cash items)
   const addBack = profitBeforeTax + depreciation; // K12
   const capitalAllowances = 0; // Simplified — requires Fixed Assets schedule
@@ -597,7 +671,7 @@ function calculateLtdResults(book, lines, taxData, scenario) {
   const ob = scenario.opening_balance || {};
 
   return {
-    OpenAccounts: {
+    "OpenAccounts": {
       E2: biz.name || entity.organizationIdentifier || "",
       E3: biz.company_number || "",
       E4: biz.address ? `${biz.address}, ${biz.town || ""} ${biz.postcode || ""}`.trim() : "",
@@ -643,7 +717,7 @@ function calculateLtdResults(book, lines, taxData, scenario) {
       B44: interestReceived,
       B45: profitBeforeTax,
     },
-    CorporationTax: {
+    "CorporationTax": {
       K5: operatingProfit,
       K12: addBack,
       K22: lessCA,
@@ -653,12 +727,12 @@ function calculateLtdResults(book, lines, taxData, scenario) {
     },
     "PubP&L": {
       D7: totalTurnover - grants, // Sales Turnover (excl. grants)
-      D8: grants,                 // Investment Grants received
-      D9: totalTurnover,          // Total Sales Turnover
-      D16: costOfSales,           // Cost of Sales total
-      D18: grossProfit,           // Gross Profit
+      D8: grants, // Investment Grants received
+      D9: totalTurnover, // Total Sales Turnover
+      D16: costOfSales, // Cost of Sales total
+      D18: grossProfit, // Gross Profit
     },
-    PubBalSht: {
+    "PubBalSht": {
       D6: (ob.motor_vehicles || 0) + (ob.computer_equipment || 0) + (ob.fixed_assets || 0) + (ob.plant_machinery || 0) + (ob.fixtures || 0),
       D9: scenario.stock?.closing ?? 0,
       D13: 0, // Current assets — needs full balance sheet
@@ -668,11 +742,11 @@ function calculateLtdResults(book, lines, taxData, scenario) {
       D28: 0, // Other creditors
       D29: ob.directors_loan || 0,
     },
-    Stock: {
+    "Stock": {
       B5: scenario.stock?.opening ?? 0,
       B8: scenario.stock?.closing ?? 0,
     },
-    TrialBalance: {
+    "TrialBalance": {
       EJ91: 0, // Audit accuracy check — should be ~0
     },
   };

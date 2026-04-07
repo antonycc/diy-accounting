@@ -33,7 +33,7 @@ export function parseOffset(offset) {
   const body = offset.replace(/^[+-]/, "");
   const match = body.match(/^P(?:(\d+)Y)?(?:(\d+)M)?$/);
   if (!match) throw new Error(`Invalid offset: "${offset}". Use ISO 8601 duration like +P1Y, -P3M, +P1Y3M`);
-  return { years: sign * (parseInt(match[1] || "0", 10)), months: sign * (parseInt(match[2] || "0", 10)) };
+  return { years: sign * parseInt(match[1] || "0", 10), months: sign * parseInt(match[2] || "0", 10) };
 }
 
 /**
@@ -43,8 +43,14 @@ export function shiftDate(dateStr, offset) {
   const [y, m, d] = dateStr.split("-").map(Number);
   let newMonth = m + offset.months;
   let newYear = y + offset.years;
-  while (newMonth > 12) { newMonth -= 12; newYear++; }
-  while (newMonth < 1) { newMonth += 12; newYear--; }
+  while (newMonth > 12) {
+    newMonth -= 12;
+    newYear++;
+  }
+  while (newMonth < 1) {
+    newMonth += 12;
+    newYear--;
+  }
   const maxDay = new Date(newYear, newMonth, 0).getDate();
   const newDay = Math.min(d, maxDay);
   return `${newYear}-${String(newMonth).padStart(2, "0")}-${String(newDay).padStart(2, "0")}`;
@@ -124,7 +130,8 @@ export function diyaGlToScenario(book, lines, product) {
     totalSales = computeGrossSales(salesLines);
   } else {
     // SE/Ltd: net sales (gross / 1.2) for turnover accounts only
-    const TURNOVER_ACCOUNTS = product === "ltd" ? new Set(["4000", "4001", "4002", "4003", "4004"]) : new Set(["4000", "4001", "4002", "4003"]);
+    const TURNOVER_ACCOUNTS =
+      product === "ltd" ? new Set(["4000", "4001", "4002", "4003", "4004"]) : new Set(["4000", "4001", "4002", "4003"]);
     const turnoverLines = salesLines.filter((l) => TURNOVER_ACCOUNTS.has(l.accountMainID));
     totalSales = computeSpreadsheetNetSales(turnoverLines);
   }

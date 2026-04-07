@@ -101,7 +101,11 @@ export function generateSectionReports(results, productMod) {
     }
     lines.push("");
 
-    const filename = section.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "") + ".md";
+    const filename =
+      section.title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/-+$/, "") + ".md";
     reports[filename] = lines.join("\n");
   }
 

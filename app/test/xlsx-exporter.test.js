@@ -5,17 +5,9 @@ import { describe, it, expect } from "vitest";
 import { readFileSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
-import {
-  buildReverseCodeMap,
-  extractBstTransactions,
-  normaliseLine,
-} from "../lib/xlsx-exporter.js";
+import { buildReverseCodeMap, extractBstTransactions, normaliseLine } from "../lib/xlsx-exporter.js";
 import { findXlsx } from "../lib/xlsx-reader.js";
-import {
-  BST_PURCHASE_CODE_MAP,
-  LTD_PURCHASE_CODE_MAP,
-  LTD_SALES_CODE_MAP,
-} from "../lib/scenario-extractor.js";
+import { BST_PURCHASE_CODE_MAP, LTD_PURCHASE_CODE_MAP, LTD_SALES_CODE_MAP } from "../lib/scenario-extractor.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..", "..");
@@ -50,7 +42,14 @@ describe("buildReverseCodeMap", () => {
 
 describe("normaliseLine", () => {
   it("normalises a line for comparison", () => {
-    const line = { sourceJournalID: "sales", postingDate: "2025-04-01", accountMainID: 4000, amount: 1234.567, detailComment: "Test", extra: "ignored" };
+    const line = {
+      sourceJournalID: "sales",
+      postingDate: "2025-04-01",
+      accountMainID: 4000,
+      amount: 1234.567,
+      detailComment: "Test",
+      extra: "ignored",
+    };
     const normalised = normaliseLine(line);
     expect(normalised.accountMainID).toBe("4000"); // string
     expect(normalised.amount).toBe(1234.57); // rounded to 2dp

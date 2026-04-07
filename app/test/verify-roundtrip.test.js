@@ -54,50 +54,60 @@ const PRODUCTS = [
 describe.skipIf(!hasLibreOffice())("Double-roundtrip fidelity", () => {
   for (const product of PRODUCTS) {
     it(`${product.name}: pass 2 export equals pass 1 export`, { timeout: 300_000 }, () => {
-        const pkg1 = resolve(ROOT, "target", `${product.name}-rt-pkg1`);
-        const data1 = resolve(ROOT, "target", `${product.name}-rt-data1`);
-        const pkg2 = resolve(ROOT, "target", `${product.name}-rt-pkg2`);
-        const data2 = resolve(ROOT, "target", `${product.name}-rt-data2`);
+      const pkg1 = resolve(ROOT, "target", `${product.name}-rt-pkg1`);
+      const data1 = resolve(ROOT, "target", `${product.name}-rt-data1`);
+      const pkg2 = resolve(ROOT, "target", `${product.name}-rt-pkg2`);
+      const data2 = resolve(ROOT, "target", `${product.name}-rt-data2`);
 
-        // Pass 1: original diya-gl → Excel → export
-        run([
-          "app/bin/generate.js",
-          "--package", product.name,
-          "--years", product.years,
-          "--year-end", product.yearEnd,
-          "--data", product.data,
-          "--output-dir", pkg1,
-          "--skip-guide",
-        ]);
-        run(["app/bin/export.js", "--package", product.name, "--source-dir", pkg1, "--output-dir", data1]);
+      // Pass 1: original diya-gl → Excel → export
+      run([
+        "app/bin/generate.js",
+        "--package",
+        product.name,
+        "--years",
+        product.years,
+        "--year-end",
+        product.yearEnd,
+        "--data",
+        product.data,
+        "--output-dir",
+        pkg1,
+        "--skip-guide",
+      ]);
+      run(["app/bin/export.js", "--package", product.name, "--source-dir", pkg1, "--output-dir", data1]);
 
-        const lines1 = readLines(data1);
-        expect(lines1.length).toBeGreaterThan(0);
+      const lines1 = readLines(data1);
+      expect(lines1.length).toBeGreaterThan(0);
 
-        // Pass 2: exported diya-gl → Excel → export
-        run([
-          "app/bin/generate.js",
-          "--package", product.name,
-          "--years", product.years,
-          "--year-end", product.yearEnd,
-          "--data", data1,
-          "--output-dir", pkg2,
-          "--skip-guide",
-        ]);
-        run(["app/bin/export.js", "--package", product.name, "--source-dir", pkg2, "--output-dir", data2]);
+      // Pass 2: exported diya-gl → Excel → export
+      run([
+        "app/bin/generate.js",
+        "--package",
+        product.name,
+        "--years",
+        product.years,
+        "--year-end",
+        product.yearEnd,
+        "--data",
+        data1,
+        "--output-dir",
+        pkg2,
+        "--skip-guide",
+      ]);
+      run(["app/bin/export.js", "--package", product.name, "--source-dir", pkg2, "--output-dir", data2]);
 
-        const lines2 = readLines(data2);
+      const lines2 = readLines(data2);
 
-        // Compare line by line
-        expect(lines2.length).toBe(lines1.length);
-        for (let i = 0; i < lines1.length; i++) {
-          expect(lines2[i], `Line ${i} mismatch`).toEqual(lines1[i]);
-        }
+      // Compare line by line
+      expect(lines2.length).toBe(lines1.length);
+      for (let i = 0; i < lines1.length; i++) {
+        expect(lines2[i], `Line ${i} mismatch`).toEqual(lines1[i]);
+      }
 
-        // Also compare book.toml
-        const book1 = readFileSync(resolve(data1, "book.toml"), "utf8");
-        const book2 = readFileSync(resolve(data2, "book.toml"), "utf8");
-        expect(book2).toBe(book1);
+      // Also compare book.toml
+      const book1 = readFileSync(resolve(data1, "book.toml"), "utf8");
+      const book2 = readFileSync(resolve(data2, "book.toml"), "utf8");
+      expect(book2).toBe(book1);
     });
   }
 });
