@@ -105,7 +105,7 @@
     "smol-toml": "^1.6.1",
     "structured-data-testing-tool": "^4.5.0",
     "vitest": "^4.1.4",
-    "wait-on": "^9.0.4"
+    "wait-on": "^9.0.5"
   },
   "dependencies": {
     "stripe": "^22.0.1"
