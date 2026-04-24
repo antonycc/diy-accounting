@@ -89,7 +89,7 @@
     "@axe-core/cli": "^4.11.2",
     "@mhlabs/cfn-diagram": "^1.1.40",
     "@playwright/test": "1.59.1",
-    "aws-cdk": "^2.1118.4",
+    "aws-cdk": "^2.1119.0",
     "eslint": "^10.2.1",
     "eslint-plugin-security": "^4.0.0",
     "exceljs": "^4.4.1-prerelease.0",
@@ -108,7 +108,7 @@
     "wait-on": "^9.0.5"
   },
   "dependencies": {
-    "stripe": "^22.0.2"
+    "stripe": "^22.1.0"
   },
   "engines": {
     "node": ">=24.0.0"
