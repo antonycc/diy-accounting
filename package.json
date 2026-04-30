@@ -89,7 +89,7 @@
     "@axe-core/cli": "^4.11.2",
     "@mhlabs/cfn-diagram": "^1.1.40",
     "@playwright/test": "1.59.1",
-    "aws-cdk": "^2.1119.0",
+    "aws-cdk": "^2.1120.0",
     "eslint": "^10.2.1",
     "eslint-plugin-security": "^4.0.0",
     "exceljs": "^4.4.1-prerelease.0",
