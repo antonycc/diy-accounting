@@ -86,7 +86,7 @@
     "resources:spreadsheets": "node scripts/generate-aws-resources.js --profile spreadsheets"
   },
   "devDependencies": {
-    "@axe-core/cli": "^4.11.2",
+    "@axe-core/cli": "^4.11.3",
     "@mhlabs/cfn-diagram": "^1.1.40",
     "@playwright/test": "1.59.1",
     "aws-cdk": "^2.1120.0",
